@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-#define defName @"13388888888" //默认用户名
-#define defNamePass @"123456"  //默认用户密码
+#define defName @"15214322207" //默认用户名
+#define defNamePass @"weijiaxu1018"  //默认用户密码
 @interface FUsersTool : NSObject
 
 + (void)setDefaultUser;

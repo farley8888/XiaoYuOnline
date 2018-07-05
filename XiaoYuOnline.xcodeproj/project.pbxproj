@@ -200,6 +200,7 @@
 		18AB49B320EE12080036E54C /* FLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48D420EE12080036E54C /* FLoginViewController.m */; };
 		18AB49B420EE12080036E54C /* NSString+Shove.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48D620EE12080036E54C /* NSString+Shove.m */; };
 		18AB49B520EE12080036E54C /* CaptchaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48D720EE12080036E54C /* CaptchaView.m */; };
+		18AB49B720EE3C3E0036E54C /* WechatIMG1659.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18AB49B620EE3C3E0036E54C /* WechatIMG1659.jpeg */; };
 		3D3284E42071CD9000F82D3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3284E32071CD9000F82D3E /* AppDelegate.m */; };
 		3D3284EA2071CD9000F82D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3284E82071CD9000F82D3E /* Main.storyboard */; };
 		3D3284F22071CD9100F82D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3284F12071CD9100F82D3E /* main.m */; };
@@ -745,6 +746,7 @@
 		18AB48D620EE12080036E54C /* NSString+Shove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Shove.m"; sourceTree = "<group>"; };
 		18AB48D720EE12080036E54C /* CaptchaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptchaView.m; sourceTree = "<group>"; };
 		18AB48D820EE12080036E54C /* FAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAppDelegate.h; sourceTree = "<group>"; };
+		18AB49B620EE3C3E0036E54C /* WechatIMG1659.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG1659.jpeg; sourceTree = "<group>"; };
 		212C2048C7407A4CF573CABF /* libPods-XiaoYuOnline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XiaoYuOnline.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23111C5E3E64E8E9E0DB8878 /* Pods-XiaoYuOnline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoYuOnline.release.xcconfig"; path = "Pods/Target Support Files/Pods-XiaoYuOnline/Pods-XiaoYuOnline.release.xcconfig"; sourceTree = "<group>"; };
 		3D3284DF2071CD9000F82D3E /* XiaoYuOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoYuOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1122,6 +1124,7 @@
 				18AB472420EE12070036E54C /* FWebController.h */,
 				18AB472520EE12070036E54C /* EditTypes */,
 				18AB473020EE12070036E54C /* WechatIMG608.jpeg */,
+				18AB49B620EE3C3E0036E54C /* WechatIMG1659.jpeg */,
 				18AB473120EE12070036E54C /* FTakeRecordIncomeController.m */,
 				18AB473220EE12070036E54C /* FTakeRecordFatherController.h */,
 				18AB473320EE12070036E54C /* FHomeViewController.m */,
@@ -2702,6 +2705,7 @@
 				3D763B1220A579EE00D0E4B8 /* mine_wb_cb_test4@3x.png in Resources */,
 				18AB498F20EE12080036E54C /* FMyExpandseRecordCell.xib in Resources */,
 				18AB48E820EE12080036E54C /* FHomeNewsCell.xib in Resources */,
+				18AB49B720EE3C3E0036E54C /* WechatIMG1659.jpeg in Resources */,
 				3D977FB9207BA8D2006A2BD5 /* Assets.xcassets in Resources */,
 				3D763B1B20A579EE00D0E4B8 /* mine_wb_cb_test5@2x.png in Resources */,
 				18AB494620EE12080036E54C /* README.md in Resources */,
@@ -3232,7 +3236,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -3262,7 +3266,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
