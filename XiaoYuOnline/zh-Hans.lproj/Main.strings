@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "常见问题"; ObjectID = "2AP-xJ-3ci"; */
+"2AP-xJ-3ci.text" = "常见问题";
+
+/* Class = "UITabBarItem"; title = "ManageMoney"; ObjectID = "527-s2-6qG"; */
+"527-s2-6qG.title" = "理财";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "AtB-0K-4Yg"; */
+"AtB-0K-4Yg.title" = "我的";
+
+/* Class = "UIButton"; normalTitle = "充值"; ObjectID = "BbQ-bs-uXO"; */
+"BbQ-bs-uXO.normalTitle" = "充值";
+
+/* Class = "UILabel"; text = "福利"; ObjectID = "HXR-6l-DG0"; */
+"HXR-6l-DG0.text" = "福利";
+
+/* Class = "UILabel"; text = "设置"; ObjectID = "J2b-AG-7OT"; */
+"J2b-AG-7OT.text" = "设置";
+
+/* Class = "UIButton"; normalTitle = "可用余额"; ObjectID = "QSz-TM-YqY"; */
+"QSz-TM-YqY.normalTitle" = "可用余额";
+
+/* Class = "UIButton"; normalTitle = "提现"; ObjectID = "dQd-2v-l8C"; */
+"dQd-2v-l8C.normalTitle" = "提现";
+
+/* Class = "UILabel"; text = "账单"; ObjectID = "dr7-kD-Nvi"; */
+"dr7-kD-Nvi.text" = "账单";
+
+/* Class = "UIButton"; normalTitle = "累计收益"; ObjectID = "ehQ-9O-DIt"; */
+"ehQ-9O-DIt.normalTitle" = "累计收益";
+
+/* Class = "UILabel"; text = "交易记录"; ObjectID = "lCQ-8k-YYO"; */
+"lCQ-8k-YYO.text" = "交易记录";
+
+/* Class = "UIButton"; normalTitle = "冻结资金"; ObjectID = "mjv-l3-dUi"; */
+"mjv-l3-dUi.normalTitle" = "冻结金额";
+
+/* Class = "UITabBarItem"; title = "Discovery"; ObjectID = "qad-E5-YMh"; */
+"qad-E5-YMh.title" = "发现";
+
+/* Class = "UILabel"; text = "关于我们"; ObjectID = "r4p-pS-TmP"; */
+"r4p-pS-TmP.text" = "关于我们";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "wpj-vS-Upw"; */
+"wpj-vS-Upw.title" = "主页";
+
+/* Class = "UITabBarItem"; title = "Mine"; ObjectID = "zXe-nO-T2K"; */
+"zXe-nO-T2K.title" = "我的";

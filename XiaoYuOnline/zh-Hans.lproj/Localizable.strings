@@ -1,0 +1,236 @@
+/* 
+  Localizable.strings
+  XiaoYuOnline
+
+  Created by wei.chen on 2018/4/3.
+  Copyright © 2018年 XiaoYuOnline. All rights reserved.
+*/
+
+// ************** //
+// ************** //
+// ** Public  ** //
+// ************** //
+// ************** //
+
+"Public_Sure" = "确定";
+"Public_Cancel" = "取消";
+"Public_Confirm" = "提交";
+"Public_Save" = "保存";
+"Public_VerifyCode" = "验证码";
+"Public_PhoneNum." = "手机号";
+"Public_Next" = "下一步";
+"Public_Complete" = "完成";
+"Public_ForgotPwd" = "忘记密码？";
+"Public_Back" = "返回";
+"Public_Select" = "请选择";
+
+
+// ************** //
+// ************** //
+// ** Account  ** //
+// ************** //
+// ************** //
+"Account_Login_Title" = "登录";
+"Account_Login_FastLogin" = "快捷登录";
+"Account_Login_PasswordLogin" = "密码登录";
+"Account_Login_InputPassword_PH" = "请输入密码";
+"Account_Login_RememberPassword" = "记住密码";
+"Account_Login_NoAccountAlert" = "没有账号？立即注册";
+"Account_GetVerifyCode" = "获取验证码";
+"Account_InputPhoneNum_PH" = "请输入手机号";
+"Account_InputVerifyCode_PH" = "请输入验证码";
+"Account_SendVerifyCode" = "发送验证码";
+"Account_Register_Title" = "注册";
+"Account_InputMessageCode_PH" = "请输入短信验证码";
+"Account_InputLoginPassword" = "登录密码";
+"Account_InputLoginPassword_PH" = "设置登录密码";
+"Account_InviteFriend" = "邀请好友";
+"Account_InviteFriend_PH" = "推荐人手机号，无邀请人可不填写";
+
+// ************** //
+// ************** //
+// ** HomePage ** //
+// ************** //
+// ************** //
+"HomePage_Title" = "主页";
+"HomePage_DaySign" = "每日签到";
+"HomePage_Invite" = "邀请好友";
+"HomePage_InviteNow" = "立即邀请";
+"HomePage_Borrow" = "我要借款";
+"HomePage_Bid" = "预约标的";
+"HomePage_NewHand" = "新人专区";
+"HomePage_TodayRecommend" = "今日推荐";
+"HomePage_SignNow" = "立即签到";
+// 借款
+"HomePage_Loan_Volume" = "金额";
+"HomePage_Loan_YearRatio" = "年利率";
+"HomePage_Loan_TimeLimite" = "期限";
+"HomePage_Loan_BusinessType" = "业务类型";
+"HomePage_Loan_RaiseTime" = "筹款日期";
+"HomePage_Loan_Name" = "姓名";
+"HomePage_Loan_Phone" = "手机";
+"HomePage_Loan_Description" = "借款说明";
+"HomePage_Loan_MortgageDes" = "抵押物说明";
+"HomePage_Loan_ApplyNow" = "立即申请";
+"HomePage_Loan_Volume_PH" = "请输入 1000 ～ 5000 元";
+"HomePage_Loan_YearRatio_PH" = "请输入 12%～5%";
+"HomePage_Loan_Name_PH" = "请输入姓名";
+"HomePage_Loan_Phone_PH" = "请输入手机号";
+"HomePage_Loan_Description_PH" = "将作为平台审核、投资人认可的有效依据，请据实填写20~5 00字篇幅，说明借款用途及还款来源...";
+"HomePage_Loan_MortgageDes_PH" = "例如：房产，面积120平米，价值150万，购买时间：2018 年，详细描述......";
+"HomePage_Loan_Description_Des" = "例如：公司职员，现居上海市，从事贸易行业，工作收入稳定，贷款用于资金周转。";
+"HomePage_Loan_InputTitle" = "填写借款信息";
+"HomePage_Loan_InputDescription" = "1.请认真填写您的真实信息，以便客服人员核对。2.带*必须填写";
+
+// ************** //
+// ************** //
+// * ManageMoney* //
+// ************** //
+// ************** //
+"ManageMoney_Title" = "理财";
+"ManageMoney_BuyNow" = "立即抢购";
+"ManageMoney_Total" = "全部";
+"ManageMoney_New" = "新手标";
+"ManageMoney_Custom" = "普标";
+"ManageMoney_Company" = "企业标";
+"ManageMoney_Invest" = "我要投资";
+"ManageMoney_BidDetail" = "标的详情";
+"ManageMoney_ProjectIntro" = "项目简介";
+"ManageMoney_InvestNow" = "立即投资";
+
+// ************** //
+// ************** //
+// *** Discory ** //
+// ************** //
+// ************** //
+"Discovery_Title" = "发现";
+
+// ************** //
+// ************** //
+// **** Main **** //
+// ************** //
+// ************** //
+
+"Mine_Title" = "我的";
+"Mine_Login" = "立即登录";
+"Mine_TotalAssets" = "总资产";
+"Mine_TotalIncomes" = "累计收益";
+"Mine_UseableBalance" = "可用余额";
+"Mine_FrozenCapital" = "冻结资金";
+"Mine_Charge" = "充值";
+"Mine_Withdraw" = "提现";
+"Mine_BillTitle" = "账单";
+"Mine_TradeRecord" = "交易记录";
+"Mine_WellBeingTitle" = "福利";
+"Mine_QA" = "常见问题";
+"Mine_AboutUs" = "关于我们";
+"Mine_Setting" = "设置";
+// 常见问题
+"Mine_QA_Contact" = "合同问题";
+"Mine_QA_Safe" = "安全问题";
+"Mine_QA_Custom" = "常见问题";
+"Mine_QA_Platform" = "平台问题";
+"Mine_QA_Invest" = "投资问题";
+"Mine_QA_Tender" = "标的问题";
+"Mine_QA_Assets" = "资金问题";
+"Mine_QA_RiskControl" = "风控问题";
+// 关于我们
+"Mine_AboutUs_Xiaoyu" = "小余在线";
+"Mine_AboutUs_Web" = "官方网站";
+"Mine_AboutUs_WeChat" = "官方微信";
+"Mine_AboutUs_Weibo" = "官方微博";
+"Mine_AboutUs_Email" = "联系邮箱";
+"Mine_AboutUs_Phone" = "客服电话";
+// 设置
+"Mine_Setting_RealName" = "实名认证";
+"Mine_Setting_PhoneAus" = "手机认证";
+"Mine_Setting_BindCard" = "银行卡绑定";
+"Mine_Setting_AccoutSafe" = "账户安全";
+"Mine_Setting_ReceiveAddress" = "收货地址";
+"Mine_Setting_Update" = "版本更新";
+"Mine_Setting_SafeQuit" = "安全退出";
+// 实名认证
+"Mine_Setting_RN_CardOwner" = "持卡人";
+"Mine_Setting_RN_PeopleID" = "身份证号";
+"Mine_Setting_RN_CardNum" = "银行卡号";
+"Mine_Setting_RN_PhoneNum" = "预留手机号";
+"Mine_Setting_RN_CardOwner_P" = "请输入姓名";
+"Mine_Setting_RN_PeopleID_P" = "请输入身份证号";
+"Mine_Setting_RN_CardNum_P" = "请输入银行卡号";
+"Mine_Setting_RN_PhoneNum_P" = "请输入手机号";
+"Mine_Setting_RN_VerifyCode" = "获取验证码";
+// 收货地址
+"Mine_Setting_SA_Receiver" = "收件人:";
+"Mine_Setting_SA_Phone" = "联系电话:";
+"Mine_Setting_SA_Address" = "收货地址:";
+"Mine_Setting_SA_Comment" = "备注:";
+"Mine_Setting_SA_Receiver_P" = "请输入您的姓名";
+"Mine_Setting_SA_Phone_P" = "请输入您的手机号";
+"Mine_Setting_SA_Address_P" = "请输入您的详细地址";
+"Mine_Setting_SA_Comment_P" = "可选择填写";
+"Mine_Setting_SA_Alert" = "请输入您的收货信息";
+// 账户安全
+"Mine_Setting_AC_LoginPwd" = "设置登录密码";
+"Mine_Setting_AC_TradePwd" = "设置交易密码";
+"Mine_Setting_AC_GesturePwd" = "手势密码";
+"Mine_Setting_AC_GestureUnable" = "未开启";
+"Mine_Setting_AC_LP_Origin" = "请输入原密码";
+"Mine_Setting_AC_LP_New" = "请输入新密码";
+"Mine_Setting_AC_LP_NewAgain" = "请再次输入新密码";
+"Mine_Setting_AC_LP_Alert" = "登录密码为6~16位字母与数字组合";
+"Mine_Setting_AC_TP_Alert" = "已验证手机号码为";
+// 交易密码
+"Mine_Setting_AC_TP_PlaceHolder" = "请输入新验证码";
+"Mine_Setting_AC_TP_Password" = "交易密码";
+"Mine_Setting_AC_TP_PasswordPH" = "请设置 6 位交易密码";
+// 手势密码
+"Mine_Setting_AC_GP_Title" = "手势锁定";
+"Mine_Setting_AC_GP_Setting" = "设置手势密码";
+"Mine_Setting_AC_GP_Close" = "关闭手势锁定";
+// 福利
+"Mine_Setting_WB_Prefecture" = "福利专区";
+"Mine_Setting_WB_CardBag" = "卡包";
+"Mine_Setting_WB_ScoreShop" = "积分商城";
+"Mine_Setting_WB_Turntable" = "幸运转盘";
+// 卡包
+"Mine_Setting_WB_CB_Bonus" = "红包";
+"Mine_Setting_WB_CB_Voucher" = "现金券";
+"Mine_Setting_WB_CB_IncreaseRate" = "加息券";
+// 充值提现
+"Mine_Setting_Charge_Title" = "充值";
+"Mine_Setting_Withdraw_Title" = "提现";
+"Mine_Setting_Charge_Success" = "充值成功";
+"Mine_Setting_Withdraw_Success" = "提现成功";
+"Mine_Setting_Charge_Failure" = "充值失败";
+"Mine_Setting_Withdraw_Failure" = "提现失败";
+"Mine_Setting_Charge_BankNum." = "充值银行卡号";
+"Mine_Setting_Charge_Volume" = "充值金额";
+"Mine_Setting_Charge_Password" = "交易密码";
+"Mine_Setting_Charge_Now" = "立即充值";
+"Mine_Setting_Withdraw_BankNum." = "提现银行卡号";
+"Mine_Setting_Withdraw_Volume" = "提现金额";
+"Mine_Setting_Withdraw_Password" = "交易密码";
+"Mine_Setting_Withdraw_Now" = "立即提现";
+"Mine_Setting_Withdraw_Volume_PH" = "请输入提现金额";
+"Mine_Setting_Charge_Volume_PH" = "单笔充值金额最低为100元";
+"Mine_Setting_OperatePwd_PH" = "请输入交易密码";
+// 交易记录
+"Mine_TradeRecord_Bid_Title" = "账单详情";
+"Mine_TradeRecord_MyInvest" = "我的投资";
+"Mine_TradeRecord_MyLoan" = "我的借款";
+"Mine_TradeRecord_Bid_Name" = "投标名称";
+"Mine_TradeRecord_Bid_YearRatio" = "年利率";
+"Mine_TradeRecord_Bid_InvestLimite" = "投资期限";
+"Mine_TradeRecord_Bid_Status" = "状态";
+"Mine_TradeRecord_Bid_BillType" = "账单分类";
+"Mine_TradeRecord_Bid_BackTime" = "回款时间";
+"Mine_TradeRecord_Bid_ExpectToAccout" = "预计到账";
+// 还款
+"Mine_TradeRecord_Bid_Repayment" = "还款";
+"Mine_TR_BR_BankAccount" = "还款银行卡号";
+"Mine_TR_BR_RepaymentVolumn" = "还款金额";
+"Mine_TR_BR_RepaymentNow" = "立即还款";
+"Mine_TR_BR_RepaymentVolumn_PH" = "元";
+"Mine_TR_BR_RepaymentNow_Success" = "还款失败";
+"Mine_TR_BR_RepaymentNow_Failure" = "还款成功";
+

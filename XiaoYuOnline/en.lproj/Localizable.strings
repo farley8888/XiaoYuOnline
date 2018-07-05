@@ -1,0 +1,234 @@
+/* 
+  Localizable.strings
+  XiaoYuOnline
+
+  Created by wei.chen on 2018/4/3.
+  Copyright © 2018年 XiaoYuOnline. All rights reserved.
+*/
+
+// ************** //
+// ************** //
+// ** Public  ** //
+// ************** //
+// ************** //
+
+"Public_Sure" = "Sure";
+"Public_Cancel" = "Cancel";
+"Public_Confirm" = "Confirm";
+"Public_Save" = "Save";
+"Public_PhoneNum." = "PhoneNum.";
+"Public_VerifyCode" = "VerifyCode";
+"Public_Next" = "Next";
+"Public_Complete" = "Complete";
+"Public_ForgotPwd" = "Forgot password";
+"Public_Back" = "Back";
+"Public_Select" = "PleaseSelect";
+
+// ************** //
+// ************** //
+// ** Account  ** //
+// ************** //
+// ************** //
+"Account_Login_Title" = "Login";
+"Account_Login_FastLogin" = "FastLogin";
+"Account_Login_PasswordLogin" = "PasswordLogin";
+"Account_Login_InputPassword_PH" = "Input your password";
+"Account_Login_RememberPassword" = "RememberPassword";
+"Account_Login_NoAccountAlert" = "Have no account？Register now";
+"Account_GetVerifyCode" = "GetVerifyCode";
+"Account_InputPhoneNum_PH" = "InputPhoneNum";
+"Account_InputVerifyCode_PH" = "InputVerifyCode";
+"Account_SendVerifyCode" = "SendVerifyCode";
+"Account_Register_Title" = "Register";
+"Account_InputMessageCode_PH" = "Input short message code";
+"Account_InputLoginPassword" = "Login password";
+"Account_InputLoginPassword_PH" = "Set your password";
+"Account_InviteFriend" = "Invite friend";
+"Account_InviteFriend_PH" = "Invite friend num.";
+
+// ************** //
+// ************** //
+// ** HomePage ** //
+// ************** //
+// ************** //
+"HomePage_Title" = "HomePage";
+"HomePage_DaySign" = "DaySign";
+"HomePage_Invite" = "Invite";
+"HomePage_InviteNow" = "InviteNow";
+"HomePage_Borrow" = "Borrow";
+"HomePage_Bid" = "AppointmentBid";
+"HomePage_NewHand" = "NewHandArea";
+"HomePage_TodayRecommend" = "TodayRecommend";
+"HomePage_SignNow" = "SignNow";
+// 借款
+"HomePage_Loan_Volume" = "Volume";
+"HomePage_Loan_YearRatio" = "YearRatio";
+"HomePage_Loan_TimeLimite" = "TimeLimite";
+"HomePage_Loan_BusinessType" = "BussinessType";
+"HomePage_Loan_RaiseTime" = "RaiseTime";
+"HomePage_Loan_Name" = "SignNow";
+"HomePage_Loan_Phone" = "SignNow";
+"HomePage_Loan_Description" = "SignNow";
+"HomePage_Loan_MortgageDes" = "MortageDescription";
+"HomePage_Loan_ApplyNow" = "SignNow";
+"HomePage_Loan_Volume_PH" = "Input 1000 ～ 5000";
+"HomePage_Loan_YearRatio_PH" = "Input 12%～5%";
+"HomePage_Loan_Name" = "Input your name";
+"HomePage_Loan_Phone" = "Input your phone";
+"HomePage_Loan_Description_PH" = "For example ...";
+"HomePage_Loan_MortgageDes_PH" = "For example ...";
+"HomePage_Loan_Description_Des" = "For example ...";
+"HomePage_Loan_InputTitle" = "Fill out loan infomation";
+"HomePage_Loan_InputDescription" = "Fill out loan infomation";
+
+// ************** //
+// ************** //
+// * ManageMoney* //
+// ************** //
+// ************** //
+"ManageMoney_Title" = "ManageMoney";
+"ManageMoney_BuyNow" = "Buy now";
+"ManageMoney_Total" = "Total";
+"ManageMoney_New" = "New";
+"ManageMoney_Custom" = "Custom";
+"ManageMoney_Company" = "Company";
+"ManageMoney_Invest" = "Invest";
+"ManageMoney_BidDetail" = "BidDetail";
+"ManageMoney_ProjectIntro" = "Project introduce";
+"ManageMoney_InvestNow" = "Invest now";
+
+
+// ************** //
+// ************** //
+// *** Discory ** //
+// ************** //
+// ************** //
+"Discovery_Title" = "Discovery";
+
+
+// ************** //
+// ************** //
+// **** Main **** //
+// ************** //
+// ************** //
+"Mine_Title" = "Mine";
+"Mine_Login" = "SignIn";
+"Mine_TotalAssets" = "TotalAssets";
+"Mine_TotalIncomes" = "TotalIncomes";
+"Mine_UseableBalance" = "UseableBalance";
+"Mine_FrozenCapital" = "FrozenCapital";
+"Mine_Charge" = "Charge";
+"Mine_Withdraw" = "Withdraw";
+"Mine_BillTitle" = "Bill";
+"Mine_TradeRecord" = "TradeRecord";
+"Mine_WellBeingTitle" = "WellBeing";
+"Mine_QA" = "QuestionAndAnswer";
+"Mine_AboutUs" = "AboutUs";
+"Mine_Setting" = "Setting";
+// 常见问题
+"Mine_QA_Contact" = "Contact";
+"Mine_QA_Safe" = "Safe";
+"Mine_QA_Custom" = "Custom";
+"Mine_QA_Platform" = "Platform";
+"Mine_QA_Invest" = "Invest";
+"Mine_QA_Tender" = "Tender";
+"Mine_QA_Assets" = "Assets";
+"Mine_QA_RiskControl" = "RiskControl";
+// 关于我们
+"Mine_AboutUs_Xiaoyu" = "XiaoYuOnline";
+"Mine_AboutUs_Web" = "Official website";
+"Mine_AboutUs_WeChat" = "Official wechat";
+"Mine_AboutUs_Weibo" = "Official weibo";
+"Mine_AboutUs_Email" = "Contact email";
+"Mine_AboutUs_Phone" = "Services phone";
+// 设置
+"Mine_Setting_RealName" = "RealName";
+"Mine_Setting_PhoneAus" = "Phone Aus";
+"Mine_Setting_BindCard" = "Bind bankcard";
+"Mine_Setting_AccoutSafe" = "AccountSafe";
+"Mine_Setting_ReceiveAddress" = "ReceiveAddress";
+"Mine_Setting_Update" = "Update";
+"Mine_Setting_SafeQuit" = "SafeQuit";
+// 实名认证
+"Mine_Setting_RN_CardOwner" = "CardOwner";
+"Mine_Setting_RN_PeopleID" = "PeopleID";
+"Mine_Setting_RN_CardNum" = "CardNum.";
+"Mine_Setting_RN_PhoneNum" = "PhoneNum.";
+"Mine_Setting_RN_CardOwner_P" = "Input your name";
+"Mine_Setting_RN_PeopleID_P" = "Input your ID";
+"Mine_Setting_RN_CardNum_P" = "Input your card number";
+"Mine_Setting_RN_PhoneNum_P" = "Input your phone number";
+"Mine_Setting_RN_VerifyCode" = "Get Verify code";
+// 收获地址
+"Mine_Setting_SA_Receiver" = "Receiver:";
+"Mine_Setting_SA_Phone" = "PhoneNum:";
+"Mine_Setting_SA_Address" = "Address:";
+"Mine_Setting_SA_Comment" = "Comment:";
+"Mine_Setting_SA_Receiver_P" = "Input your name";
+"Mine_Setting_SA_Phone_P" = "Input your phone";
+"Mine_Setting_SA_Address_P" = "Input your detail address:";
+"Mine_Setting_SA_Comment_P" = "Input another comment";
+"Mine_Setting_SA_Alert" = "Please input you shipping address info";
+// 账户安全
+"Mine_Setting_AC_LoginPwd" = "Set login password";
+"Mine_Setting_AC_TradePwd" = "Set Trade password";
+"Mine_Setting_AC_GesturePwd" = "Set Gesture password";
+"Mine_Setting_AC_GestureUnable" = "GestureUnable";
+"Mine_Setting_AC_LP_Origin" = "Input origin password";
+"Mine_Setting_AC_LP_New" = "Input new password";
+"Mine_Setting_AC_LP_NewAgain" = "Input nwe password again";
+"Mine_Setting_AC_LP_Alert" = "Login password is 6~16 character or digital";
+// 交易密码
+"Mine_Setting_AC_TP_PlaceHolder" = "Please input new verify code";
+"Mine_Setting_AC_TP_Password" = "Trade password";
+"Mine_Setting_AC_TP_PasswordPH" = "Input 6 password";
+// 手势密码
+"Mine_Setting_AC_GP_Title" = "Gesture lock";
+"Mine_Setting_AC_GP_Setting" = "Set gesture lock";
+"Mine_Setting_AC_GP_Close" = "Close gesture lock";
+// 福利
+"Mine_Setting_WB_Prefecture" = "WellBeingPrefecture";
+"Mine_Setting_WB_CardBag" = "Card bag";
+"Mine_Setting_WB_ScoreShop" = "Score shop";
+"Mine_Setting_WB_Turntable" = "Turntable";
+// 卡包
+"Mine_Setting_WB_CB_Bonus" = "Bonus";
+"Mine_Setting_WB_CB_Voucher" = "Voucher";
+"Mine_Setting_WB_CB_IncreaseRate" = "IncreaseRate";
+
+// 充值提现
+"Mine_Setting_Charge_Title" = "Charge";
+"Mine_Setting_Withdraw_Title" = "Withdraw";
+"Mine_Setting_Charge_BankNum." = "Bank number";
+"Mine_Setting_Charge_Volume" = "Charge volume";
+"Mine_Setting_Charge_Password" = "Trade password";
+"Mine_Setting_Charge_Now" = "Charge now";
+"Mine_Setting_Withdraw_BankNum." = "Bank number";
+"Mine_Setting_Withdraw_Volume" = "Withdraw volume";
+"Mine_Setting_Withdraw_Password" = "Withdraw password";
+"Mine_Setting_Withdraw_Now" = "Withdraw now";
+"Mine_Setting_Withdraw_Volume_PH" = "Input withdraw volume";
+"Mine_Setting_Charge_Volume_PH" = "Input charge volume";
+"Mine_Setting_OperatePwd_PH" = "Input trade password";
+// 交易记录
+"Mine_TradeRecord_Bid_Title" = "BidDetail";
+"Mine_TradeRecord_MyInvest" = "MyInvest";
+"Mine_TradeRecord_MyLoan" = "MyLoan";
+"Mine_TradeRecord_Bid_Name" = "BidName";
+"Mine_TradeRecord_Bid_YearRatio" = "YearRatio";
+"Mine_TradeRecord_Bid_InvestLimite" = "InvestLimite";
+"Mine_TradeRecord_Bid_Status" = "Status";
+"Mine_TradeRecord_Bid_BillType" = "BillType";
+"Mine_TradeRecord_Bid_BackTime" = "BackTime";
+"Mine_TradeRecord_Bid_ExpectToAccout" = "ExpectToAccount";
+"Mine_TradeRecord_Bid_Repayment" = "Repayment";
+// 还款
+"Mine_TradeRecord_Bid_Repayment" = "Repayment";
+"Mine_TR_BR_BankAccount" = "BankAccount";
+"Mine_TR_BR_RepaymentVolumn" = "RepaymentVolumn";
+"Mine_TR_BR_RepaymentNow" = "RepaymentNow";
+"Mine_TR_BR_RepaymentVolumn_PH" = "Yuan";
+"Mine_TR_BR_RepaymentNow_Success" = "RepaymentSuccess";
+"Mine_TR_BR_RepaymentNow_Failure" = "RepaymentFailure";
+
+
