@@ -1,118 +1,27 @@
 //
-//  AppDelegate.m
-//  ftool
+//  DataUtil.m
+//  XiaoYuOnline
 //
-//  Created by apple on 2018/6/20.
-//  Copyright © 2018年 apple. All rights reserved.
+//  Created by apple on 2018/7/11.
+//  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "FAppDelegate.h"
-#import "FTabBarController.h"
-#import "IQKeyboardManager.h"
-#import "NSDate+BRAdd.h"
+#import "DataUtil.h"
 
-@interface FAppDelegate ()
+static BOOL IS_PASSED ; //是否通过审核
 
-@end
+@implementation DataUtil
 
-@implementation FAppDelegate
-
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [[AppDefaultUtil sharedInstance] setLoginState:NO]; //测试登录
-    NSString *clientVersion = [[NSUserDefaults standardUserDefaults] stringForKey:@"clientVersion"];
-    //判断应用程序是否更新了版本
-    NSLog(@"clientVersion = [%@]", clientVersion);
-    if ([clientVersion isEqualToString:CLIENT_VERSION]) {
-        NSLog(@"未更新,正常使用");
-        
-    }else if(clientVersion == nil ){
-        NSLog(@"首次安装");
-        [[NSUserDefaults standardUserDefaults] setObject:CLIENT_VERSION forKey:@"clientVersion"];
-        [FUsersTool setDefaultUser];
-    } else{
-        NSLog(@"更新了APP");
-        [[NSUserDefaults standardUserDefaults] setObject:CLIENT_VERSION forKey:@"clientVersion"];
-    }
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    FTabBarController *tabbarVC = [[FTabBarController alloc] init];
-    self.window.rootViewController = tabbarVC;
-    
-   
-    [self setUpKeyboardManager];
-    
-    self.userInfo = [FUserModel userFrom_NSUserDefaults];
-    
-//    [FAccountRecord recordRandomIncomeWithtime_minute:@"07月29日12时20分" time_month:@"2018年07月"];
-//    [self generateMonthBlance];
-    return YES;
++(void) setResult:(BOOL) pass{
+    IS_PASSED = pass;
 }
 
-- (void)setUserInfo:(FUserModel *)userInfo{
-    _userInfo = userInfo;
-    
-    [[AppDefaultUtil sharedInstance] setLoginState:userInfo?YES:NO]; //测试登录
-    
-    if (!userInfo) {
-        return;
-    }
-    self.aFAccountCategaries = [FAccountRecordSaveTool readLocalUserAccountCategaries];
-    // 为默认用户专门生成预算
-    if ([userInfo.phone isEqualToString:defName]) {
-        for (FFirstType *expandseFirstType in self.aFAccountCategaries.expensesTypeArr) {
-            expandseFirstType.budget = expandseFirstType.initBudget;
-        }
-    }
-    
-    [self initcurrentMonthRecord];
-}
-
-- (void)initcurrentMonthRecord{
-    
-    self.currentMonthRecord = [FAccountRecordSaveTool readLoaclCurrentMonthBlanceRecords];
-    if (!self.currentMonthRecord) {//
-    }
-}
-
-
-- (void)generateMonthBlance{
-    // 6月份 //MM月dd日HH时mm分 yyyy年MM月
-    NSMutableArray *monthExpandse = [NSMutableArray array];
-    NSMutableArray *monthincome = [NSMutableArray array];
-    //    NSInteger day = [NSDate date].day;
-    //    int month = [NSDate date].month;
-    for (int i = 1; i<= 30; i++) {// 支出一天1-2个，收入有6份收入
-        
-        NSString *time_minut = [NSString stringWithFormat:@"04月%02d日%02d时%02d分", i, 9+i%12, 10+i%20];
-        NSString *time_month = [NSString stringWithFormat:@"2018年04月"];
-        FAccountRecord *expandse = [FAccountRecord recordRandomExpandseWithtime_minute:time_minut time_month:time_month];
-        [monthExpandse addObject:expandse];
-        if (i%5 == 0) {
-            
-            FAccountRecord *expandse = [FAccountRecord recordRandomExpandseWithtime_minute:time_minut time_month:time_month];
-            [monthExpandse addObject:expandse];
-            
-            FAccountRecord *income = [FAccountRecord recordRandomIncomeWithtime_minute:time_minut time_month:time_month];
-            [monthincome addObject:income];
-        }
-    }
-    FCurrentMonthRecord *moth4 = [FCurrentMonthRecord new];
-    moth4.expandseArr = monthExpandse.mutableCopy;
-    moth4.incomeArr = monthincome.mutableCopy;
-    
-    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *filePathName = [path stringByAppendingPathComponent:@"F_default_201804.txt"];
-    
-    NSDictionary *month4Account = [moth4 mj_JSONObject];
-    NSString *jsonString = [month4Account mj_JSONString];
-    
-    [jsonString writeToFile:filePathName atomically:YES encoding:NSUTF8StringEncoding error:nil];
++(BOOL) isPass{
+    return IS_PASSED;
 }
 
 - (void)generatePlist{
+    NSLog(@"%s", __FUNCTION__);
     
     NSMutableArray *arrtemp = [NSMutableArray array];
     FSubType *sub1, *sub2, *sub3, *sub4, *sub5, *sub6;
@@ -335,43 +244,39 @@
     DLOG(@"path = %@, result = %@", filePathName, plistWriteArr);
 }
 
-#pragma  mark - 以下自定义方法
-- (void)setUpKeyboardManager
-{
-    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
-    manager.enable = YES;
-    manager.shouldResignOnTouchOutside = YES;
-    manager.shouldToolbarUsesTextFieldTintColor = YES;
-    manager.shouldShowToolbarPlaceholder = NO;
-    manager.toolbarManageBehaviour = IQAutoToolbarByTag;
-    //    manager.previousNextDisplayMode = IQPreviousNextDisplayModeDefault;
-}
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+
+- (void)generateMonthBlance{
+    // 6月份 //MM月dd日HH时mm分 yyyy年MM月
+    NSMutableArray *monthExpandse = [NSMutableArray array];
+    NSMutableArray *monthincome = [NSMutableArray array];
+    //    NSInteger day = [NSDate date].day;
+    //    int month = [NSDate date].month;
+    for (int i = 1; i<= 30; i++) {// 支出一天1-2个，收入有6份收入
+        
+        NSString *time_minut = [NSString stringWithFormat:@"04月%02d日%02d时%02d分", i, 9+i%12, 10+i%20];
+        NSString *time_month = [NSString stringWithFormat:@"2018年04月"];
+        FAccountRecord *expandse = [FAccountRecord recordRandomExpandseWithtime_minute:time_minut time_month:time_month];
+        [monthExpandse addObject:expandse];
+        if (i%5 == 0) {
+            
+            FAccountRecord *expandse = [FAccountRecord recordRandomExpandseWithtime_minute:time_minut time_month:time_month];
+            [monthExpandse addObject:expandse];
+            
+            FAccountRecord *income = [FAccountRecord recordRandomIncomeWithtime_minute:time_minut time_month:time_month];
+            [monthincome addObject:income];
+        }
+    }
+    FCurrentMonthRecord *moth4 = [FCurrentMonthRecord new];
+    moth4.expandseArr = monthExpandse.mutableCopy;
+    moth4.incomeArr = monthincome.mutableCopy;
     
-    [self.userInfo saveTo_NSUserDefaults];
-}
-
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-}
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSString *filePathName = [path stringByAppendingPathComponent:@"F_default_201804.txt"];
+    
+    NSDictionary *month4Account = [moth4 mj_JSONObject];
+    NSString *jsonString = [month4Account mj_JSONString];
+    
+    [jsonString writeToFile:filePathName atomically:YES encoding:NSUTF8StringEncoding error:nil];
 }
 
 

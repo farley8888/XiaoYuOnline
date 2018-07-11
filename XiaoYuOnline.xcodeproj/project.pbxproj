@@ -11,7 +11,6 @@
 		18AB48DA20EE12080036E54C /* AccoutCategeries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18AB470320EE12070036E54C /* AccoutCategeries.plist */; };
 		18AB48DB20EE12080036E54C /* F_default_201806.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18AB470420EE12070036E54C /* F_default_201806.txt */; };
 		18AB48DC20EE12080036E54C /* F_default_201807.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18AB470520EE12070036E54C /* F_default_201807.txt */; };
-		18AB48DD20EE12080036E54C /* FAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB470620EE12070036E54C /* FAppDelegate.m */; };
 		18AB48DE20EE12080036E54C /* FWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB470A20EE12070036E54C /* FWebController.m */; };
 		18AB48DF20EE12080036E54C /* FTakeRecordFatherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB470B20EE12070036E54C /* FTakeRecordFatherController.m */; };
 		18AB48E020EE12080036E54C /* FRateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AB470C20EE12070036E54C /* FRateViewController.xib */; };
@@ -201,6 +200,7 @@
 		18AB49B420EE12080036E54C /* NSString+Shove.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48D620EE12080036E54C /* NSString+Shove.m */; };
 		18AB49B520EE12080036E54C /* CaptchaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48D720EE12080036E54C /* CaptchaView.m */; };
 		18AB49B720EE3C3E0036E54C /* WechatIMG1659.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18AB49B620EE3C3E0036E54C /* WechatIMG1659.jpeg */; };
+		18D29B2E20F5EA0A00B6EF0A /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D29B2D20F5EA0A00B6EF0A /* DataUtil.m */; };
 		3D3284E42071CD9000F82D3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3284E32071CD9000F82D3E /* AppDelegate.m */; };
 		3D3284EA2071CD9000F82D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3284E82071CD9000F82D3E /* Main.storyboard */; };
 		3D3284F22071CD9100F82D3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3284F12071CD9100F82D3E /* main.m */; };
@@ -393,7 +393,6 @@
 		18AB470320EE12070036E54C /* AccoutCategeries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AccoutCategeries.plist; sourceTree = "<group>"; };
 		18AB470420EE12070036E54C /* F_default_201806.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = F_default_201806.txt; sourceTree = "<group>"; };
 		18AB470520EE12070036E54C /* F_default_201807.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = F_default_201807.txt; sourceTree = "<group>"; };
-		18AB470620EE12070036E54C /* FAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAppDelegate.m; sourceTree = "<group>"; };
 		18AB470A20EE12070036E54C /* FWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWebController.m; sourceTree = "<group>"; };
 		18AB470B20EE12070036E54C /* FTakeRecordFatherController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTakeRecordFatherController.m; sourceTree = "<group>"; };
 		18AB470C20EE12070036E54C /* FRateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRateViewController.xib; sourceTree = "<group>"; };
@@ -744,8 +743,10 @@
 		18AB48D520EE12080036E54C /* FUsersTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUsersTool.h; sourceTree = "<group>"; };
 		18AB48D620EE12080036E54C /* NSString+Shove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Shove.m"; sourceTree = "<group>"; };
 		18AB48D720EE12080036E54C /* CaptchaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptchaView.m; sourceTree = "<group>"; };
-		18AB48D820EE12080036E54C /* FAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAppDelegate.h; sourceTree = "<group>"; };
 		18AB49B620EE3C3E0036E54C /* WechatIMG1659.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG1659.jpeg; sourceTree = "<group>"; };
+		18D29B2C20F5EA0A00B6EF0A /* DataUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
+		18D29B2D20F5EA0A00B6EF0A /* DataUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
+		18D29B3320F6061500B6EF0A /* XYPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPrefixHeader.pch; sourceTree = "<group>"; };
 		212C2048C7407A4CF573CABF /* libPods-XiaoYuOnline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XiaoYuOnline.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23111C5E3E64E8E9E0DB8878 /* Pods-XiaoYuOnline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoYuOnline.release.xcconfig"; path = "Pods/Target Support Files/Pods-XiaoYuOnline/Pods-XiaoYuOnline.release.xcconfig"; sourceTree = "<group>"; };
 		3D3284DF2071CD9000F82D3E /* XiaoYuOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoYuOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -825,7 +826,6 @@
 		3D3ADFE9207AFE1700B7386B /* UIDevice+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Common.h"; sourceTree = "<group>"; };
 		3D3ADFEA207AFE1700B7386B /* UIDevice+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Common.m"; sourceTree = "<group>"; };
 		3D3BD0022073A9CB000887AF /* XYSystemDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYSystemDefine.h; sourceTree = "<group>"; };
-		3D3BD0032073AA6E000887AF /* XYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPrefixHeader.pch; sourceTree = "<group>"; };
 		3D3BD1342074991C000887AF /* XYBillTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBillTableViewController.h; sourceTree = "<group>"; };
 		3D3BD1352074991C000887AF /* XYBillTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBillTableViewController.m; sourceTree = "<group>"; };
 		3D3BD1372074993C000887AF /* XYBillModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBillModel.h; sourceTree = "<group>"; };
@@ -1085,9 +1085,9 @@
 				18AB470220EE12070036E54C /* F_default_201805.txt */,
 				18AB470420EE12070036E54C /* F_default_201806.txt */,
 				18AB470520EE12070036E54C /* F_default_201807.txt */,
-				18AB470620EE12070036E54C /* FAppDelegate.m */,
-				18AB48D820EE12080036E54C /* FAppDelegate.h */,
 				18AB470820EE12070036E54C /* ftool */,
+				18D29B2C20F5EA0A00B6EF0A /* DataUtil.h */,
+				18D29B2D20F5EA0A00B6EF0A /* DataUtil.m */,
 			);
 			path = XTool;
 			sourceTree = "<group>";
@@ -1882,6 +1882,7 @@
 		3D3284E12071CD9000F82D3E /* XiaoYuOnline */ = {
 			isa = PBXGroup;
 			children = (
+				18D29B3320F6061500B6EF0A /* XYPrefixHeader.pch */,
 				3D977FB8207BA8D2006A2BD5 /* Assets.xcassets */,
 				3D3284E22071CD9000F82D3E /* AppDelegate.h */,
 				3D3284E32071CD9000F82D3E /* AppDelegate.m */,
@@ -1897,7 +1898,6 @@
 				3D3285842073662300F82D3E /* Localizable.strings */,
 				3D3284F12071CD9100F82D3E /* main.m */,
 				3D3284E82071CD9000F82D3E /* Main.storyboard */,
-				3D3BD0032073AA6E000887AF /* XYPrefixHeader.pch */,
 			);
 			path = XiaoYuOnline;
 			sourceTree = "<group>";
@@ -2876,7 +2876,6 @@
 				18AB496820EE12080036E54C /* AJImgBrowser.m in Sources */,
 				18AB497520EE12080036E54C /* UIButton+Custom.m in Sources */,
 				18AB49AF20EE12080036E54C /* UIButton+CountDown.m in Sources */,
-				18AB48DD20EE12080036E54C /* FAppDelegate.m in Sources */,
 				18AB496D20EE12080036E54C /* ZHPickView.m in Sources */,
 				18AB48DF20EE12080036E54C /* FTakeRecordFatherController.m in Sources */,
 				3D5FDD882090589900C16A5F /* XYUser.m in Sources */,
@@ -2891,6 +2890,7 @@
 				18AB495E20EE12080036E54C /* AJIDFATool.m in Sources */,
 				3DFFF9DB20770E190049DC9A /* XYAccoutSecurityController.m in Sources */,
 				18AB498420EE12080036E54C /* FMyExpandseRecordController.m in Sources */,
+				18D29B2E20F5EA0A00B6EF0A /* DataUtil.m in Sources */,
 				3DFFF9E1207713E40049DC9A /* XYChangePasswordController.m in Sources */,
 				3DC16C4B20809E9600A9292A /* XYRepaymentController.m in Sources */,
 				3D6564D420A7C4F000BA364E /* XYPlanBidViewController.m in Sources */,

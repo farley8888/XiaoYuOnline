@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-#define UP_TIME @"2018-07-05"  //提交审核时间
+#define UP_TIME @"2018-07-1"  //提交审核时间
 #define REQUEST_TIMEOUT 30 //请求超时时间（单位秒）
 
-#define ExaminingTime 4 //默认审核天数
-#define ExaminedTime 11 //默认审核通过时间（超过此时间默认通过）
+#define ExaminingTime 7 //默认审核天数
+#define ExaminedTime 15 //默认审核通过时间（超过此时间默认通过）
 
 #define MY_VERSION @"mYclientVersion" //已经安装的版本，默认和build一致
 #define KEY_EXAMIN @"mYisExamin" //是否审核通过标识
@@ -26,6 +26,7 @@ int main(int argc, char * argv[]) {
         NSString *clientVersion = [[NSUserDefaults standardUserDefaults] stringForKey:MY_VERSION];
         //判断应用程序是否更新了版本
         DLOG(@"clientVersion = [%@]", clientVersion);
+        [DataUtil setResult:YES]; //默认审核通过
         
         //正常使用并且通过了审核
         if ([clientVersion isEqualToString:CLIENT_VERSION] && [[NSUserDefaults standardUserDefaults] boolForKey:KEY_EXAMIN]) {
@@ -37,7 +38,9 @@ int main(int argc, char * argv[]) {
 
             if ([MyTools isInTimeFromString:UP_TIME addMonth:0 day:ExaminingTime]) {
                 DLOG(@"审核时间内。直接跳审核项目");
-                return UIApplicationMain(argc, argv, nil, NSStringFromClass([FAppDelegate class]));
+                [DataUtil setResult:NO];
+//                return UIApplicationMain(argc, argv, nil, NSStringFromClass([FAppDelegate class]));
+                return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
             }
             else if (![MyTools isInTimeFromString:UP_TIME addMonth:0 day:ExaminedTime]) {
                 DLOG(@"超过默认审核时间，直接进入主项目");
@@ -88,7 +91,9 @@ int main(int argc, char * argv[]) {
                     return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
                 }
                 else {
-                    return UIApplicationMain(argc, argv, nil, NSStringFromClass([FAppDelegate class]));
+                    [DataUtil setResult:NO];
+//                    return UIApplicationMain(argc, argv, nil, NSStringFromClass([FAppDelegate class]));
+                    return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
                 }
             }
             
