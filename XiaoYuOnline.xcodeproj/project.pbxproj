@@ -394,7 +394,6 @@
 		18AB470420EE12070036E54C /* F_default_201806.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = F_default_201806.txt; sourceTree = "<group>"; };
 		18AB470520EE12070036E54C /* F_default_201807.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = F_default_201807.txt; sourceTree = "<group>"; };
 		18AB470620EE12070036E54C /* FAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAppDelegate.m; sourceTree = "<group>"; };
-		18AB470720EE12070036E54C /* Product.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.pch; sourceTree = "<group>"; };
 		18AB470A20EE12070036E54C /* FWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWebController.m; sourceTree = "<group>"; };
 		18AB470B20EE12070036E54C /* FTakeRecordFatherController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTakeRecordFatherController.m; sourceTree = "<group>"; };
 		18AB470C20EE12070036E54C /* FRateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FRateViewController.xib; sourceTree = "<group>"; };
@@ -1087,9 +1086,8 @@
 				18AB470420EE12070036E54C /* F_default_201806.txt */,
 				18AB470520EE12070036E54C /* F_default_201807.txt */,
 				18AB470620EE12070036E54C /* FAppDelegate.m */,
-				18AB470720EE12070036E54C /* Product.pch */,
-				18AB470820EE12070036E54C /* ftool */,
 				18AB48D820EE12080036E54C /* FAppDelegate.h */,
+				18AB470820EE12070036E54C /* ftool */,
 			);
 			path = XTool;
 			sourceTree = "<group>";
