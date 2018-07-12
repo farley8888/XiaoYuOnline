@@ -175,7 +175,7 @@
             request.api = Account_LoginURL;
             request.parameters = param;
         } onSuccess:^(id  _Nullable responseObject) {
-            [[XYUser currentUser] updateUserWithLoginApiData:responseObject];
+            [[OLUser currentUser] updateUserWithLoginApiData:responseObject];
             [weakSelf.navigationController popViewControllerAnimated:YES];
         }  successHint:@"登录成功" onFailure:NULL];
     } else { 
@@ -186,7 +186,7 @@
             request.api = Account_LoginFastURL;
             request.parameters = param;
         } onSuccess:^(id  _Nullable responseObject) {
-            [[XYUser currentUser] updateUserWithLoginApiData:responseObject];
+            [[OLUser currentUser] updateUserWithLoginApiData:responseObject];
             [weakSelf.navigationController popViewControllerAnimated:YES];
         }  successHint:@"登录成功" onFailure:NULL];
     }

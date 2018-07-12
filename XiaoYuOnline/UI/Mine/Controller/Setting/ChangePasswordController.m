@@ -8,7 +8,7 @@
 
 #import "ChangePasswordController.h"
 #import "UIViewController+ShowTextHUD.h"
-#import "XYSigleTextFieldCell.h"
+#import "SigleTextFieldCell.h"
 #import "BaseInfoModel.h"
 
 static NSString *changePwdReuseID = @"XYChangePasswordReuseIdentifier";
@@ -34,7 +34,7 @@ static NSString *changePwdReuseID = @"XYChangePasswordReuseIdentifier";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.tableFooterView = [self tableFooterView];
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    [self.tableView registerClass:[XYSigleTextFieldCell class] forCellReuseIdentifier:changePwdReuseID];
+    [self.tableView registerClass:[SigleTextFieldCell class] forCellReuseIdentifier:changePwdReuseID];
 }
 
 - (UIView *)tableFooterView {
@@ -89,7 +89,7 @@ static NSString *changePwdReuseID = @"XYChangePasswordReuseIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYSigleTextFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:changePwdReuseID forIndexPath:indexPath];
+    SigleTextFieldCell *cell = [tableView dequeueReusableCellWithIdentifier:changePwdReuseID forIndexPath:indexPath];
     BaseInfoModel *model = _itemList[indexPath.row];
     cell.textField.placeholder = model.scriptDescription;
     [cell.textField addTarget:self action:@selector(textValueDidChanged:) forControlEvents:UIControlEventEditingChanged];
@@ -102,7 +102,7 @@ static NSString *changePwdReuseID = @"XYChangePasswordReuseIdentifier";
     for (NSUInteger i = 0, count = _itemList.count; i < count; i ++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
         BaseInfoModel *model = _itemList[i];
-        XYSigleTextFieldCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+        SigleTextFieldCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
         NSString *textContent = [cell.textField.text stringByTrimmingCharactersInSet:set];
         if (textContent.length > 0) {
             model.content = textContent;

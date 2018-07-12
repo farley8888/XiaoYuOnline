@@ -11,15 +11,15 @@
 #import "UITextView+Placeholder.h"
 #import "UIViewController+ShowTextHUD.h"
 #import "LoanHeaderView.h"
-#import "XYOLPickerView.h"
+#import "OLPickerView.h"
 #import "LoanViewCell.h"
-#import "XYLoanModel.h"
+#import "LoanModel.h"
 
 static NSString *loanReuseID = @"XYLoanCellReuseIdentifier";
 static NSString *loanDesReuseID = @"XYLoanDesCellReuseIdentifier";
 
 @interface LoanViewController ()<LoanViewCellDelegate>
-@property (nonatomic, strong) NSArray<NSArray<XYLoanModel *> *> *itemList;
+@property (nonatomic, strong) NSArray<NSArray<LoanModel *> *> *itemList;
 @property (nonatomic, strong) XYLoanFooterView *footerView;
 @end
 
@@ -28,7 +28,7 @@ static NSString *loanDesReuseID = @"XYLoanDesCellReuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = NSLocalizedString(@"HomePage_Borrow", nil);
-    _itemList = [XYLoanModel loanDatasourceList];
+    _itemList = [LoanModel loanDatasourceList];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.rowHeight = 48.0;
@@ -46,7 +46,7 @@ static NSString *loanDesReuseID = @"XYLoanDesCellReuseIdentifier";
     UITableViewCell *cell = nil;
     if (indexPath.section == 0) {
         LoanViewCell *cell0 = [tableView dequeueReusableCellWithIdentifier:loanReuseID forIndexPath:indexPath];
-        XYLoanModel *model = _itemList[indexPath.section][indexPath.row];
+        LoanModel *model = _itemList[indexPath.section][indexPath.row];
         cell0.titleLabel.text = model.title;
         cell0.textField.placeholder = model.placeHolder;
         cell0.textField.text = model.content;
@@ -55,7 +55,7 @@ static NSString *loanDesReuseID = @"XYLoanDesCellReuseIdentifier";
         cell = cell0;
     } else {
         LoanDescriptionCell *cell1 = [tableView dequeueReusableCellWithIdentifier:loanDesReuseID forIndexPath:indexPath];
-        XYLoanModel *model = _itemList[indexPath.section][indexPath.row];
+        LoanModel *model = _itemList[indexPath.section][indexPath.row];
         cell1.titleLabel.text = model.title;
         cell1.textView.placeholder = model.placeHolder;
         cell1.descriptLabel.text = model.scriptDescription;
@@ -96,11 +96,11 @@ static NSString *loanDesReuseID = @"XYLoanDesCellReuseIdentifier";
 
 - (BOOL)loanViewCell:(LoanViewCell *)cell textFieldShouldBeginEditing:(UITextField *)textField {
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-    XYLoanModel *model = _itemList[indexPath.section][indexPath.row];
+    LoanModel *model = _itemList[indexPath.section][indexPath.row];
     if (model.editable == NO) {
         [self.view endEditing:YES];
         
-        XYOLPickerView *view = [[XYOLPickerView alloc] initWithPickerDataSource:model.sheetTitles completionBlock:^(NSString * _Nonnull selectedValue) {
+        OLPickerView *view = [[OLPickerView alloc] initWithPickerDataSource:model.sheetTitles completionBlock:^(NSString * _Nonnull selectedValue) {
             model.content = selectedValue;
             model.selectedIndex = @([model.sheetTitles indexOfObject:selectedValue] + 1);
             cell.textField.text = selectedValue;
@@ -115,7 +115,7 @@ static NSString *loanDesReuseID = @"XYLoanDesCellReuseIdentifier";
     NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     if ([textField.text stringByTrimmingCharactersInSet:set].length > 0) {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-        XYLoanModel *model = _itemList[indexPath.section][indexPath.row];
+        LoanModel *model = _itemList[indexPath.section][indexPath.row];
         model.content = textField.text;
     }
 }
@@ -124,7 +124,7 @@ static NSString *loanDesReuseID = @"XYLoanDesCellReuseIdentifier";
     NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     if ([textView.text stringByTrimmingCharactersInSet:set].length > 0) {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-        XYLoanModel *model = _itemList[indexPath.section][indexPath.row];
+        LoanModel *model = _itemList[indexPath.section][indexPath.row];
         model.content = textView.text;
     }
 }
@@ -145,10 +145,10 @@ static NSString *loanDesReuseID = @"XYLoanDesCellReuseIdentifier";
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     NSArray *keys = @[@"money", @"apr", @"limitTime", @"productType", @"validTime", @"name", @"telephone", @"description", @"collateralDescription"];
-    NSMutableArray<XYLoanModel *> *arr = [NSMutableArray arrayWithArray:_itemList[0]];
+    NSMutableArray<LoanModel *> *arr = [NSMutableArray arrayWithArray:_itemList[0]];
     [arr addObjectsFromArray:_itemList[1]];
     for (NSUInteger i = 0, count = keys.count; i < count; i ++) {
-        XYLoanModel *model = arr[i];
+        LoanModel *model = arr[i];
         if (!model.content || model.content.length == 0) {
             [self showHUDText:[NSString stringWithFormat:@"%@不能为空", model.title]];
             return;

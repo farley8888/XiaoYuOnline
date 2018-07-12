@@ -7,7 +7,7 @@
 //
 
 #import "BindCardViewController.h"
-#import "XYRealNameModel.h"
+#import "RealNameModel.h"
 
 @interface BindCardViewController ()
 
@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     self.title = NSLocalizedString(@"Mine_Setting_BindCard", nil);
-    self.itemList = [XYRealNameModel bindBankCardDatasourceList];
+    self.itemList = [RealNameModel bindBankCardDatasourceList];
 }
 
 - (void)footerViewButtonAction:(UIButton *)button {
@@ -27,7 +27,7 @@
     NSArray *keys = @[@"realName", @"cardId", @"paypwd", @"phone"];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:XYCurrentUser.userID forKey:@"userId"];
     for (NSUInteger i = 0, count = keys.count; i < count; i ++) {
-        XYRealNameModel *model = weakSelf.itemList[i];
+        RealNameModel *model = weakSelf.itemList[i];
         [params setObject:model.content forKey:keys[i]];
     }
     [self sendRequest:^(XMRequest * _Nonnull request) {

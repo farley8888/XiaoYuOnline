@@ -1,15 +1,15 @@
 //
-//  XYChargeViewController.m
+//  ChargeViewController.m
 //  XiaoYuOnline
 //
 //  Created by wei.chen on 2018/4/7.
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYChargeViewController.h"
-#import "XYRealNameTableViewCell.h"
+#import "ChargeViewController.h"
+#import "RealNameTableViewCell.h"
 #import "ChargeWithdrawViewCell.h"
-#import "XYCompleteViewController.h"
+#import "CompleteViewController.h"
 #import "SettingRealNameController.h"
 #import "BindCardViewController.h"
 #import "UIViewController+ShowTextHUD.h"
@@ -26,14 +26,14 @@ static NSString *chargeReuseID = @"XYChargeCellReuseIdentifier";
 @end
 
 #if !TARGET_OS_SIMULATOR
-@interface XYChargeViewController ()<FYPayDelegate>
+@interface ChargeViewController ()<FYPayDelegate>
 #else
-@interface XYChargeViewController ()
+@interface ChargeViewController ()
 #endif
 
 @end
 
-@implementation XYChargeViewController
+@implementation ChargeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -135,7 +135,7 @@ static NSString *chargeReuseID = @"XYChargeCellReuseIdentifier";
         cell.textField.userInteractionEnabled = YES;
     }
     
-    XYRealNameModel *model = self.itemList[indexPath.row];
+    RealNameModel *model = self.itemList[indexPath.row];
     cell.titleLabel.text = model.title;
     cell.textField.placeholder = model.placeHolder;
     cell.descriptionLabel.text = model.scriptDescription;
@@ -152,7 +152,7 @@ static NSString *chargeReuseID = @"XYChargeCellReuseIdentifier";
     for (NSUInteger i = 1, count = self.itemList.count; i < count; i ++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-        UITextField *tf = ((XYRealNameTableViewCell *)cell).textField;
+        UITextField *tf = ((RealNameTableViewCell *)cell).textField;
         self.itemList[i].scriptDescription = tf.text;
         
         NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
@@ -182,7 +182,7 @@ static NSString *chargeReuseID = @"XYChargeCellReuseIdentifier";
         NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:orderId forKey:@"orderId"];
         [params setObject:XYCurrentUser.userID forKey:@"userId"];
         for (NSUInteger i = 0, count = keys.count; i < count; i ++) {
-            XYRealNameModel *model = self.itemList[i];
+            RealNameModel *model = self.itemList[i];
             [params setObject:model.scriptDescription forKey:keys[i]];
         }
         

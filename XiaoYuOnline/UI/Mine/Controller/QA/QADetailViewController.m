@@ -8,19 +8,19 @@
 
 //#import "QADetailViewController.h"
 #import "QADetailViewController.h"
-#import "XYQAModel.h"
+#import "QAModel.h"
 
 @interface QADetailViewController ()
 
 @property (nonatomic, strong) UILabel *detailQALabel;
-@property (nonatomic, strong) XYQAModel *QAModel;
+@property (nonatomic, strong) QAModel *QAModel;
 @property (nonatomic, strong) UIImageView *imageView;
 
 @end
 
 @implementation QADetailViewController
 
-- (instancetype)initWithQAModel:(XYQAModel *)model {
+- (instancetype)initWithQAModel:(QAModel *)model {
     self = [super init];
     if (self) {
         _QAModel = model;

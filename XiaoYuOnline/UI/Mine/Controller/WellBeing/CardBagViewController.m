@@ -9,7 +9,7 @@
 #import "CardBagViewController.h"
 #import "WKSegementSliderView.h"
 #import "SVPullToRefresh.h"
-#import "XYCardBagViewCell.h"
+#import "CardBagViewCell.h"
 #import "UIView+Common.h"
 #import "CardBagModel.h"
 
@@ -73,7 +73,7 @@ static NSString *cardBagReuseID = @"XYCardBagCellReuseIdentifier";
     view.rowHeight = 120.0;
     view.backgroundColor = XYGlobalUI.backgroundColor;
     view.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [view registerClass:[XYCardBagViewCell class] forCellReuseIdentifier:cardBagReuseID];
+    [view registerClass:[CardBagViewCell class] forCellReuseIdentifier:cardBagReuseID];
     
     return view;
 }
@@ -185,7 +185,7 @@ static NSString *cardBagReuseID = @"XYCardBagCellReuseIdentifier";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CardBagModel *model = _allDataList[indexPath.section][indexPath.row];
-    XYCardBagViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cardBagReuseID forIndexPath:indexPath];
+    CardBagViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cardBagReuseID forIndexPath:indexPath];
     cell.valueLabel.text = [@"¥ " stringByAppendingString:model.value];
     cell.usageConditionLabel.text = [NSString stringWithFormat:@"满 %@ 使用", model.useableMoney];
     cell.validDateLabel.text = [NSString stringWithFormat:@"有效期至：%@", [_dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSince1970:model.validDate]]];

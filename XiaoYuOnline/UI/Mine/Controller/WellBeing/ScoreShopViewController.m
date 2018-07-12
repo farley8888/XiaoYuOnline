@@ -7,8 +7,8 @@
 //
 
 #import "ScoreShopViewController.h"
-#import "XYSocreShopHeader.h"
-#import "XYScoreShopTableViewCell.h"
+#import "SocreShopHeader.h"
+#import "ScoreShopTableViewCell.h"
 #import <YYKit/NSDictionary+YYAdd.h>
 #import "SVPullToRefresh.h"
 #import "ScoreModel.h"
@@ -51,9 +51,9 @@ static NSString *couponConvertCellReuseID = @"XYCouponCovertCellReuseIdentifier"
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
-    [_tableView registerClass:[XYScoreShopTableViewCell class] forCellReuseIdentifier:shopCovertCellReuseID];
+    [_tableView registerClass:[ScoreShopTableViewCell class] forCellReuseIdentifier:shopCovertCellReuseID];
     [_tableView registerClass:[XYCouponConvertViewCell class] forCellReuseIdentifier:couponConvertCellReuseID];
-    [_tableView registerClass:[XYSocreShopHeader class] forHeaderFooterViewReuseIdentifier:shopCovertHeaderReuseID];
+    [_tableView registerClass:[SocreShopHeader class] forHeaderFooterViewReuseIdentifier:shopCovertHeaderReuseID];
     [_tableView registerClass:[XYCouponConvertHeader class] forHeaderFooterViewReuseIdentifier:couponConvertHeaderReuseID];
     
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * 0.53)];
@@ -198,7 +198,7 @@ static NSString *couponConvertCellReuseID = @"XYCouponCovertCellReuseIdentifier"
         
         view = view1;
     } else {
-        XYSocreShopHeader *view2 = [tableView dequeueReusableHeaderFooterViewWithIdentifier:shopCovertHeaderReuseID];
+        SocreShopHeader *view2 = [tableView dequeueReusableHeaderFooterViewWithIdentifier:shopCovertHeaderReuseID];
         view2.titleLabel.text = @"商品兑换";
         view2.titleImageView.image = [UIImage imageNamed:@"mine_wb_cb_goods"];
         view = view2;
@@ -231,7 +231,7 @@ static NSString *couponConvertCellReuseID = @"XYCouponCovertCellReuseIdentifier"
         
         cell = cell1;
     } else {
-        XYScoreShopTableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:shopCovertCellReuseID forIndexPath:indexPath];
+        ScoreShopTableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:shopCovertCellReuseID forIndexPath:indexPath];
         cell2.titleLable.text = @"充电宝";
         cell2.contentLabel.text = @"1888积分兑换";
         cell2.titleImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"mine_wb_cb_test%@", @(indexPath.row)]];

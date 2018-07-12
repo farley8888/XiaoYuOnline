@@ -7,19 +7,19 @@
 //
 
 #import "RootViewController.h"
-#import "XYHomePageViewController.h"
-#import "XYManageMoneyViewController.h"
+#import "HomePageViewController.h"
+#import "ManageMoneyViewController.h"
 #import "DiscoveryViewController.h"
-#import "XYBaseNavigationController.h"
-#import "XYMineViewController.h"
+#import "BaseNavigationController.h"
+#import "MineViewController.h"
 #import "UIImage+Common.h"
 
 @interface RootViewController ()
 
-@property (nonatomic, strong) XYHomePageViewController *homePageController;
-@property (nonatomic, strong) XYManageMoneyViewController *managerMoneyController;
+@property (nonatomic, strong) HomePageViewController *homePageController;
+@property (nonatomic, strong) ManageMoneyViewController *managerMoneyController;
 @property (nonatomic, strong) DiscoveryViewController *discoveryController;
-@property (nonatomic, strong) XYMineViewController *mineController;
+@property (nonatomic, strong) MineViewController *mineController;
 
 @end
 
@@ -29,33 +29,33 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _homePageController = [[XYHomePageViewController alloc] init];
+    _homePageController = [[HomePageViewController alloc] init];
     _homePageController.tabBarItem.title = NSLocalizedString(@"HomePage_Title", nil);
     _homePageController.tabBarItem.image = [UIImage imageNamed:@"tab_home"];
     _homePageController.tabBarItem.selectedImage = [UIImage imageNamed:@"tab_home_sel"];
     _homePageController.title = NSLocalizedString(@"HomePage_Title", nil);
-    XYBaseNavigationController *hNav = [[XYBaseNavigationController alloc]initWithRootViewController:_homePageController];
+    BaseNavigationController *hNav = [[BaseNavigationController alloc]initWithRootViewController:_homePageController];
     
-    _managerMoneyController = [[XYManageMoneyViewController alloc] init];
+    _managerMoneyController = [[ManageMoneyViewController alloc] init];
     _managerMoneyController.tabBarItem.title = NSLocalizedString(@"ManageMoney_Title", nil);
     _managerMoneyController.tabBarItem.image = [UIImage imageNamed:@"tab_manageMoney"];
     _managerMoneyController.tabBarItem.selectedImage = [UIImage imageNamed:@"tab_manageMoney_sel"];
     _managerMoneyController.title = NSLocalizedString(@"ManageMoney_Title", nil);
-    XYBaseNavigationController *mmNav = [[XYBaseNavigationController alloc]initWithRootViewController:_managerMoneyController];
+    BaseNavigationController *mmNav = [[BaseNavigationController alloc]initWithRootViewController:_managerMoneyController];
     
     _discoveryController = [[DiscoveryViewController alloc] init];
     _discoveryController.tabBarItem.title = NSLocalizedString(@"Discovery_Title", nil);
     _discoveryController.tabBarItem.image = [UIImage imageNamed:@"tab_discovery"];
     _discoveryController.tabBarItem.selectedImage = [UIImage imageNamed:@"tab_discovery_sel"];
     _discoveryController.title = NSLocalizedString(@"Discovery_Title", nil);
-    XYBaseNavigationController *dNav = [[XYBaseNavigationController alloc]initWithRootViewController:_discoveryController];
+    BaseNavigationController *dNav = [[BaseNavigationController alloc]initWithRootViewController:_discoveryController];
     
-    _mineController = [[XYMineViewController alloc] init];
+    _mineController = [[MineViewController alloc] init];
     _mineController.tabBarItem.title = NSLocalizedString(@"Mine_Title", nil);
     _mineController.tabBarItem.image = [UIImage imageNamed:@"tab_mine"];
     _mineController.tabBarItem.selectedImage = [UIImage imageNamed:@"tab_mine_sel"];
     _mineController.title = NSLocalizedString(@"Mine_Title", nil);
-    XYBaseNavigationController *mNav = [[XYBaseNavigationController alloc]initWithRootViewController:_mineController];
+    BaseNavigationController *mNav = [[BaseNavigationController alloc]initWithRootViewController:_mineController];
     
     self.viewControllers = @[hNav, mmNav, dNav, mNav];
     self.tabBar.tintColor = XYGlobalUI.mainColor;

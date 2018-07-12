@@ -9,7 +9,7 @@
 #import "TradeRecordViewController.h"
 #import "TradeDetailViewController.h"
 #import "WKSegementSliderView.h"
-#import "XYBillTableViewCell.h"
+#import "BillTableViewCell.h"
 #import "SVPullToRefresh.h"
 #import "UIView+Common.h"
 #import "TradeRecoderModel.h"
@@ -86,7 +86,7 @@ static NSString *tradeRecordReuseID = @"XYBillReuseIdentifier";
     view.rowHeight = 60.0;
     view.backgroundColor = XYGlobalUI.backgroundColor;
     view.separatorStyle = UITableViewCellSeparatorStyleNone;
-    UINib *nib = [UINib nibWithNibName:@"XYBillTableViewCell" bundle:[NSBundle mainBundle]];
+    UINib *nib = [UINib nibWithNibName:@"BillTableViewCell" bundle:[NSBundle mainBundle]];
     [view registerNib:nib forCellReuseIdentifier:tradeRecordReuseID];
     
     return view;
@@ -206,7 +206,7 @@ static NSString *tradeRecordReuseID = @"XYBillReuseIdentifier";
     } else {
         model = _loanList[indexPath.row];
     }
-    XYBillTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tradeRecordReuseID forIndexPath:indexPath];
+    BillTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tradeRecordReuseID forIndexPath:indexPath];
     cell.valueLabel.textColor = XYGlobalUI.grayColor;
     cell.leftBottomLabel.textColor = XYGlobalUI.blackColor;
     cell.rightBottomLabel.textColor = XYGlobalUI.redColor;

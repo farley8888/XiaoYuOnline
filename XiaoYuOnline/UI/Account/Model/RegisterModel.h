@@ -6,9 +6,9 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYRealNameModel.h"
+#import "RealNameModel.h"
 
-@interface RegisterModel : XYRealNameModel
+@interface RegisterModel : RealNameModel
 
 + (NSArray <RegisterModel *> *)registerDatasourceList;
 

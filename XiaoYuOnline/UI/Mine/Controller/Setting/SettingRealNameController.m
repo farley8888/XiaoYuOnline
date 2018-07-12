@@ -8,8 +8,8 @@
 
 #import "SettingRealNameController.h"
 #import "BindCardViewController.h"
-#import "XYRealNameTableViewCell.h"
-#import "XYRealNameModel.h"
+#import "RealNameTableViewCell.h"
+#import "RealNameModel.h"
 
 static NSString *realNameReuseID = @"XYRealNameReuseIdentifier";
 
@@ -24,7 +24,7 @@ static NSString *realNameReuseID = @"XYRealNameReuseIdentifier";
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
-    _itemList = [XYRealNameModel realNameDatasourceList];
+    _itemList = [RealNameModel realNameDatasourceList];
     
     self.title = NSLocalizedString(@"Mine_Setting_RealName", nil);
     self.tableView.backgroundColor = XYGlobalUI.backgroundColor;
@@ -33,7 +33,7 @@ static NSString *realNameReuseID = @"XYRealNameReuseIdentifier";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.tableFooterView = [self tableFooterView];
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    [self.tableView registerClass:[XYRealNameTableViewCell class] forCellReuseIdentifier:realNameReuseID];
+    [self.tableView registerClass:[RealNameTableViewCell class] forCellReuseIdentifier:realNameReuseID];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapContentScrollAction)];
     [self.view addGestureRecognizer:tap];
@@ -109,8 +109,8 @@ static NSString *realNameReuseID = @"XYRealNameReuseIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYRealNameTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:realNameReuseID forIndexPath:indexPath];
-    XYRealNameModel *model = _itemList[indexPath.row];
+    RealNameTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:realNameReuseID forIndexPath:indexPath];
+    RealNameModel *model = _itemList[indexPath.row];
     cell.titleLabel.text = model.title;
     cell.textField.placeholder = model.placeHolder;
     cell.descriptionLabel.text = model.scriptDescription;
@@ -133,7 +133,7 @@ static NSString *realNameReuseID = @"XYRealNameReuseIdentifier";
     for (NSUInteger i = 0, count = _itemList.count; i < count; i ++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-        UITextField *tf = ((XYRealNameTableViewCell *)cell).textField;
+        UITextField *tf = ((RealNameTableViewCell *)cell).textField;
         _itemList[i].content = tf.text;
         
         NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
@@ -155,7 +155,7 @@ static NSString *realNameReuseID = @"XYRealNameReuseIdentifier";
     NSArray *keys = @[@"realName", @"cardId", @"phone"];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:XYCurrentUser.userID forKey:@"userId"];
     for (NSUInteger i = 0, count = keys.count; i < count; i ++) {
-        XYRealNameModel *model = weakSelf.itemList[i];
+        RealNameModel *model = weakSelf.itemList[i];
         [params setObject:model.content forKey:keys[i]];
     }
     [self sendRequest:^(XMRequest * _Nonnull request) {

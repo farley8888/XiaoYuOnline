@@ -6,9 +6,9 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYRealNameTableViewCell.h"
+#import "RealNameTableViewCell.h"
 
-@interface RegisterViewCell : XYRealNameTableViewCell
+@interface RegisterViewCell : RealNameTableViewCell
 
 @property (nonatomic, strong) UIImageView *rightImageView;
 

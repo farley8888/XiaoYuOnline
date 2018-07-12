@@ -8,7 +8,7 @@
 
 #import "TradePasswordNextController.h"
 #import "UIViewController+ShowTextHUD.h"
-#import "XYRealNameModel.h"
+#import "RealNameModel.h"
 
 @interface TradePasswordNextController ()
 @property (nonatomic, copy) NSString *verifyCode;
@@ -28,7 +28,7 @@
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
-    self.tradeModel = [[XYRealNameModel alloc] initWithTitle:NSLocalizedString(@"Mine_Setting_AC_TP_Password", nil) content:nil description:nil placeHolder:NSLocalizedString(@"Mine_Setting_AC_TP_PasswordPH", nil)];
+    self.tradeModel = [[RealNameModel alloc] initWithTitle:NSLocalizedString(@"Mine_Setting_AC_TP_Password", nil) content:nil description:nil placeHolder:NSLocalizedString(@"Mine_Setting_AC_TP_PasswordPH", nil)];
     [self.footerButton setTitle:NSLocalizedString(@"Public_Complete", nil) forState:UIControlStateNormal];
     
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 7.0)];

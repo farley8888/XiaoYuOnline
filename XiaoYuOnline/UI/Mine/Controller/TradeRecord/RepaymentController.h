@@ -6,11 +6,11 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYChargeViewController.h"
+#import "ChargeViewController.h"
 
 /**
  还款
  */
-@interface RepaymentController : XYChargeViewController
+@interface RepaymentController : ChargeViewController
 
 @end

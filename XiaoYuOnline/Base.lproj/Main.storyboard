@@ -9,7 +9,7 @@
         <!--Manage Money View Controller-->
         <scene sceneID="2mH-L7-HDR">
             <objects>
-                <viewController id="N1h-4i-MlY" customClass="XYManageMoneyViewController" sceneMemberID="viewController">
+                <viewController id="N1h-4i-MlY" customClass="ManageMoneyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3ui-a1-NL8"/>
                         <viewControllerLayoutGuide type="bottom" id="KOE-0R-na6"/>
@@ -28,7 +28,7 @@
         <!--Home Page View Controller-->
         <scene sceneID="pER-hM-mRP">
             <objects>
-                <viewController id="F4Z-Bq-cI6" customClass="XYHomePageViewController" sceneMemberID="viewController">
+                <viewController id="F4Z-Bq-cI6" customClass="HomePageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pbR-CG-AtW"/>
                         <viewControllerLayoutGuide type="bottom" id="N6I-DM-K1g"/>
@@ -134,7 +134,7 @@
         <!--Root View Controller-->
         <scene sceneID="hIy-zg-gbq">
             <objects>
-                <tableViewController id="Edx-Qy-Djx" customClass="XYMineViewController" sceneMemberID="viewController">
+                <tableViewController id="Edx-Qy-Djx" customClass="MineViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bel-dS-Pcy">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -516,7 +516,7 @@
                                         <rect key="frame" x="0.0" y="552" width="600" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gPD-5C-Usp" id="vFy-uK-cTu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7b-Tr-H24">

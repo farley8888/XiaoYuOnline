@@ -8,10 +8,10 @@
 
 #import "BaseTableViewController.h"
 
-@class XYRealNameModel;
+@class RealNameModel;
 @interface TradePasswordController : BaseTableViewController
 
-@property (nonatomic, strong) XYRealNameModel *tradeModel;
+@property (nonatomic, strong) RealNameModel *tradeModel;
 @property (nonatomic, readonly) UIButton *footerButton;
 
 /**

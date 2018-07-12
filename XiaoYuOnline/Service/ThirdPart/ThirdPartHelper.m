@@ -9,7 +9,7 @@
 #import "ThirdPartHelper.h"
 #import <XMNetworking/XMNetworking.h>
 #import "NSString+Common.h"
-#import "XYURLDefine.h"
+#import "OLURLDefine.h"
 
 NSErrorDomain const XYNetworkErrorDomain = @"XYNetworkErrorDomain";
 

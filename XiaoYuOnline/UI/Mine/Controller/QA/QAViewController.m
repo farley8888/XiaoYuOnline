@@ -7,8 +7,8 @@
 //
 
 #import "QAViewController.h"
-#import "XYQATableViewCell.h"
-#import "XYQAModel.h"
+#import "QATableViewCell.h"
+#import "QAModel.h"
 #import "UIImage+Common.h"
 #import "QADetailViewController.h"
 #import "UIView+Common.h"
@@ -16,7 +16,7 @@
 static NSString *QACellReuseID = @"XYQACellReuseIdentifier";
 
 @interface QAViewController ()
-@property (nonatomic, strong) NSArray<XYQAModel *> *itemList;
+@property (nonatomic, strong) NSArray<QAModel *> *itemList;
 @property (nonatomic, strong) UIImage *originImage;
 @property (nonatomic, strong) UIImage *navigationBarImage;
 @end
@@ -26,13 +26,13 @@ static NSString *QACellReuseID = @"XYQACellReuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _itemList = [XYQAModel QADatasourceList];
+    _itemList = [QAModel QADatasourceList];
     
     self.tableView.rowHeight = 49.0;
     self.tableView.backgroundColor = XYGlobalUI.backgroundColor;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.tableHeaderView = [self tableHeaderView];
-    [self.tableView registerClass:[XYQATableViewCell class] forCellReuseIdentifier:QACellReuseID];
+    [self.tableView registerClass:[QATableViewCell class] forCellReuseIdentifier:QACellReuseID];
     
     _originImage = [self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault];
     _navigationBarImage = [UIImage imageWithColor:RGB_COLOR(231, 198, 85) size:CGSizeMake(2.0, 2.0)];
@@ -82,8 +82,8 @@ static NSString *QACellReuseID = @"XYQACellReuseIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYQATableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:QACellReuseID forIndexPath:indexPath];
-    XYQAModel *model = _itemList[indexPath.row];
+    QATableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:QACellReuseID forIndexPath:indexPath];
+    QAModel *model = _itemList[indexPath.row];
     cell.titleLabel.text = model.title;
     
     return cell;
@@ -92,7 +92,7 @@ static NSString *QACellReuseID = @"XYQACellReuseIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    XYQAModel *model = _itemList[indexPath.row];
+    QAModel *model = _itemList[indexPath.row];
     QADetailViewController *vc = [[QADetailViewController alloc] initWithQAModel:model];
     [self.navigationController pushViewController:vc animated:YES];
 }

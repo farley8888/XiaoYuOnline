@@ -8,9 +8,9 @@
 
 #import "BaseViewController.h"
 
-@class XYQAModel;
+@class QAModel;
 @interface QADetailViewController : BaseViewController
 
-- (instancetype)initWithQAModel:(XYQAModel *)model;
+- (instancetype)initWithQAModel:(QAModel *)model;
 
 @end

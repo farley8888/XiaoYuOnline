@@ -7,13 +7,13 @@
 //
 
 #import "BillTableViewController.h"
-#import "XYBillTableViewCell.h"
-#import "XYBillModel.h"
+#import "BillTableViewCell.h"
+#import "BillModel.h"
 
 static NSString *billReuseID = @"XYBillReuseIdentifier";
 
 @interface BillTableViewController ()
-@property (nonatomic, strong) NSMutableArray<XYBillModel *> *billList;
+@property (nonatomic, strong) NSMutableArray<BillModel *> *billList;
 @property (nonatomic, strong) NSDateFormatter *dataFormatter;
 @end
 
@@ -26,7 +26,7 @@ static NSString *billReuseID = @"XYBillReuseIdentifier";
     self.title = NSLocalizedString(@"Mine_BillTitle", nil);
     self.tableView.rowHeight = 56.0;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    UINib *billNib = [UINib nibWithNibName:@"XYBillTableViewCell" bundle:[NSBundle mainBundle]];
+    UINib *billNib = [UINib nibWithNibName:@"BillTableViewCell" bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:billNib forCellReuseIdentifier:billReuseID];
     
     self.enablePullToRefresh = YES;
@@ -45,7 +45,7 @@ static NSString *billReuseID = @"XYBillReuseIdentifier";
     } onSuccess:^(id  _Nullable responseObject) {
         NSMutableArray *marr = [NSMutableArray array];
         for (NSDictionary *data in responseObject[@"list"]) {
-            XYBillModel *bill = [[XYBillModel alloc] initWithBillListApiData:data];
+            BillModel *bill = [[BillModel alloc] initWithBillListApiData:data];
             [marr addObject:bill];
         }
         
@@ -65,8 +65,8 @@ static NSString *billReuseID = @"XYBillReuseIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYBillTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:billReuseID forIndexPath:indexPath];
-    XYBillModel *model = _billList[indexPath.row];
+    BillTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:billReuseID forIndexPath:indexPath];
+    BillModel *model = _billList[indexPath.row];
     cell.valueLabel.text = model.moneyDisp;
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:model.addTime];
     cell.leftBottomLabel.text = [_dataFormatter stringFromDate:date];

@@ -7,7 +7,7 @@
 //
 
 #import "RegisterController.h"
-#import "XYRealNameTableViewCell.h"
+#import "RealNameTableViewCell.h"
 #import "RegisterViewCell.h"
 #import "RegisterFooterView.h"
 #import "RegisterModel.h"
@@ -33,7 +33,7 @@ static NSString *registerImageCellReuseID = @"registerImageCellReuseIdentifier";
     self.tableView.tableFooterView = [[RegisterFooterView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 160)];
     self.tableView.backgroundColor = XYGlobalUI.backgroundColor;
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    [self.tableView registerClass:[XYRealNameTableViewCell class] forCellReuseIdentifier:registerCustomReuseID];
+    [self.tableView registerClass:[RealNameTableViewCell class] forCellReuseIdentifier:registerCustomReuseID];
     [self.tableView registerClass:[RegisterViewCell class] forCellReuseIdentifier:registerImageCellReuseID];
     
     [self addButtonAction];
@@ -75,7 +75,7 @@ static NSString *registerImageCellReuseID = @"registerImageCellReuseIdentifier";
         
         cell = cell0;
     } else {
-        XYRealNameTableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:registerCustomReuseID forIndexPath:indexPath];
+        RealNameTableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:registerCustomReuseID forIndexPath:indexPath];
         cell1.titleLabel.text = model.title;
         cell1.textField.placeholder = model.placeHolder;
         if (model.scriptDescription) {
@@ -89,7 +89,7 @@ static NSString *registerImageCellReuseID = @"registerImageCellReuseIdentifier";
         
         cell = cell1;
     }*/
-    XYRealNameTableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:registerCustomReuseID forIndexPath:indexPath];
+    RealNameTableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:registerCustomReuseID forIndexPath:indexPath];
     cell1.titleLabel.text = model.title;
     cell1.textField.delegate = self;
     cell1.textField.placeholder = model.placeHolder;
@@ -111,7 +111,7 @@ static NSString *registerImageCellReuseID = @"registerImageCellReuseIdentifier";
     for (NSUInteger i = 0, count = _itemList.count; i < count; i ++) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-        UITextField *tf = ((XYRealNameTableViewCell *)cell).textField;
+        UITextField *tf = ((RealNameTableViewCell *)cell).textField;
         tf.delegate = self;
         _itemList[i].content = tf.text;
         

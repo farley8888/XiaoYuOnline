@@ -8,15 +8,15 @@
 
 #import "TradeDetailViewController.h"
 #import "RepaymentController.h"
-#import "XYTradeDetailViewCell.h"
+#import "TradeDetailViewCell.h"
 #import "PhoneCodeVerifyView.h"
-#import "XYTradeDetailModel.h"
+#import "TradeDetailModel.h"
 #import "TradeRecoderModel.h"
 
 static NSString *tradeDetaiReuseID = @"XYTradeDetailReuseIdentifier";
 
 @interface TradeDetailViewController ()
-@property (nonatomic, strong) NSArray <XYTradeDetailModel *> *itemList;
+@property (nonatomic, strong) NSArray <TradeDetailModel *> *itemList;
 @property (nonatomic, assign) BOOL adjustContentInset;
 @property (nonatomic, strong) TradeRecoderModel *model;
 @end
@@ -34,13 +34,13 @@ static NSString *tradeDetaiReuseID = @"XYTradeDetailReuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = NSLocalizedString(@"Mine_TradeRecord_Bid_Title", nil);
-    _itemList = [XYTradeDetailModel tradeDatasourceListWithTradeModel:_model];
+    _itemList = [TradeDetailModel tradeDatasourceListWithTradeModel:_model];
     
     self.tableView.tableHeaderView = [self tableHeaderView];
     self.tableView.tableFooterView = [self tableFooterView];
     self.tableView.rowHeight = 48.0;
     self.tableView.backgroundColor = XYGlobalUI.backgroundColor;
-    [self.tableView registerClass:[XYTradeDetailViewCell class] forCellReuseIdentifier:tradeDetaiReuseID];
+    [self.tableView registerClass:[TradeDetailViewCell class] forCellReuseIdentifier:tradeDetaiReuseID];
 }
 
 - (UIView *)tableHeaderView {
@@ -116,8 +116,8 @@ static NSString *tradeDetaiReuseID = @"XYTradeDetailReuseIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYTradeDetailViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tradeDetaiReuseID forIndexPath:indexPath];
-    XYTradeDetailModel *model = _itemList[indexPath.row];
+    TradeDetailViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tradeDetaiReuseID forIndexPath:indexPath];
+    TradeDetailModel *model = _itemList[indexPath.row];
     cell.titleLabel.text = model.title;
     cell.descriptionLabel.text = model.content;
     if (model.isSpecial) {

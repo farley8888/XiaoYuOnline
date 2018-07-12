@@ -8,8 +8,8 @@
 
 #import "TradePasswordController.h"
 #import "TradePasswordNextController.h"
-#import "XYRealNameTableViewCell.h"
-#import "XYRealNameModel.h"
+#import "RealNameTableViewCell.h"
+#import "RealNameModel.h"
 
 static NSString *tradePasswordReuseID = @"XYTradePasswordReuseIdentifier";
 
@@ -21,7 +21,7 @@ static NSString *tradePasswordReuseID = @"XYTradePasswordReuseIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _tradeModel = [[XYRealNameModel alloc] initWithTitle:NSLocalizedString(@"Public_VerifyCode", nil) content:nil description:NSLocalizedString(@"Mine_Setting_RN_VerifyCode", nil) placeHolder:NSLocalizedString(@"Mine_Setting_AC_TP_PlaceHolder", nil)];
+    _tradeModel = [[RealNameModel alloc] initWithTitle:NSLocalizedString(@"Public_VerifyCode", nil) content:nil description:NSLocalizedString(@"Mine_Setting_RN_VerifyCode", nil) placeHolder:NSLocalizedString(@"Mine_Setting_AC_TP_PlaceHolder", nil)];
     
     self.title = NSLocalizedString(@"Mine_Setting_AC_TradePwd", nil);
     self.tableView.backgroundColor = XYGlobalUI.backgroundColor;
@@ -31,7 +31,7 @@ static NSString *tradePasswordReuseID = @"XYTradePasswordReuseIdentifier";
     self.tableView.tableFooterView = [self tableFooterView];
     self.tableView.tableHeaderView = [self tableHeaderView];
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    [self.tableView registerClass:[XYRealNameTableViewCell class] forCellReuseIdentifier:tradePasswordReuseID];
+    [self.tableView registerClass:[RealNameTableViewCell class] forCellReuseIdentifier:tradePasswordReuseID];
 }
 
 - (UIView *)tableFooterView {
@@ -79,7 +79,7 @@ static NSString *tradePasswordReuseID = @"XYTradePasswordReuseIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYRealNameTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tradePasswordReuseID forIndexPath:indexPath];
+    RealNameTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tradePasswordReuseID forIndexPath:indexPath];
     cell.titleLabel.text = _tradeModel.title;
     cell.rightView.hidden = NO;
     cell.textField.placeholder = _tradeModel.placeHolder;

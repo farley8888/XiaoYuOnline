@@ -7,7 +7,7 @@
 //
 
 #import "BidDetailViewController.h"
-#import "XYInvestViewController.h"
+#import "InvestViewController.h"
 #import "LoginViewController.h"
 #import "BidSecondViewCell.h"
 #import "BidFirstViewCell.h"
@@ -120,8 +120,8 @@ static NSString *bidThirdReuseID = @"XYBidThirdCellReuseIdentifier";
 }
 
 - (void)investButtonAction {
-    if (XYCurrentUser.userState == XYUserStateLogin) {
-        XYInvestViewController *vc= [[XYInvestViewController alloc] initWithBidId:_model.bidID];
+    if (XYCurrentUser.userState == OLUserStateLogin) {
+        InvestViewController *vc= [[InvestViewController alloc] initWithBidId:_model.bidID];
         [self.navigationController pushViewController:vc animated:YES];
     } else {
         LoginViewController *login = [[LoginViewController alloc] init];

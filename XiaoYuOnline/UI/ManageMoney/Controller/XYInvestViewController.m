@@ -1,17 +1,17 @@
 //
-//  XYInvestViewController.m
+//  InvestViewController.m
 //  XiaoYuOnline
 //
 //  Created by wei.chen on 2018/4/10.
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYInvestViewController.h"
+#import "InvestViewController.h"
 #import "UIViewController+ShowTextHUD.h"
 #import "UIView+Common.h"
 #import "PreferentialModel.h"
 
-@interface XYInvestViewController () {
+@interface InvestViewController () {
     UIView *_lineView;
 }
 /// 投资金额
@@ -47,7 +47,7 @@
 @property (nonatomic, copy) NSString *bidId;
 @end
 
-@implementation XYInvestViewController
+@implementation InvestViewController
 
 - (instancetype)initWithBidId:(NSString *)bidId {
     self = [super init];

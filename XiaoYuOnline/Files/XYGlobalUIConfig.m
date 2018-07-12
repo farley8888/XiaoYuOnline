@@ -1,15 +1,15 @@
 //
-//  XYGlobalUIConfig.m
+//  OLGlobalUIConfig.m
 //  XiaoYuOnline
 //
 //  Created by wei.chen on 2018/4/5.
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYGlobalUIConfig.h"
+#import "OLGlobalUIConfig.h"
 #import "UIColor+Helper.h"
 
-@interface XYGlobalUIConfig()
+@interface OLGlobalUIConfig()
 
 @property (nonatomic, strong) UIFont *titleFont;
 @property (nonatomic, strong) UIFont *mainFont;
@@ -31,7 +31,7 @@
 
 @end
 
-@implementation XYGlobalUIConfig
+@implementation OLGlobalUIConfig
 
 - (void)setup
 {
@@ -66,10 +66,10 @@
 
 + (instancetype)shareInstance
 {
-    static XYGlobalUIConfig *config;
+    static OLGlobalUIConfig *config;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        config = [[XYGlobalUIConfig alloc] init];
+        config = [[OLGlobalUIConfig alloc] init];
         [config setup];
     });
     return config;

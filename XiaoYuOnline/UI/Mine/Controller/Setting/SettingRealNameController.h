@@ -8,10 +8,10 @@
 
 #import "BaseTableViewController.h"
 
-@class XYRealNameModel;
+@class RealNameModel;
 @interface SettingRealNameController : BaseTableViewController
 
-@property (nonatomic, strong) NSArray<XYRealNameModel *> *itemList;
+@property (nonatomic, strong) NSArray<RealNameModel *> *itemList;
 
 - (void)footerViewButtonAction:(UIButton *)button;
 

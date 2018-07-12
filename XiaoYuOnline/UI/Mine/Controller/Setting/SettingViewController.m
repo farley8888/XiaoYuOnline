@@ -7,7 +7,7 @@
 //
 
 #import "SettingViewController.h"
-#import "XYSettingTableViewCell.h"
+#import "SettingTableViewCell.h"
 #import "SettingRealNameController.h"
 #import "ShippingAddressController.h"
 #import "AccoutSecurityController.h"
@@ -23,7 +23,7 @@ static NSString *settingReuseID = @"XYSettingReuseIdentifer";
 @implementation SettingViewController
 
 - (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:XYUserInfoDidChangedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:OLUserInfoDidChangedNotification object:nil];
 }
 
 - (void)viewDidLoad {
@@ -37,9 +37,9 @@ static NSString *settingReuseID = @"XYSettingReuseIdentifer";
     self.tableView.sectionHeaderHeight = 7.0;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.tableFooterView = [self tableFooterView];
-    [self.tableView registerClass:[XYSettingTableViewCell class] forCellReuseIdentifier:settingReuseID];
+    [self.tableView registerClass:[SettingTableViewCell class] forCellReuseIdentifier:settingReuseID];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userInfoChangeAction) name:XYUserInfoDidChangedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userInfoChangeAction) name:OLUserInfoDidChangedNotification object:nil];
 }
 
 - (UIView *)tableFooterView {
@@ -80,7 +80,7 @@ static NSString *settingReuseID = @"XYSettingReuseIdentifer";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYSettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:settingReuseID forIndexPath:indexPath];
+    SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:settingReuseID forIndexPath:indexPath];
     NSArray *sectionItem = _itemList[indexPath.section];
     SettingModel *model = sectionItem[indexPath.row];
     cell.titleLabel.text = model.title;

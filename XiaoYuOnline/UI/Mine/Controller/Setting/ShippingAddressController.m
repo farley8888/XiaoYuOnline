@@ -8,7 +8,7 @@
 
 #import "ShippingAddressController.h"
 #import "BaseInfoModel.h"
-#import "XYRealNameTableViewCell.h"
+#import "RealNameTableViewCell.h"
 
 static NSString *shippingAddressReuseID = @"XYShippingAddressReuseIdentifier";
 
@@ -43,7 +43,7 @@ static NSString *shippingAddressReuseID = @"XYShippingAddressReuseIdentifier";
     self.tableView.tableFooterView = [self tableFooterView];
     self.tableView.tableHeaderView = [self tableHeaderView];
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    [self.tableView registerClass:[XYRealNameTableViewCell class] forCellReuseIdentifier:shippingAddressReuseID];
+    [self.tableView registerClass:[RealNameTableViewCell class] forCellReuseIdentifier:shippingAddressReuseID];
 }
 
 - (UIView *)tableHeaderView {
@@ -99,7 +99,7 @@ static NSString *shippingAddressReuseID = @"XYShippingAddressReuseIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYRealNameTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:shippingAddressReuseID forIndexPath:indexPath];
+    RealNameTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:shippingAddressReuseID forIndexPath:indexPath];
     BaseInfoModel *model = _itemList[indexPath.row];
     cell.titleLabel.text = model.title;
     cell.textField.placeholder = model.scriptDescription;

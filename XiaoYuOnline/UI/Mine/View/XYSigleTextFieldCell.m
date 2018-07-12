@@ -1,14 +1,14 @@
 //
-//  XYSigleTextFieldCell.m
+//  SigleTextFieldCell.m
 //  XiaoYuOnline
 //
 //  Created by wei.chen on 2018/4/6.
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYSigleTextFieldCell.h"
+#import "SigleTextFieldCell.h"
 
-@implementation XYSigleTextFieldCell
+@implementation SigleTextFieldCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

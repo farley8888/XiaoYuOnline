@@ -6,8 +6,8 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYChargeViewController.h"
+#import "ChargeViewController.h"
 
-@interface WithdrawViewController : XYChargeViewController
+@interface WithdrawViewController : ChargeViewController
 
 @end

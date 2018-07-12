@@ -7,7 +7,7 @@
 //
 
 #import "WithdrawViewController.h"
-#import "XYCompleteViewController.h"
+#import "CompleteViewController.h"
 
 @interface WithdrawViewController ()
 
@@ -19,7 +19,7 @@
     [super viewDidLoad];
     self.title = NSLocalizedString(@"Mine_Setting_Withdraw_Title", nil);
     NSString *bankCard = @"";
-    if (XYCurrentUser.userState == XYUserStateLogin && XYCurrentUser.realName) {
+    if (XYCurrentUser.userState == OLUserStateLogin && XYCurrentUser.realName) {
         bankCard = XYCurrentUser.partBankCardID;
     }
     self.itemList = @[[[ChargeWithdrawModel alloc] initWithTitle:NSLocalizedString(@"Mine_Setting_Withdraw_BankNum.", nil) content:nil description:bankCard placeHolder:nil],
@@ -51,7 +51,7 @@
         request.parameters = params;
     } onSuccess:^(id  _Nullable responseObject) {
         [weakSelf completeWithState:YES];
-        [[NSNotificationCenter defaultCenter] postNotificationName:XYUserAssetDidChangedNotification object:responseObject];
+        [[NSNotificationCenter defaultCenter] postNotificationName:OLUserAssetDidChangedNotification object:responseObject];
     } successHint:@"提现成功" onFailure:^(NSError * _Nullable error) {
         [weakSelf completeWithState:NO];
     }];
@@ -71,7 +71,7 @@
         btnT = NSLocalizedString(@"Public_Back", nil);
     }
     
-    XYCompleteViewController *vc = [[XYCompleteViewController alloc] initWithImage:image title:NSLocalizedString(@"Mine_Setting_Withdraw_Title", nil)];
+    CompleteViewController *vc = [[CompleteViewController alloc] initWithImage:image title:NSLocalizedString(@"Mine_Setting_Withdraw_Title", nil)];
     vc.buttonTitle = btnT;
     vc.descriptText = des;
     vc.success = success;

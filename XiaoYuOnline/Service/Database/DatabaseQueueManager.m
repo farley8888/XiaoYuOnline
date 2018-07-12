@@ -7,7 +7,7 @@
 //
 
 #import "DatabaseQueueManager.h"
-#import "XYURLDefine.h"
+#import "OLURLDefine.h"
 
 @implementation DatabaseQueueManager {
     NSString *_dbPath;
@@ -74,7 +74,7 @@
      @property (nonatomic, assign) NSTimeInterval createTime;
      @property (nonatomic, assign) int apiStatus;
      @property (nonatomic, assign) BOOL appSign;
-     @property (nonatomic, assign) XYUserState userState;
+     @property (nonatomic, assign) OLUserState userState;
      */
     NSString *statements = @"CREATE TABLE IF NOT EXISTS user(ID integer primary key autoincrement, user_id varchar(32) NOT NULL, avatar varchar(32), nickname varchar(32), state integer, phone_num varchar(32), real_name varchar(32), part_phone_num varchar(32), api_id varchar(32), bank_id varchar(32), bank_name varchar(32), bank_num varchar(32), part_bank_num varchar(32), card_id varchar(32), part_card_id varchar(32), recommend_phone_num varchar(32), user_type integer, api_state integer, app_sign integer, create_time double);";
     

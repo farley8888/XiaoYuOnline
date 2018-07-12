@@ -10,7 +10,7 @@
 #import "ChangePasswordController.h"
 #import "TradePasswordController.h"
 #import "GesturePasswordNextController.h"
-#import "XYSettingTableViewCell.h"
+#import "SettingTableViewCell.h"
 #import "BaseInfoModel.h"
 
 static NSString *accountSecurityReuseID = @"AccountSecurityReuseIdentifier";
@@ -35,7 +35,7 @@ static NSString *accountSecurityReuseID = @"AccountSecurityReuseIdentifier";
     self.tableView.sectionHeaderHeight = 7.0;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    [self.tableView registerClass:[XYSettingTableViewCell class] forCellReuseIdentifier:accountSecurityReuseID];
+    [self.tableView registerClass:[SettingTableViewCell class] forCellReuseIdentifier:accountSecurityReuseID];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +54,7 @@ static NSString *accountSecurityReuseID = @"AccountSecurityReuseIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYSettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:accountSecurityReuseID forIndexPath:indexPath];
+    SettingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:accountSecurityReuseID forIndexPath:indexPath];
     cell.descriptionLabel.textColor = XYGlobalUI.mainColor;
     BaseInfoModel *model = _itemList[indexPath.row];
     cell.titleLabel.text = model.title;

@@ -7,9 +7,9 @@
 //
 
 #import "RepaymentController.h"
-#import "XYCompleteViewController.h"
+#import "CompleteViewController.h"
 #import "PhoneCodeVerifyView.h"
-#import "XYCompleteViewController.h"
+#import "CompleteViewController.h"
 
 @interface RepaymentController ()
 
@@ -59,7 +59,7 @@
     };
     
     view.dismissBlock = ^() {
-        XYCompleteViewController *vc = [[XYCompleteViewController alloc] initWithImage:image title:NSLocalizedString(@"Mine_TradeRecord_Bid_Repayment", nil)];
+        CompleteViewController *vc = [[CompleteViewController alloc] initWithImage:image title:NSLocalizedString(@"Mine_TradeRecord_Bid_Repayment", nil)];
         vc.buttonTitle = btnT;
         vc.descriptText = des;
         vc.success = succ;

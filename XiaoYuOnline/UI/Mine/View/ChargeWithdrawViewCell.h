@@ -6,8 +6,8 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYRealNameTableViewCell.h"
+#import "RealNameTableViewCell.h"
 
-@interface ChargeWithdrawViewCell : XYRealNameTableViewCell
+@interface ChargeWithdrawViewCell : RealNameTableViewCell
 
 @end
