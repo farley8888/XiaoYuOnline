@@ -344,7 +344,7 @@
 		3DFFFA112077AC120049DC9A /* WKSegementSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFFA102077AC120049DC9A /* WKSegementSliderView.m */; };
 		3DFFFA142077ACF50049DC9A /* CardBagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFFA132077ACF50049DC9A /* CardBagViewController.m */; };
 		3DFFFA172077BFD40049DC9A /* CardBagViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFFA162077BFD40049DC9A /* CardBagViewCell.m */; };
-		BF956339B8CB2EBDC0077349 /* libPods-XiaoYuOnline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 212C2048C7407A4CF573CABF /* libPods-XiaoYuOnline.a */; };
+		6C0FE59550F7C973782EE39B /* libPods-ZheJu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFDC4677FFDD2F6EB64961E /* libPods-ZheJu.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -730,15 +730,16 @@
 		18D29B2C20F5EA0A00B6EF0A /* DataUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
 		18D29B2D20F5EA0A00B6EF0A /* DataUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
 		18D29B3320F6061500B6EF0A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		212C2048C7407A4CF573CABF /* libPods-XiaoYuOnline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XiaoYuOnline.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23111C5E3E64E8E9E0DB8878 /* Pods-XiaoYuOnline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoYuOnline.release.xcconfig"; path = "Pods/Target Support Files/Pods-XiaoYuOnline/Pods-XiaoYuOnline.release.xcconfig"; sourceTree = "<group>"; };
-		3D3284DF2071CD9000F82D3E /* XiaoYuOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoYuOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B6FB0BC48DAF3BF3A8D7AD6 /* Pods-ZheJu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZheJu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZheJu/Pods-ZheJu.debug.xcconfig"; sourceTree = "<group>"; };
+		3A85A9D01626A0E26B3571A9 /* Pods-ZheJu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZheJu.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZheJu/Pods-ZheJu.release.xcconfig"; sourceTree = "<group>"; };
+		3D3284DF2071CD9000F82D3E /* ZheJu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZheJu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3284E22071CD9000F82D3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D3284E32071CD9000F82D3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3D3284E92071CD9000F82D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D3284F02071CD9100F82D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3284F12071CD9100F82D3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3D3284F72071CD9100F82D3E /* XiaoYuOnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XiaoYuOnlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3284F72071CD9100F82D3E /* ZheJuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZheJuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D32852120732E8400F82D3E /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
 		3D32852220732E8400F82D3E /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
 		3D32852320732E8400F82D3E /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
@@ -1015,6 +1016,7 @@
 		3DFFFA132077ACF50049DC9A /* CardBagViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardBagViewController.m; sourceTree = "<group>"; };
 		3DFFFA152077BFD40049DC9A /* CardBagViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardBagViewCell.h; sourceTree = "<group>"; };
 		3DFFFA162077BFD40049DC9A /* CardBagViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardBagViewCell.m; sourceTree = "<group>"; };
+		3FFDC4677FFDD2F6EB64961E /* libPods-ZheJu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZheJu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1023,7 +1025,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D3A938A20873EC30079F932 /* FUMobilePay.framework in Frameworks */,
-				BF956339B8CB2EBDC0077349 /* libPods-XiaoYuOnline.a in Frameworks */,
+				6C0FE59550F7C973782EE39B /* libPods-ZheJu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1040,7 +1042,7 @@
 		067037A5054F65775ADA20FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				212C2048C7407A4CF573CABF /* libPods-XiaoYuOnline.a */,
+				3FFDC4677FFDD2F6EB64961E /* libPods-ZheJu.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1838,8 +1840,8 @@
 		3D3284E02071CD9000F82D3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D3284DF2071CD9000F82D3E /* XiaoYuOnline.app */,
-				3D3284F72071CD9100F82D3E /* XiaoYuOnlineTests.xctest */,
+				3D3284DF2071CD9000F82D3E /* ZheJu.app */,
+				3D3284F72071CD9100F82D3E /* ZheJuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2510,6 +2512,8 @@
 			children = (
 				05D3F83CFCF956574F30B9A1 /* Pods-XiaoYuOnline.debug.xcconfig */,
 				23111C5E3E64E8E9E0DB8878 /* Pods-XiaoYuOnline.release.xcconfig */,
+				2B6FB0BC48DAF3BF3A8D7AD6 /* Pods-ZheJu.debug.xcconfig */,
+				3A85A9D01626A0E26B3571A9 /* Pods-ZheJu.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -2517,9 +2521,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D3284DE2071CD9000F82D3E /* XiaoYuOnline */ = {
+		3D3284DE2071CD9000F82D3E /* ZheJu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D3285002071CD9100F82D3E /* Build configuration list for PBXNativeTarget "XiaoYuOnline" */;
+			buildConfigurationList = 3D3285002071CD9100F82D3E /* Build configuration list for PBXNativeTarget "ZheJu" */;
 			buildPhases = (
 				B10CA3FBD25AD290BA5B9889 /* [CP] Check Pods Manifest.lock */,
 				3D3284DB2071CD9000F82D3E /* Sources */,
@@ -2531,14 +2535,14 @@
 			);
 			dependencies = (
 			);
-			name = XiaoYuOnline;
+			name = ZheJu;
 			productName = XiaoYuOnline;
-			productReference = 3D3284DF2071CD9000F82D3E /* XiaoYuOnline.app */;
+			productReference = 3D3284DF2071CD9000F82D3E /* ZheJu.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3D3284F62071CD9100F82D3E /* XiaoYuOnlineTests */ = {
+		3D3284F62071CD9100F82D3E /* ZheJuTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D3285032071CD9100F82D3E /* Build configuration list for PBXNativeTarget "XiaoYuOnlineTests" */;
+			buildConfigurationList = 3D3285032071CD9100F82D3E /* Build configuration list for PBXNativeTarget "ZheJuTests" */;
 			buildPhases = (
 				3D3284F32071CD9100F82D3E /* Sources */,
 				3D3284F42071CD9100F82D3E /* Frameworks */,
@@ -2549,9 +2553,9 @@
 			dependencies = (
 				3D3284F92071CD9100F82D3E /* PBXTargetDependency */,
 			);
-			name = XiaoYuOnlineTests;
+			name = ZheJuTests;
 			productName = XiaoYuOnlineTests;
-			productReference = 3D3284F72071CD9100F82D3E /* XiaoYuOnlineTests.xctest */;
+			productReference = 3D3284F72071CD9100F82D3E /* ZheJuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -2561,7 +2565,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = XiaoYuOnline;
+				ORGANIZATIONNAME = ZheJu;
 				TargetAttributes = {
 					3D3284DE2071CD9000F82D3E = {
 						CreatedOnToolsVersion = 9.3;
@@ -2572,7 +2576,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3D3284DA2071CD9000F82D3E /* Build configuration list for PBXProject "XiaoYuOnline" */;
+			buildConfigurationList = 3D3284DA2071CD9000F82D3E /* Build configuration list for PBXProject "ZheJu" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2586,8 +2590,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D3284DE2071CD9000F82D3E /* XiaoYuOnline */,
-				3D3284F62071CD9100F82D3E /* XiaoYuOnlineTests */,
+				3D3284DE2071CD9000F82D3E /* ZheJu */,
+				3D3284F62071CD9100F82D3E /* ZheJuTests */,
 			);
 		};
 /* End PBXProject section */
@@ -2675,7 +2679,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-XiaoYuOnline-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ZheJu-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2985,7 +2989,7 @@
 /* Begin PBXTargetDependency section */
 		3D3284F92071CD9100F82D3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D3284DE2071CD9000F82D3E /* XiaoYuOnline */;
+			target = 3D3284DE2071CD9000F82D3E /* ZheJu */;
 			targetProxy = 3D3284F82071CD9100F82D3E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -3136,7 +3140,7 @@
 		};
 		3D3285012071CD9100F82D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05D3F83CFCF956574F30B9A1 /* Pods-XiaoYuOnline.debug.xcconfig */;
+			baseConfigurationReference = 2B6FB0BC48DAF3BF3A8D7AD6 /* Pods-ZheJu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -3166,7 +3170,7 @@
 		};
 		3D3285022071CD9100F82D3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23111C5E3E64E8E9E0DB8878 /* Pods-XiaoYuOnline.release.xcconfig */;
+			baseConfigurationReference = 3A85A9D01626A0E26B3571A9 /* Pods-ZheJu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -3209,7 +3213,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyu.test.XiaoYuOnlineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XiaoYuOnline.app/XiaoYuOnline";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZheJu.app/ZheJu";
 			};
 			name = Debug;
 		};
@@ -3228,14 +3232,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyu.test.XiaoYuOnlineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XiaoYuOnline.app/XiaoYuOnline";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZheJu.app/ZheJu";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D3284DA2071CD9000F82D3E /* Build configuration list for PBXProject "XiaoYuOnline" */ = {
+		3D3284DA2071CD9000F82D3E /* Build configuration list for PBXProject "ZheJu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D3284FE2071CD9100F82D3E /* Debug */,
@@ -3244,7 +3248,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D3285002071CD9100F82D3E /* Build configuration list for PBXNativeTarget "XiaoYuOnline" */ = {
+		3D3285002071CD9100F82D3E /* Build configuration list for PBXNativeTarget "ZheJu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D3285012071CD9100F82D3E /* Debug */,
@@ -3253,7 +3257,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D3285032071CD9100F82D3E /* Build configuration list for PBXNativeTarget "XiaoYuOnlineTests" */ = {
+		3D3285032071CD9100F82D3E /* Build configuration list for PBXNativeTarget "ZheJuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D3285042071CD9100F82D3E /* Debug */,
