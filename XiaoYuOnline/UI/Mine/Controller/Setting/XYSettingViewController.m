@@ -6,21 +6,21 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYSettingViewController.h"
+#import "SettingViewController.h"
 #import "XYSettingTableViewCell.h"
-#import "XYSettingRealNameController.h"
-#import "XYShippingAddressController.h"
-#import "XYAccoutSecurityController.h"
+#import "SettingRealNameController.h"
+#import "ShippingAddressController.h"
+#import "AccoutSecurityController.h"
 #import "XYBindCardViewController.h"
-#import "XYSettingModel.h"
+#import "SettingModel.h"
 
 static NSString *settingReuseID = @"XYSettingReuseIdentifer";
 
-@interface XYSettingViewController ()
+@interface SettingViewController ()
 @property (nonatomic, strong) NSArray<NSArray <XYSettingModel *> *> *itemList;
 @end
 
-@implementation XYSettingViewController
+@implementation SettingViewController
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:XYUserInfoDidChangedNotification object:nil];

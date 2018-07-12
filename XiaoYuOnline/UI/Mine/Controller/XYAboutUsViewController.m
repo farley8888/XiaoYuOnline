@@ -6,17 +6,17 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYAboutUsViewController.h"
-#import "XYAboutUsTableViewCell.h"
-#import "XYAboutUsModel.h"
+#import "AboutUsViewController.h"
+#import "AboutUsTableViewCell.h"
+#import "AboutUsModel.h"
 
 static NSString *aboutUsReuseID = @"XYAboutUsCellReuseIdentifier";
 
-@interface XYAboutUsViewController ()
+@interface AboutUsViewController ()
 @property (nonatomic, strong) NSArray <XYAboutUsModel *>* itemList;
 @end
 
-@implementation XYAboutUsViewController
+@implementation AboutUsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

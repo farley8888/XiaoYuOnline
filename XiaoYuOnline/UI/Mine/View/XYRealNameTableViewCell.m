@@ -26,7 +26,7 @@
         _textField.font = XYGlobalUI.smallFont_14;
         [superView addSubview:_textField];
         
-        _rightView = [[XYSendVerifyCodeView alloc] init];
+        _rightView = [[SendVerifyCodeView alloc] init];
         [_rightView.sendButton setTitleColor:XYGlobalUI.mainColor forState:UIControlStateNormal];
         _rightView.hidden = YES;
         [superView addSubview:_rightView];

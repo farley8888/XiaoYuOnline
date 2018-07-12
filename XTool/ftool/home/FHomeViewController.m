@@ -34,8 +34,7 @@ static NSString * const reuseIdentifier2 = @"FHomeNewsCell";
     self.dataArray = @[@"最新利率", @"记一笔"].mutableCopy;
     self.header.imageURLStringsGroup = @[
 //                                         @"https://static.weijinzaixian.com/ad_0603403dc18654ec40c34a63c5eb5dd8.jpg",
-                                         @"WechatIMG1659.jpeg",
-                                         @"WechatIMG608.jpeg"
+                                         @"homebanner.jpeg",
                                          ];
     
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

@@ -6,8 +6,8 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYBaseViewController.h"
+#import "BaseViewController.h"
 
-@interface XYManageMoneyViewController : XYBaseViewController
+@interface XYManageMoneyViewController : BaseViewController
 
 @end

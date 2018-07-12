@@ -6,9 +6,9 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYBaseViewController.h"
+#import "BaseViewController.h"
 
-@interface XYInvestViewController : XYBaseViewController
+@interface XYInvestViewController : BaseViewController
 
 - (instancetype)initWithBidId:(NSString *)bidId;
 

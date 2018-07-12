@@ -6,16 +6,16 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYRepaymentController.h"
+#import "RepaymentController.h"
 #import "XYCompleteViewController.h"
-#import "XYPhoneCodeVerifyView.h"
+#import "PhoneCodeVerifyView.h"
 #import "XYCompleteViewController.h"
 
-@interface XYRepaymentController ()
+@interface RepaymentController ()
 
 @end
 
-@implementation XYRepaymentController
+@implementation RepaymentController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,7 +50,7 @@
         btnT = NSLocalizedString(@"Public_Back", nil);
     }
     
-    XYPhoneCodeVerifyView *view = [XYPhoneCodeVerifyView phoneCodeVerifyView];
+    PhoneCodeVerifyView *view = [PhoneCodeVerifyView phoneCodeVerifyView];
     [view show];
     __weak typeof(self) weakSelf = self;
     __weak typeof(view) weakView = view;

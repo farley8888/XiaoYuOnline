@@ -8,10 +8,10 @@
 
 #import "XYChargeViewController.h"
 #import "XYRealNameTableViewCell.h"
-#import "XYChargeWithdrawViewCell.h"
+#import "ChargeWithdrawViewCell.h"
 #import "XYCompleteViewController.h"
-#import "XYSettingRealNameController.h"
-#import "XYBindCardViewController.h"
+#import "SettingRealNameController.h"
+#import "BindCardViewController.h"
 #import "UIViewController+ShowTextHUD.h"
 #import "NSString+Common.h"
 
@@ -22,7 +22,7 @@
 
 static NSString *chargeReuseID = @"XYChargeCellReuseIdentifier";
 
-@implementation XYChargeWithdrawModel
+@implementation ChargeWithdrawModel
 @end
 
 #if !TARGET_OS_SIMULATOR
@@ -44,11 +44,11 @@ static NSString *chargeReuseID = @"XYChargeCellReuseIdentifier";
         bankCard = XYCurrentUser.partBankCardID;
     }
     
-    self.itemList = @[[[XYChargeWithdrawModel alloc] initWithTitle:NSLocalizedString(@"Mine_Setting_Charge_BankNum.", nil) content:nil description:bankCard placeHolder:nil],
-                      [[XYChargeWithdrawModel alloc] initWithTitle:NSLocalizedString(@"Mine_Setting_Charge_Volume", nil) content:nil description:nil placeHolder:NSLocalizedString(@"Mine_Setting_Charge_Volume_PH", nil)],
-                      [[XYChargeWithdrawModel alloc] initWithTitle:NSLocalizedString(@"Mine_Setting_Charge_Password", nil) content:nil description:nil placeHolder:NSLocalizedString(@"Mine_Setting_OperatePwd_PH", nil)]
+    self.itemList = @[[[ChargeWithdrawModel alloc] initWithTitle:NSLocalizedString(@"Mine_Setting_Charge_BankNum.", nil) content:nil description:bankCard placeHolder:nil],
+                      [[ChargeWithdrawModel alloc] initWithTitle:NSLocalizedString(@"Mine_Setting_Charge_Volume", nil) content:nil description:nil placeHolder:NSLocalizedString(@"Mine_Setting_Charge_Volume_PH", nil)],
+                      [[ChargeWithdrawModel alloc] initWithTitle:NSLocalizedString(@"Mine_Setting_Charge_Password", nil) content:nil description:nil placeHolder:NSLocalizedString(@"Mine_Setting_OperatePwd_PH", nil)]
                       ];
-    [self.tableView registerClass:[XYChargeWithdrawViewCell class] forCellReuseIdentifier:chargeReuseID];
+    [self.tableView registerClass:[ChargeWithdrawViewCell class] forCellReuseIdentifier:chargeReuseID];
 }
 
 - (UIView *)tableFooterView {
@@ -95,14 +95,14 @@ static NSString *chargeReuseID = @"XYChargeCellReuseIdentifier";
             title = @"实名认证";
             message = @"你好，系统检测到您当前并没有实名认证，不能进行充值或者提现操作！";
             operateAction = [UIAlertAction actionWithTitle:@"实名认证" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                XYSettingRealNameController *vc = [[XYSettingRealNameController alloc] init];
+                SettingRealNameController *vc = [[SettingRealNameController alloc] init];
                 [weakSelf.navigationController pushViewController:vc animated:YES];
             }];
         } else if (!XYCurrentUser.bankCardID){
             title = @"绑定银行卡";
             message = @"你好，系统检测到您当前并没有绑定银行卡，不能进行充值或者提现操作！";
             operateAction = [UIAlertAction actionWithTitle:@"绑卡" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                XYBindCardViewController *vc = [[XYBindCardViewController alloc] init];
+                BindCardViewController *vc = [[BindCardViewController alloc] init];
                 [weakSelf.navigationController pushViewController:vc animated:YES];
             }];
         }
@@ -128,7 +128,7 @@ static NSString *chargeReuseID = @"XYChargeCellReuseIdentifier";
 #pragma mark - Table view data source
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYChargeWithdrawViewCell *cell = [tableView dequeueReusableCellWithIdentifier:chargeReuseID forIndexPath:indexPath];
+    ChargeWithdrawViewCell *cell = [tableView dequeueReusableCellWithIdentifier:chargeReuseID forIndexPath:indexPath];
     if (indexPath.row == 0) {
         cell.textField.userInteractionEnabled = NO;
     } else {

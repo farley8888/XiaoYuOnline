@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XYBaseTableViewController.h"
+#import "BaseTableViewController.h"
 
-@interface XYMineViewController : XYBaseTableViewController
+@interface XYMineViewController : BaseTableViewController
 
 @end

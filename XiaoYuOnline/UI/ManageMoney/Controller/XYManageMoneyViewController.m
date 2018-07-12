@@ -7,16 +7,16 @@
 //
 
 #import "XYManageMoneyViewController.h"
-#import "XYBidDetailViewController.h"
+#import "BidDetailViewController.h"
 #import "SVPullToRefresh.h"
-#import "XYManageMoneyCell.h"
+#import "ManageMoneyCell.h"
 #import "WKSegementSliderView.h"
 #import "NSString+Common.h"
 #import "UIView+Common.h"
-#import "XYManageMoneyModel.h"
-#import "XYBidModel.h"
+#import "ManageMoneyModel.h"
+#import "BidModel.h"
 
-static NSString *manageMoneyReuseID = @"XYManageMoneyCellReuseIdentifier";
+static NSString *manageMoneyReuseID = @"ManageMoneyCellReuseIdentifier";
 
 @interface XYTriggerTableView : UITableView
 // 下拉刷新是否触发过
@@ -34,7 +34,7 @@ static NSString *manageMoneyReuseID = @"XYManageMoneyCellReuseIdentifier";
 }
 @end
 
-@interface XYManageMoneyViewController ()<UITableViewDelegate, UITableViewDataSource, WKSegementSliderViewDelegate, XYManageMoneyCellDelegate>
+@interface XYManageMoneyViewController ()<UITableViewDelegate, UITableViewDataSource, WKSegementSliderViewDelegate, ManageMoneyCellDelegate>
 @property (nonatomic, strong) UIScrollView *contentScroll;
 @property (nonatomic, strong) WKSegementSliderView *sliderView;
 @property (nonatomic, strong) XYTriggerTableView *totalTable;
@@ -99,7 +99,7 @@ static NSString *manageMoneyReuseID = @"XYManageMoneyCellReuseIdentifier";
     view.rowHeight = 160.0;
     view.backgroundColor = XYGlobalUI.backgroundColor;
     view.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [view registerClass:[XYManageMoneyCell class] forCellReuseIdentifier:manageMoneyReuseID];
+    [view registerClass:[ManageMoneyCell class] forCellReuseIdentifier:manageMoneyReuseID];
     
     return view;
 }
@@ -216,7 +216,7 @@ static NSString *manageMoneyReuseID = @"XYManageMoneyCellReuseIdentifier";
         } onSuccess:^(id  _Nullable responseObject) {
             NSMutableArray *marr = [NSMutableArray arrayWithCapacity:20];
             for (NSDictionary *data in responseObject[@"data"][@"list"]) {
-                XYManageMoneyModel *model = [[XYManageMoneyModel alloc] initWithManageMoneyListApi:data];
+                ManageMoneyModel *model = [[ManageMoneyModel alloc] initWithManageMoneyListApi:data];
                 [marr addObject:model];
             }
             
@@ -270,7 +270,7 @@ static NSString *manageMoneyReuseID = @"XYManageMoneyCellReuseIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYManageMoneyModel *model = nil;
+    ManageMoneyModel *model = nil;
     if (tableView == _totalTable) {
         if (_totalDataList.count >= indexPath.row) {
             model = _totalDataList[indexPath.row];
@@ -289,7 +289,7 @@ static NSString *manageMoneyReuseID = @"XYManageMoneyCellReuseIdentifier";
         }
     }
     
-    XYManageMoneyCell *cell = [tableView dequeueReusableCellWithIdentifier:manageMoneyReuseID forIndexPath:indexPath];
+    ManageMoneyCell *cell = [tableView dequeueReusableCellWithIdentifier:manageMoneyReuseID forIndexPath:indexPath];
     cell.titleLabel.text = model.title;
     cell.progressView.progress = model.investProgress;
     cell.deadlineLabel.attributedText = model.planLimitMonthAtt;
@@ -306,8 +306,8 @@ static NSString *manageMoneyReuseID = @"XYManageMoneyCellReuseIdentifier";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     NSArray<NSMutableArray *> * datasources = @[_totalDataList, _greenDataList, _customDataList, _companyDataList];
-    XYManageMoneyModel *model = datasources[_sliderView.selectedIndex][indexPath.row];
-    XYBidDetailViewController *vc = [[XYBidDetailViewController alloc] initWithBidModel:model];
+    ManageMoneyModel *model = datasources[_sliderView.selectedIndex][indexPath.row];
+    BidDetailViewController *vc = [[BidDetailViewController alloc] initWithBidModel:model];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
@@ -335,9 +335,9 @@ static NSString *manageMoneyReuseID = @"XYManageMoneyCellReuseIdentifier";
 
 
 #pragma mark -
-#pragma mark - XYManageMoneyCellDelegate
+#pragma mark - ManageMoneyCellDelegate
 
-- (void)manageMoneyCell:(XYManageMoneyCell *)cell didPressedBuyButton:(UIButton *)button {
+- (void)manageMoneyCell:(ManageMoneyCell *)cell didPressedBuyButton:(UIButton *)button {
     NSArray *tables = @[_totalTable, _greenHandTable, _customTable, _companyTable];
     UITableView *table = tables[_sliderView.selectedIndex];
     NSIndexPath *index = [table indexPathForCell:cell];

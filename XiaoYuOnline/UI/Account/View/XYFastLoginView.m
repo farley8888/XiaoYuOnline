@@ -6,11 +6,11 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYFastLoginView.h"
+#import "FastLoginView.h"
 #import "NSTimer+Helper.h"
-#import "XYSendVerifyCodeView.h"
+#import "SendVerifyCodeView.h"
 
-@implementation XYFastLoginView
+@implementation FastLoginView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

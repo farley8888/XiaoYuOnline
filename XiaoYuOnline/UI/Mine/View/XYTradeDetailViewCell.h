@@ -6,8 +6,8 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYAboutUsTableViewCell.h"
+#import "AboutUsTableViewCell.h"
 
-@interface XYTradeDetailViewCell : XYAboutUsTableViewCell
+@interface XYTradeDetailViewCell : AboutUsTableViewCell
 
 @end

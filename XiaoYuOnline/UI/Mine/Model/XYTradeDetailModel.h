@@ -6,15 +6,15 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYBaseInfoModel.h"
+#import "BaseInfoModel.h"
 
-@class XYTradeRecoderModel;
-@interface XYTradeDetailModel : XYBaseInfoModel
+@class TradeRecoderModel;
+@interface XYTradeDetailModel : BaseInfoModel
 
 /**
  是否是特殊显示（特殊显示为红色）
  */
 @property (nonatomic, assign) BOOL isSpecial;
-+ (NSArray<XYTradeDetailModel *> *)tradeDatasourceListWithTradeModel:(XYTradeRecoderModel *)model;
++ (NSArray<XYTradeDetailModel *> *)tradeDatasourceListWithTradeModel:(TradeRecoderModel *)model;
 
 @end

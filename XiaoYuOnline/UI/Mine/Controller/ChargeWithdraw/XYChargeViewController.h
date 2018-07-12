@@ -6,13 +6,13 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYSettingRealNameController.h"
+#import "SettingRealNameController.h"
 #import "XYRealNameModel.h"
 
-@interface XYChargeWithdrawModel : XYRealNameModel
+@interface ChargeWithdrawModel : XYRealNameModel
 @end
 
-@interface XYChargeViewController : XYSettingRealNameController
+@interface XYChargeViewController : SettingRealNameController
 
 /**
  操作按钮，“立即充值”、“立即提现”

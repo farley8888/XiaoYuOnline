@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XYUserAsset.h"
+#import "OLXYUserAsset.h"
 
 /**
  用户状态
@@ -65,7 +65,7 @@ typedef NS_ENUM(NSUInteger, XYUserState) {
 // 用户状态
 @property (nonatomic, assign) XYUserState userState;
 // 用户资产
-@property (nonatomic, readonly) XYUserAsset *userAsset;
+@property (nonatomic, readonly) OLXYUserAsset *userAsset;
 
 - (instancetype)init NS_UNAVAILABLE;
 - (void)userSignOut;
@@ -75,7 +75,7 @@ typedef NS_ENUM(NSUInteger, XYUserState) {
 - (void)updateUserCardInfoWithData:(NSDictionary *)data;
 - (void)updateUserRealNameWithData:(NSDictionary *)data;
 
-- (XYUserAsset *)updateUserAssetWithApiData:(NSDictionary *)data;
+- (OLXYUserAsset *)updateUserAssetWithApiData:(NSDictionary *)data;
 
 FOUNDATION_EXTERN NSNotificationName const XYUserDidLoginNotification;
 FOUNDATION_EXTERN NSNotificationName const XYUserDidLogoutNotification;

@@ -6,9 +6,9 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYBaseInfoModel.h"
+#import "BaseInfoModel.h"
 
-@interface XYRealNameModel : XYBaseInfoModel
+@interface XYRealNameModel : BaseInfoModel
 
 @property (nonatomic, copy) NSString *placeHolder;
 

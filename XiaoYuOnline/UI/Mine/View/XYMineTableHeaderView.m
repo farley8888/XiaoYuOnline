@@ -6,14 +6,14 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYMineTableHeaderView.h"
-#import "XYAssetGraphView.h"
+#import "MineTableHeaderView.h"
+#import "AssetGraphView.h"
 
-@interface XYMineTableHeaderView ()
+@interface MineTableHeaderView ()
 @property (nonatomic, strong) CAGradientLayer *backgroundLayer;
 @end
 
-@implementation XYMineTableHeaderView
+@implementation MineTableHeaderView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

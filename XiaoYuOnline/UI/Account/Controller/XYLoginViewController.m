@@ -6,26 +6,26 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYLoginViewController.h"
-#import "XYRegisterController.h"
+#import "LoginViewController.h"
+#import "RegisterController.h"
 #import "WKSegementSliderView.h"
-#import "XYPasswordLoginView.h"
+#import "PasswordLoginView.h"
 #import "UIViewController+KeyboardHandler.h"
 #import "UIViewController+ShowTextHUD.h"
-#import "XYSendVerifyCodeView.h"
+#import "SendVerifyCodeView.h"
 #import "UIView+Common.h"
 
-@interface XYLoginViewController ()<WKSegementSliderViewDelegate, UIScrollViewDelegate, UITextFieldDelegate>
+@interface LoginViewController ()<WKSegementSliderViewDelegate, UIScrollViewDelegate, UITextFieldDelegate>
 @property (nonatomic, strong) UIImageView *logoView;
 @property (nonatomic, strong) UIScrollView  *contentScroll;
 @property (nonatomic, strong) UIScrollView  *bottomScroll;
 @property (nonatomic, strong) WKSegementSliderView *sliderView;
-@property (nonatomic, strong) XYFastLoginView *fastLoginView;
-@property (nonatomic, strong) XYPasswordLoginView *passwordLoginView;
+@property (nonatomic, strong) FastLoginView *fastLoginView;
+@property (nonatomic, strong) PasswordLoginView *passwordLoginView;
 
 @end
 
-@implementation XYLoginViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -59,7 +59,7 @@
     _bottomScroll.showsHorizontalScrollIndicator = NO;
     _bottomScroll.delegate = self;
     
-    _fastLoginView = [[XYFastLoginView alloc] init];
+    _fastLoginView = [[FastLoginView alloc] init];
     _fastLoginView.phoneTextField.delegate = self;
     _fastLoginView.bottomTextField.delegate = self;
     _fastLoginView.backgroundColor = XYGlobalUI.backgroundColor;
@@ -67,7 +67,7 @@
     [_fastLoginView.loginButon addTarget:self action:@selector(loginButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [_fastLoginView.sendVerifyCodeView.sendButton addTarget:self action:@selector(sendVerifyCodeButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     
-    _passwordLoginView = [[XYPasswordLoginView alloc] init];
+    _passwordLoginView = [[PasswordLoginView alloc] init];
     _passwordLoginView.phoneTextField.delegate = self;
     _passwordLoginView.bottomTextField.delegate = self;
     _passwordLoginView.backgroundColor = XYGlobalUI.backgroundColor;

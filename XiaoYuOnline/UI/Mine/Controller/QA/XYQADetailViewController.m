@@ -1,15 +1,15 @@
 //
-//  XYQADetailViewController.m
+//  QADetailViewController.m
 //  XiaoYuOnline
 //
 //  Created by wei.chen on 2018/4/4.
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYQADetailViewController.h"
+#import "QADetailViewController.h"
 #import "XYQAModel.h"
 
-@interface XYQADetailViewController ()
+@interface QADetailViewController ()
 
 @property (nonatomic, strong) UILabel *detailQALabel;
 @property (nonatomic, strong) XYQAModel *QAModel;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation XYQADetailViewController
+@implementation QADetailViewController
 
 - (instancetype)initWithQAModel:(XYQAModel *)model {
     self = [super init];

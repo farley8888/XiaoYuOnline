@@ -6,9 +6,9 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYBaseInfoModel.h"
+#import "BaseInfoModel.h"
 
-@interface XYLoanModel : XYBaseInfoModel
+@interface XYLoanModel : BaseInfoModel
 
 @property (nonatomic, copy) NSString *placeHolder;
 @property (nonatomic, strong) NSArray *sheetTitles;

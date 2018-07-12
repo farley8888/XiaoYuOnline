@@ -6,8 +6,8 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYClearNavPullToRefreshController.h"
+#import "ClearNavPullToRefreshController.h"
 
-@interface XYHomePageViewController : XYClearNavPullToRefreshController
+@interface XYHomePageViewController : ClearNavPullToRefreshController
 
 @end

@@ -6,12 +6,12 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYAboutUsTableViewCell.h"
-#import "XYSendVerifyCodeView.h"
+#import "AboutUsTableViewCell.h"
+#import "SendVerifyCodeView.h"
 
-@interface XYRealNameTableViewCell : XYAboutUsTableViewCell
+@interface XYRealNameTableViewCell : AboutUsTableViewCell
 
 @property (nonatomic, strong) UITextField *textField;
-@property (nonatomic, strong) XYSendVerifyCodeView *rightView;
+@property (nonatomic, strong) SendVerifyCodeView *rightView;
 
 @end

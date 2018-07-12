@@ -7,13 +7,13 @@
 //
 
 #import "XYTradeDetailModel.h"
-#import "XYTradeRecoderModel.h"
+#import "TradeRecoderModel.h"
 
 static NSDateFormatter *__tradeDateFormatter;
 
 @implementation XYTradeDetailModel
 
-+ (NSArray<XYTradeDetailModel *> *)tradeDatasourceListWithTradeModel:(XYTradeRecoderModel *)model {
++ (NSArray<XYTradeDetailModel *> *)tradeDatasourceListWithTradeModel:(TradeRecoderModel *)model {
     XYTradeDetailModel *m = [[XYTradeDetailModel alloc] initWithTitle:NSLocalizedString(@"Mine_TradeRecord_Bid_Status", nil) content:@"待还款" description:nil];
     m.isSpecial = YES;
     

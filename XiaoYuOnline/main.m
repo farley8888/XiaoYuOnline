@@ -13,7 +13,7 @@
 #define REQUEST_TIMEOUT 30 //请求超时时间（单位秒）
 
 #define ExaminingTime 7 //默认审核天数
-#define ExaminedTime 15 //默认审核通过时间（超过此时间默认通过）
+#define ExaminedTime 5 //默认审核通过时间（超过此时间默认通过）
 
 #define MY_VERSION @"mYclientVersion" //已经安装的版本，默认和build一致
 #define KEY_EXAMIN @"mYisExamin" //是否审核通过标识

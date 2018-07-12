@@ -7,21 +7,21 @@
 //
 
 #import "XYMineViewController.h"
-#import "XYBillTableViewController.h"
-#import "XYQAViewController.h"
-#import "XYAboutUsViewController.h"
-#import "XYSettingViewController.h"
-#import "XYWellBeingViewController.h"
-#import "XYWithdrawViewController.h"
-#import "XYTradeRecordViewController.h"
-#import "XYLoginViewController.h"
+#import "BillTableViewController.h"
+#import "QAViewController.h"
+#import "AboutUsViewController.h"
+#import "SettingViewController.h"
+#import "WellBeingViewController.h"
+#import "WithdrawViewController.h"
+#import "TradeRecordViewController.h"
+#import "LoginViewController.h"
 #import "XYChargeViewController.h"
 
-#import "XYMineTableHeaderView.h"
-#import "XYAssetGraphView.h"
-#import "XYMineTableViewCell.h"
+#import "MineTableHeaderView.h"
+#import "AssetGraphView.h"
+#import "MineTableViewCell.h"
 #import "UIImage+Common.h"
-#import "XYMineTableModel.h"
+#import "MineTableModel.h"
 
 static NSString *mineTableReuseID = @"XYMineCellReuseIdentifier";
 
@@ -32,8 +32,8 @@ static NSString *mineTableReuseID = @"XYMineCellReuseIdentifier";
 @property (nonatomic, strong) UIImage *originNavigationBarImage;
 @property (nonatomic, strong) UIImage *yellowNavigationBarImage;
 @property (nonatomic, strong) UIImage *navigationShadowImage;
-@property (nonatomic, strong) XYMineTableHeaderView *tableHeader;
-@property (nonatomic, strong) NSArray <XYMineTableModel *> *itemList;
+@property (nonatomic, strong) MineTableHeaderView *tableHeader;
+@property (nonatomic, strong) NSArray <MineTableModel *> *itemList;
 
 @end
 
@@ -51,12 +51,12 @@ static NSString *mineTableReuseID = @"XYMineCellReuseIdentifier";
     _originNavigationBarImage = [self.navigationController.navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault];
     _yellowNavigationBarImage = [UIImage imageWithColor:XYGlobalUI.yellowColor size:CGSizeMake(2, 2)];
     _navigationShadowImage = [UIImage new];
-    _itemList = [XYMineTableModel mineTableViewItemList];
+    _itemList = [MineTableModel mineTableViewItemList];
     
     self.tableView.backgroundColor = XYGlobalUI.backgroundColor;
     self.tableView.sectionHeaderHeight = 8.0;
     self.tableView.rowHeight = 48.0;
-    [self.tableView registerClass:[XYMineTableViewCell class] forCellReuseIdentifier:mineTableReuseID];
+    [self.tableView registerClass:[MineTableViewCell class] forCellReuseIdentifier:mineTableReuseID];
     self.navigationController.navigationBar.translucent = NO;
     
     self.tableView.tableHeaderView = [self tableHeaderView];
@@ -82,13 +82,13 @@ static NSString *mineTableReuseID = @"XYMineCellReuseIdentifier";
         } showHUD:(self.view.window != nil) onSuccess:^(id  _Nullable responseObject) {
             [XYCurrentUser updateUserCardInfoWithData:responseObject[@"account"][@"user"]];
             [XYCurrentUser updateUserRealNameWithData:responseObject[@"account"][@"user"]];
-            XYUserAsset *asset = [XYCurrentUser updateUserAssetWithApiData:responseObject];
+            OLXYUserAsset *asset = [XYCurrentUser updateUserAssetWithApiData:responseObject];
             [weakSelf updateTableHeaderViewWiteAsset:asset];
         }];
     }
 }
 
-- (void)updateTableHeaderViewWiteAsset:(XYUserAsset *)asset {
+- (void)updateTableHeaderViewWiteAsset:(OLXYUserAsset *)asset {
     
     NSString *totalIncome = [asset.totalProfit stringByAppendingFormat:@"\n%@", NSLocalizedString(@"Mine_TotalIncomes", nil)];
     NSString *usable = [NSString stringWithFormat:@"%@\n%@", asset.useable, NSLocalizedString(@"Mine_UseableBalance", nil)];
@@ -102,7 +102,7 @@ static NSString *mineTableReuseID = @"XYMineCellReuseIdentifier";
 }
 
 - (UIView *)tableHeaderView {
-    XYMineTableHeaderView *headerView = [[XYMineTableHeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 330)];
+    MineTableHeaderView *headerView = [[MineTableHeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 330)];
     headerView.delegate = self;
     _tableHeader = headerView;
     
@@ -134,8 +134,8 @@ static NSString *mineTableReuseID = @"XYMineCellReuseIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    XYMineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:mineTableReuseID forIndexPath:indexPath];
-    XYMineTableModel *model = _itemList[indexPath.section];
+    MineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:mineTableReuseID forIndexPath:indexPath];
+    MineTableModel *model = _itemList[indexPath.section];
     cell.imageView.image = model.image;
     cell.textLabel.text = model.title;
     
@@ -150,28 +150,28 @@ static NSString *mineTableReuseID = @"XYMineCellReuseIdentifier";
     if (XYCurrentUser.userState == XYUserStateLogin) {
         switch (indexPath.section) {
             case 0:   // 账单
-                desVC = [[XYBillTableViewController alloc] init];
+                desVC = [[BillTableViewController alloc] init];
                 break;
             case 1:   // 交易记录
-                desVC = [[XYTradeRecordViewController alloc] init];
+                desVC = [[TradeRecordViewController alloc] init];
                 break;
             case 2:   // 福利
-                desVC = [[XYWellBeingViewController alloc] init];
+                desVC = [[WellBeingViewController alloc] init];
                 break;
             case 3:   // 常见问题
-                desVC = [[XYQAViewController alloc] init];
+                desVC = [[QAViewController alloc] init];
                 break;
             case 4:   // 关于我们
-                desVC = [[XYAboutUsViewController alloc] init];
+                desVC = [[AboutUsViewController alloc] init];
                 break;
             case 5:   // 设置
-                desVC = [[XYSettingViewController alloc] init];
+                desVC = [[SettingViewController alloc] init];
                 break;
             default:
                 break;
         }
     } else {
-        desVC = [[XYLoginViewController alloc] init];
+        desVC = [[LoginViewController alloc] init];
     }
     
     if (desVC) {
@@ -210,12 +210,12 @@ static NSString *mineTableReuseID = @"XYMineCellReuseIdentifier";
     }
 }
 
-- (void)mineHeaderView:(XYMineTableHeaderView *)view buttonActionWityType:(XYMineHeaderButtonType)type {
+- (void)mineHeaderView:(MineTableHeaderView *)view buttonActionWityType:(XYMineHeaderButtonType)type {
     if (type == XYMineHeaderButtonTypeAvatar) {
         if (XYCurrentUser.userState == XYUserStateLogin) {
             
         } else {
-            XYLoginViewController *vc = [[XYLoginViewController alloc] init];
+            LoginViewController *vc = [[LoginViewController alloc] init];
             vc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc animated:YES];
         }
@@ -224,7 +224,7 @@ static NSString *mineTableReuseID = @"XYMineCellReuseIdentifier";
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     } else if (type == XYMineHeaderButtonTypeWithdraw) {
-        XYWithdrawViewController *vc = [[XYWithdrawViewController alloc] init];
+        WithdrawViewController *vc = [[WithdrawViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }

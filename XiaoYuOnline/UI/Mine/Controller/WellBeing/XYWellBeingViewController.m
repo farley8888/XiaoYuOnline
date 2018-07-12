@@ -6,19 +6,19 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYWellBeingViewController.h"
-#import "XYCardBagViewController.h"
-#import "XYScoreShopViewController.h"
-#import "XYWellBeingViewCell.h"
-#import "XYWellBeingModel.h"
+#import "WellBeingViewController.h"
+#import "CardBagViewController.h"
+#import "ScoreShopViewController.h"
+#import "WellBeingViewCell.h"
+#import "WellBeingModel.h"
 
 static NSString *wellBeingReuseID = @"XYWellBeingReuseIdentifier";
 
-@interface XYWellBeingViewController ()
+@interface WellBeingViewController ()
 @property (nonatomic, strong) NSArray<XYWellBeingModel *> *itemList;
 @end
 
-@implementation XYWellBeingViewController
+@implementation WellBeingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

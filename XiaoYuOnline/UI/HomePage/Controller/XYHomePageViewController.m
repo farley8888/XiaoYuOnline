@@ -7,19 +7,19 @@
 //
 
 #import "XYHomePageViewController.h"
-#import "XYBidDetailViewController.h"
-#import "XYPlanBidViewController.h"
-#import "XYInviteFrinendController.h"
+#import "BidDetailViewController.h"
+#import "PlanBidViewController.h"
+#import "InviteFrinendController.h"
 #import "UIViewController+ShowTextHUD.h"
-#import "XYLoginViewController.h"
-#import "XYLoanViewController.h"
-#import "XYHomeFirstViewCell.h"
-#import "XYHomeSecondViewCell.h"
-#import "XYHomeSectionHeader.h"
-#import "XYHomeThirdViewCell.h"
+#import "LoginViewController.h"
+#import "LoanViewController.h"
+#import "HomeFirstViewCell.h"
+#import "HomeSecondViewCell.h"
+#import "HomeSectionHeader.h"
+#import "HomeThirdViewCell.h"
 #import <YYKit/NSDictionary+YYAdd.h>
-#import "XYHomeSignView.h"
-#import "XYBidModel.h"
+#import "HomeSignView.h"
+#import "BidModel.h"
 
 static NSString *homeFirstReuseID = @"XYHomeFirstCellReuseIdentifier";
 static NSString *homeSecondReuseID = @"XYHomeSecondCellReuseIdentifier";
@@ -27,7 +27,7 @@ static NSString *homeThirdReuseID = @"XYHomeThirdCellReuseIdentifier";
 static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
 
 @interface XYHomePageViewController ()<UITableViewDelegate, UITableViewDataSource, XYHomeFirstCellDelegate, XYHomeThirdViewCellDelegate, XYHomeSignViewDelegate>
-@property (nonatomic, strong) NSMutableArray<XYBidModel *> *todayRecommend;
+@property (nonatomic, strong) NSMutableArray<BidModel *> *todayRecommend;
 @end
 
 @implementation XYHomePageViewController
@@ -54,10 +54,10 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
     header.frame = CGRectMake(0, 0, SCREEN_WIDTH, 0.1);
     self.tableView.tableHeaderView = header;
     
-    [self.tableView registerClass:[XYHomeFirstViewCell class] forCellReuseIdentifier:homeFirstReuseID];
-    [self.tableView registerClass:[XYHomeSecondViewCell class] forCellReuseIdentifier:homeSecondReuseID];
-    [self.tableView registerClass:[XYHomeThirdViewCell class] forCellReuseIdentifier:homeThirdReuseID];
-    [self.tableView registerClass:[XYHomeSectionHeader class] forHeaderFooterViewReuseIdentifier:homeHeaderReuseID];
+    [self.tableView registerClass:[HomeFirstViewCell class] forCellReuseIdentifier:homeFirstReuseID];
+    [self.tableView registerClass:[HomeSecondViewCell class] forCellReuseIdentifier:homeSecondReuseID];
+    [self.tableView registerClass:[HomeThirdViewCell class] forCellReuseIdentifier:homeThirdReuseID];
+    [self.tableView registerClass:[HomeSectionHeader class] forHeaderFooterViewReuseIdentifier:homeHeaderReuseID];
 }
 
 - (void)loadDataWithPage:(NSInteger)page isRefresh:(BOOL)isRefresh {
@@ -71,7 +71,7 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
     } onSuccess:^(id  _Nullable responseObject) {
         NSMutableArray *marr = [NSMutableArray array];
         for (NSDictionary * data in responseObject[@"list"][@"list"]) {
-            XYBidModel *bid = [[XYBidModel alloc] initWithHomePageListApi:data];
+            BidModel *bid = [[BidModel alloc] initWithHomePageListApi:data];
             [marr addObject:bid];
         }
         if (isRefresh) {
@@ -104,7 +104,7 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
     if (section == 0) {
         return nil;
     } else {
-        XYHomeSectionHeader *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:homeHeaderReuseID];
+        HomeSectionHeader *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:homeHeaderReuseID];
         if (section == 1) {
             header.titleImageView.image = [UIImage imageNamed:@"home_crown_bg"];
             header.titleLabel.text = NSLocalizedString(@"HomePage_NewHand", nil);
@@ -119,9 +119,9 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        return [XYHomeFirstViewCell cellHeight];
+        return [HomeFirstViewCell cellHeight];
     } else if(indexPath.section == 1) {
-        return [XYHomeSecondViewCell cellHeight];
+        return [HomeSecondViewCell cellHeight];
     } else {
         return 164.0;
     }
@@ -150,17 +150,17 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *desCell = nil;
     if (indexPath.section == 0) {
-        XYHomeFirstViewCell *cell0 = [tableView dequeueReusableCellWithIdentifier:homeFirstReuseID forIndexPath:indexPath];
+        HomeFirstViewCell *cell0 = [tableView dequeueReusableCellWithIdentifier:homeFirstReuseID forIndexPath:indexPath];
         cell0.delegate = self;
         desCell = cell0;
     } else if (indexPath.section == 1) {
-        XYHomeSecondViewCell *cell = [tableView dequeueReusableCellWithIdentifier:homeSecondReuseID forIndexPath:indexPath];
+        HomeSecondViewCell *cell = [tableView dequeueReusableCellWithIdentifier:homeSecondReuseID forIndexPath:indexPath];
         cell.imageView.image = [UIImage imageNamed:@"Home_second_cell"];
         
         desCell = cell;
     } else {
-        XYBidModel *model = _todayRecommend[indexPath.row];
-        XYHomeThirdViewCell *cell = [tableView dequeueReusableCellWithIdentifier:homeThirdReuseID forIndexPath:indexPath];
+        BidModel *model = _todayRecommend[indexPath.row];
+        HomeThirdViewCell *cell = [tableView dequeueReusableCellWithIdentifier:homeThirdReuseID forIndexPath:indexPath];
         cell.profitImageView.image = [UIImage imageNamed:@"home_profit_bg"];
         cell.voucherImageView.image = [UIImage imageNamed:@"home_voucher_bg"];
         cell.previousYearProfit.attributedText = model.yearProfitRatioAtt;
@@ -194,8 +194,8 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if (indexPath.section == 2) {
-        XYBidModel *model = _todayRecommend[indexPath.row];
-        XYBidDetailViewController *vc = [[XYBidDetailViewController alloc] initWithBidModel:model];
+        BidModel *model = _todayRecommend[indexPath.row];
+        BidDetailViewController *vc = [[BidDetailViewController alloc] initWithBidModel:model];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
@@ -203,9 +203,9 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
 
 #pragma mark - XYHomeFirstCellDelegate
 
-- (void)firstCell:(XYHomeFirstViewCell *)cell didPressedButtonWithType:(XYHomeButtonType)type {
+- (void)firstCell:(HomeFirstViewCell *)cell didPressedButtonWithType:(XYHomeButtonType)type {
     if (XYCurrentUser.userState != XYUserStateLogin) {
-        XYLoginViewController *login = [[XYLoginViewController alloc] init];
+        LoginViewController *login = [[LoginViewController alloc] init];
         login.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:login animated:YES];
         
@@ -213,7 +213,7 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
     }
     
     if (type == XYHomeButtonTypeSign) {
-        XYHomeSignView *view = [XYHomeSignView signView];
+        HomeSignView *view = [HomeSignView signView];
         view.delegate = self;
         [view show];
         
@@ -230,15 +230,15 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
             [view setSeletedDates:dates];
         }];
     } else if (type == XYHomeButtonTypeAppointment) {
-        XYLoanViewController *vc = [[XYLoanViewController alloc] init];
+        LoanViewController *vc = [[LoanViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     } else if (type == XYHomeButtonTypeBid) {
-        XYPlanBidViewController *bid = [[XYPlanBidViewController alloc] init];
+        PlanBidViewController *bid = [[PlanBidViewController alloc] init];
         bid.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:bid animated:YES];
     } else if (type == XYHomeButtonTypeInvite) {
-        XYInviteFrinendController *vc = [[XYInviteFrinendController alloc] init];
+        InviteFrinendController *vc = [[InviteFrinendController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
@@ -247,7 +247,7 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
 #pragma mark -
 #pragma mark - XYHomeThirdViewCellDelegate
 
-- (void)thirdCell:(XYHomeThirdViewCell *)cell didPressedBuyButton:(UIButton *)buyButton {
+- (void)thirdCell:(HomeThirdViewCell *)cell didPressedBuyButton:(UIButton *)buyButton {
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     [self tableView:self.tableView didSelectRowAtIndexPath:indexPath];
 }
@@ -255,7 +255,7 @@ static NSString *homeHeaderReuseID = @"XYHomeHeaderReuseIdentifier";
 #pragma mark -
 #pragma mark - HomeSignViewDelegate
 
-- (void)homeSignView:(XYHomeSignView *)view didPressSignButton:(UIButton *)signButton {
+- (void)homeSignView:(HomeSignView *)view didPressSignButton:(UIButton *)signButton {
     [self sendSilentRequest:^(XMRequest * _Nonnull request) {
         request.api = HomePage_Sigin_URL;
         request.parameters = @{@"userId" : XYCurrentUser.userID};

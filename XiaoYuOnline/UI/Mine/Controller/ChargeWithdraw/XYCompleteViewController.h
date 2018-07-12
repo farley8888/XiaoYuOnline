@@ -6,9 +6,9 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "XYBaseViewController.h"
+#import "BaseViewController.h"
 
-@interface XYCompleteViewController : XYBaseViewController
+@interface XYCompleteViewController : BaseViewController
 
 @property (nonatomic, assign) BOOL success;
 @property (nonatomic, copy) NSString *buttonTitle;

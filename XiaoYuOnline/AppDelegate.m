@@ -7,10 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "XYGuideViewController.h"
+#import "GuideViewController.h"
 #import "UserDefaultsHelper.h"
 #import "UIImage+Common.h"
-#import "XYRootViewController.h"
+#import "RootViewController.h"
 #import "ThirdPartHelper.h"
 
 //ftool
@@ -40,9 +40,9 @@
         UIViewController *rootViewController = nil;
         if ([UserDefaultsHelper isFirstLaunchOrUpdate]) {
         //        rootViewController = [[XYGuideViewController alloc] init];
-            rootViewController = [[XYRootViewController alloc] init];
+            rootViewController = [[RootViewController alloc] init];
         } else {
-            rootViewController = [[XYRootViewController alloc] init];
+            rootViewController = [[RootViewController alloc] init];
         }
 
         self.window.rootViewController = rootViewController;
@@ -61,14 +61,14 @@
     //判断应用程序是否更新了版本
     NSLog(@"clientVersion = [%@]", clientVersion);
     if ([clientVersion isEqualToString:CLIENT_VERSION]) {
-        NSLog(@"未更新,正常使用");
+        NSLog(@"未更新,正常使用2");
         
     }else if(clientVersion == nil ){
-        NSLog(@"首次安装");
+        NSLog(@"首次安装2");
         [[NSUserDefaults standardUserDefaults] setObject:CLIENT_VERSION forKey:@"clientVersion"];
         [FUsersTool setDefaultUser];
     } else{
-        NSLog(@"更新了APP");
+        NSLog(@"更新了APP2");
         [[NSUserDefaults standardUserDefaults] setObject:CLIENT_VERSION forKey:@"clientVersion"];
     }
     

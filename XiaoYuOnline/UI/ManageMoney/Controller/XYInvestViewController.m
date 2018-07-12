@@ -9,7 +9,7 @@
 #import "XYInvestViewController.h"
 #import "UIViewController+ShowTextHUD.h"
 #import "UIView+Common.h"
-#import "XYPreferentialModel.h"
+#import "PreferentialModel.h"
 
 @interface XYInvestViewController () {
     UIView *_lineView;
@@ -38,9 +38,9 @@
 @property (nonatomic, strong) UIButton *investButton;
 @property (nonatomic, strong) UIView *investBackView;
 @property (nonatomic, strong) NSMutableArray<UIButton *> *voucherImageList;
-@property (nonatomic, strong) NSMutableArray<XYPreferentialModel *> *preferentialList;
-@property (nonatomic, strong) NSMutableArray<XYPreferentialModel *> *cashTicketList;
-@property (nonatomic, strong) NSMutableArray<XYPreferentialModel *> *profitTicketList;
+@property (nonatomic, strong) NSMutableArray<PreferentialModel *> *preferentialList;
+@property (nonatomic, strong) NSMutableArray<PreferentialModel *> *cashTicketList;
+@property (nonatomic, strong) NSMutableArray<PreferentialModel *> *profitTicketList;
 
 @property (nonatomic, strong) UIButton *lastSelectedButton;
 @property (nonatomic, strong) UIButton *selectedTicketButton;
@@ -218,7 +218,7 @@
         CGFloat y = (_vouchersView.height - w) / 2.0;
         
         for (NSUInteger i = 0, count = list.count; i < count; i ++) {
-            XYPreferentialModel *model = list[i];
+            PreferentialModel *model = list[i];
             UIButton *ticketBtn = [UIButton buttonWithType:UIButtonTypeCustom];
             [ticketBtn setBackgroundImage:[UIImage imageNamed:@"manage_invest_voucher_gray"] forState:UIControlStateDisabled];
             [ticketBtn addTarget:self action:@selector(selectTicketButtonAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -343,7 +343,7 @@
                 request.parameters = @{@"userId" : XYCurrentUser.userID, @"id" : weakSelf.bidId};
             } showHUD:YES onSuccess:^(id  _Nullable responseObject) {
                 for (NSDictionary *data in responseObject[@"welfares"]) {
-                    XYPreferentialModel *model = [[XYPreferentialModel alloc] initWithApiData:data];
+                    PreferentialModel *model = [[PreferentialModel alloc] initWithApiData:data];
                     if (model.type == XYPreferentialTypeBonus) {
                         [weakSelf.preferentialList addObject:model];
                     } else if (model.type == XYPreferentialTypeCashTicket) {
@@ -425,7 +425,7 @@
         }
         
         for (NSUInteger i = 0, count = list.count; i < count; i ++) {
-            XYPreferentialModel *model = list[i];
+            PreferentialModel *model = list[i];
             UIButton *btn = _voucherImageList[i];
             btn.enabled = model.usableMoney.floatValue <= value;
             if (model.usableMoney.floatValue > value && [btn titleForState:UIControlStateNormal]) {
@@ -477,7 +477,7 @@
     for (UIButton *btn in _voucherImageList) {
         if (btn.selected) {
             NSInteger index = [_voucherImageList indexOfObject:btn];
-            XYPreferentialModel *model = list[index];
+            PreferentialModel *model = list[index];
             welfareId = model.preferentialID;
             
             break;

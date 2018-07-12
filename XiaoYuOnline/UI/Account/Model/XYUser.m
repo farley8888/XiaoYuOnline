@@ -7,7 +7,7 @@
 //
 
 #import "XYUser.h"
-#import "XYDatabaseQueueManager.h"
+#import "DatabaseQueueManager.h"
 #import <YYKit/YYKit.h>
 
 NSNotificationName const XYUserDidLoginNotification = @"XYUserDidLoginNotification";
@@ -100,9 +100,9 @@ NSNotificationName const XYUserAssetDidChangedNotification = @"XYUserAssetDidCha
     };
 }
 
-- (XYUserAsset *)updateUserAssetWithApiData:(NSDictionary *)data {
+- (OLXYUserAsset *)updateUserAssetWithApiData:(NSDictionary *)data {
     if (data) {
-        _userAsset = [[XYUserAsset alloc] initWithMineAssetApiData:data];
+        _userAsset = [[OLXYUserAsset alloc] initWithMineAssetApiData:data];
     }
     return _userAsset;
 }
@@ -151,7 +151,7 @@ NSNotificationName const XYUserAssetDidChangedNotification = @"XYUserAssetDidCha
  */
 - (void)initDBLoginUserInDB {
     __block XYUser *user = self;
-    [[XYDatabaseQueueManager shareInstance].queue inDatabase:^(FMDatabase * _Nonnull db) {
+    [[DatabaseQueueManager shareInstance].queue inDatabase:^(FMDatabase * _Nonnull db) {
         FMResultSet *set = [db executeQuery:@"select * from user where state=?", @(XYUserStateLogin)];
         while ([set next]) {
             user.userID = [set stringForColumn:@"user_id"];
@@ -179,7 +179,7 @@ NSNotificationName const XYUserAssetDidChangedNotification = @"XYUserAssetDidCha
 
 - (BOOL)updateLoginUserInDB {
     __block BOOL success = NO;
-    [[XYDatabaseQueueManager shareInstance].queue inDatabase:^(FMDatabase * _Nonnull db) {
+    [[DatabaseQueueManager shareInstance].queue inDatabase:^(FMDatabase * _Nonnull db) {
         FMResultSet *set = [db executeQuery:@"select * from user where user_id=?", self.userID];
         if ([set next]) {
             success = [db executeUpdate:@"update user set avatar=?, nickname=?, phone_num=?, real_name=?, part_phone_num=?, api_id=?,bank_id=?, bank_name=?, bank_num=?, part_bank_num=?, card_id=?, part_card_id=?, recommend_phone_num=?, user_type=?, api_state=?, app_sign=?, create_time=?, state=?", self.avatar, self.nickname, self.phoneNumber, self.realName, self.partPhoneNumber, self.apiID, self.bankCardIdentifier, self.bankName, self.bankCardID, self.partBankCardID, self.cardID, self.partCardID, self.recommendPhoneNum, @(self.userType), @(self.apiStatus), @(self.appSign), @(self.createTime), @(self.userState)];
@@ -193,7 +193,7 @@ NSNotificationName const XYUserAssetDidChangedNotification = @"XYUserAssetDidCha
 
 - (BOOL)updateCard:(NSString *)cardID realName:(NSString *)realName partCardID:(NSString *)partCardID {
     __block BOOL success = NO;
-    [[XYDatabaseQueueManager shareInstance].queue inDatabase:^(FMDatabase * _Nonnull db) {
+    [[DatabaseQueueManager shareInstance].queue inDatabase:^(FMDatabase * _Nonnull db) {
         success = [db executeUpdate:@"update user set card_id=?, real_name=?, part_card_id=? where user_id=?", cardID, realName, partCardID, self.userID];
     }];
     return success;
@@ -201,7 +201,7 @@ NSNotificationName const XYUserAssetDidChangedNotification = @"XYUserAssetDidCha
 
 - (BOOL)updateBank:(NSString *)bankNum name:(NSString *)name partBankNum:(NSString *)partBankNum bankID:(NSString *)bankID {
     __block BOOL success = NO;
-    [[XYDatabaseQueueManager shareInstance].queue inDatabase:^(FMDatabase * _Nonnull db) {
+    [[DatabaseQueueManager shareInstance].queue inDatabase:^(FMDatabase * _Nonnull db) {
         success = [db executeUpdate:@"update user set bank_num=?, bank_name=?, part_bank_num=?, bank_id=? where user_id=?", bankNum, name, partBankNum, bankID, self.userID];
     }];
     return success;
@@ -209,7 +209,7 @@ NSNotificationName const XYUserAssetDidChangedNotification = @"XYUserAssetDidCha
 
 - (BOOL)userDidSignOut {
     __block BOOL success = NO;
-    [[XYDatabaseQueueManager shareInstance].queue inDatabase:^(FMDatabase * _Nonnull db) {
+    [[DatabaseQueueManager shareInstance].queue inDatabase:^(FMDatabase * _Nonnull db) {
         success = [db executeUpdate:@"update user set state=? where user_id=?", @(XYUserStateSignOut), self.userID];
     }];
     return success;
