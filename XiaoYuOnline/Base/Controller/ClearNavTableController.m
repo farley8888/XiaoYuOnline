@@ -8,6 +8,7 @@
 
 #import "ClearNavTableController.h"
 
+#import "ClearNavTableController+Initview.h"
 @interface ClearNavTableController ()
 @property (nonatomic, strong) UIImage *originNavigationBarImage;
 @property (nonatomic, assign) BOOL isTranslucent;

@@ -6,9 +6,11 @@
 //  Copyright © 2017年 WilliamChen. All rights reserved.
 //
 
-#import "UIColor+Helper.h"
+#import "UIColor+HelperInfrate.h"
 
+#import "UIColor+Helper.h"
 @implementation UIColor (Helper)
+
 
 static inline NSUInteger hexStrToInt(NSString *str) {
     uint32_t result = 0;

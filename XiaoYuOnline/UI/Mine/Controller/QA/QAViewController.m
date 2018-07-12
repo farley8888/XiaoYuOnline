@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "QAViewController.h"
+#import "QAViewController+Custeffet.h"
 #import "QATableViewCell.h"
 #import "QAModel.h"
 #import "UIImage+Common.h"

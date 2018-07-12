@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "MineTableHeaderView.h"
+#import "MineTableHeaderView+Custeffet.h"
 #import "AssetGraphView.h"
 
 @interface MineTableHeaderView ()

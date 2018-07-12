@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "MineTableViewCell.h"
+#import "MineTableViewCell+Custeffet.h"
 #import "UIView+Common.h"
 
 @implementation MineTableViewCell {

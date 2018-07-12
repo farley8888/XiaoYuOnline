@@ -8,6 +8,7 @@
 
 #import "GuideViewController.h"
 #import "RootViewController.h"
+#import "GuideViewController+Custeffet.h"
 
 @interface GuideViewController ()
 @property (nonatomic, strong) UIScrollView *scrollView;

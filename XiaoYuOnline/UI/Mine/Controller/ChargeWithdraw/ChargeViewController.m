@@ -7,7 +7,7 @@
 //
 
 //#import "ChargeViewController.h"
-#import "ChargeViewController.h"
+#import "ChargeViewController+Custeffet.h"
 #import "RealNameTableViewCell.h"
 #import "ChargeWithdrawViewCell.h"
 #import "CompleteViewController.h"

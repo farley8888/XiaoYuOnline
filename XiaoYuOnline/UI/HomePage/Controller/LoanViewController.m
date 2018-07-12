@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "LoanViewController.h"
+#import "LoanViewController+Custeffet.h"
 #import "LoanDescriptionCell.h"
 #import "UITextView+Placeholder.h"
 #import "UIViewController+ShowTextHUD.h"

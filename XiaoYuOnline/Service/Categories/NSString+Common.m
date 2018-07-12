@@ -8,6 +8,7 @@
 
 #import "NSString+Common.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "NSString+CommonInfrate.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
 

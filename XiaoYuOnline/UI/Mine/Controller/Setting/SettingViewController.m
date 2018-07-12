@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "SettingViewController.h"
+#import "SettingViewController+Custeffet.h"
 #import "SettingTableViewCell.h"
 #import "SettingRealNameController.h"
 #import "ShippingAddressController.h"

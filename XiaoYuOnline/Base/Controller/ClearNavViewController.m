@@ -8,6 +8,7 @@
 
 #import "ClearNavViewController.h"
 
+#import "ClearNavViewController+Initview.h"
 
 @interface ClearNavViewController ()
 

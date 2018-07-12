@@ -7,6 +7,143 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183B18AB20F783A3005B27AD /* JinnLockPassword+Infrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B187B20F783A3005B27AD /* JinnLockPassword+Infrate.m */; };
+		183B18AC20F783A3005B27AD /* UIScrollView+SVPullToRefreshInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B187D20F783A3005B27AD /* UIScrollView+SVPullToRefreshInfrate.m */; };
+		183B18AD20F783A3005B27AD /* UIViewController+ShowTextHUDInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B187E20F783A3005B27AD /* UIViewController+ShowTextHUDInfrate.m */; };
+		183B18AE20F783A3005B27AD /* JinnLockCircle+Infrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B188420F783A3005B27AD /* JinnLockCircle+Infrate.m */; };
+		183B18AF20F783A3005B27AD /* UIViewController+KeyboardHandlerInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B188920F783A3005B27AD /* UIViewController+KeyboardHandlerInfrate.m */; };
+		183B18B020F783A3005B27AD /* JinnLockIndicator+Infrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B188A20F783A3005B27AD /* JinnLockIndicator+Infrate.m */; };
+		183B18B120F783A3005B27AD /* NSString+NetworkEncryptionInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B188C20F783A3005B27AD /* NSString+NetworkEncryptionInfrate.m */; };
+		183B18B220F783A3005B27AD /* ThirdPartHelper+Infrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B188D20F783A3005B27AD /* ThirdPartHelper+Infrate.m */; };
+		183B18B420F783A3005B27AD /* SVPullToRefreshView+Infrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B189020F783A3005B27AD /* SVPullToRefreshView+Infrate.m */; };
+		183B18B520F783A3005B27AD /* UITextView+PlaceholderInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B189420F783A3005B27AD /* UITextView+PlaceholderInfrate.m */; };
+		183B18B620F783A3005B27AD /* UIView+FrameLayoutMethodInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B189620F783A3005B27AD /* UIView+FrameLayoutMethodInfrate.m */; };
+		183B18B720F783A3005B27AD /* NSDictionary+CommonInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B189920F783A3005B27AD /* NSDictionary+CommonInfrate.m */; };
+		183B18B820F783A3005B27AD /* UIColor+HelperInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B189A20F783A3005B27AD /* UIColor+HelperInfrate.m */; };
+		183B18BA20F783A3005B27AD /* UIScrollView+SVInfiniteScrollingInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B189C20F783A3005B27AD /* UIScrollView+SVInfiniteScrollingInfrate.m */; };
+		183B18BB20F783A3005B27AD /* UIImage+CommonInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B189E20F783A3005B27AD /* UIImage+CommonInfrate.m */; };
+		183B18BC20F783A3005B27AD /* NSString+CommonInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B189F20F783A3005B27AD /* NSString+CommonInfrate.m */; };
+		183B18BD20F783A3005B27AD /* DatabaseQueueManager+Infrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18A020F783A3005B27AD /* DatabaseQueueManager+Infrate.m */; };
+		183B18BE20F783A3005B27AD /* UIView+CommonInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18A120F783A3005B27AD /* UIView+CommonInfrate.m */; };
+		183B18BF20F783A3005B27AD /* NSTimer+HelperInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18A520F783A3005B27AD /* NSTimer+HelperInfrate.m */; };
+		183B18C020F783A3005B27AD /* SVInfiniteScrollingView+Infrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18A720F783A3005B27AD /* SVInfiniteScrollingView+Infrate.m */; };
+		183B18C120F783A3005B27AD /* UserDefaultsHelper+Infrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18A820F783A3005B27AD /* UserDefaultsHelper+Infrate.m */; };
+		183B18C220F783A3005B27AD /* UIView+FirstResponderInfrate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18AA20F783A3005B27AD /* UIView+FirstResponderInfrate.m */; };
+		183B197E20F7875C005B27AD /* InviteFrinendController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18C520F7875C005B27AD /* InviteFrinendController+Custeffet.m */; };
+		183B197F20F7875C005B27AD /* GesturePasswordNextController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18C620F7875C005B27AD /* GesturePasswordNextController+Custeffet.m */; };
+		183B198020F7875C005B27AD /* OLUser+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18C920F7875C005B27AD /* OLUser+Custeffet.m */; };
+		183B198120F7875C005B27AD /* SettingViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18CD20F7875C005B27AD /* SettingViewController+Custeffet.m */; };
+		183B198220F7875C005B27AD /* ScoreShopTableViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18CE20F7875C005B27AD /* ScoreShopTableViewCell+Custeffet.m */; };
+		183B198320F7875C005B27AD /* TradeDetailViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18D020F7875C005B27AD /* TradeDetailViewController+Custeffet.m */; };
+		183B198420F7875D005B27AD /* BillTableViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18D220F7875C005B27AD /* BillTableViewController+Custeffet.m */; };
+		183B198520F7875D005B27AD /* HomeSecondViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18D320F7875C005B27AD /* HomeSecondViewCell+Custeffet.m */; };
+		183B198620F7875D005B27AD /* BidThirdViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18D420F7875C005B27AD /* BidThirdViewCell+Custeffet.m */; };
+		183B198720F7875D005B27AD /* SocreShopHeader+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18D620F7875C005B27AD /* SocreShopHeader+Custeffet.m */; };
+		183B198820F7875D005B27AD /* DiscoveryModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18D720F7875C005B27AD /* DiscoveryModel+Custeffet.m */; };
+		183B198920F7875D005B27AD /* LoanViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18DA20F7875C005B27AD /* LoanViewCell+Custeffet.m */; };
+		183B198A20F7875D005B27AD /* SigleTextFieldCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18DE20F7875C005B27AD /* SigleTextFieldCell+Custeffet.m */; };
+		183B198B20F7875D005B27AD /* TradeDetailViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18DF20F7875C005B27AD /* TradeDetailViewCell+Custeffet.m */; };
+		183B198C20F7875D005B27AD /* SettingRealNameController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18E120F7875C005B27AD /* SettingRealNameController+Custeffet.m */; };
+		183B198D20F7875D005B27AD /* RegisterViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18E220F7875C005B27AD /* RegisterViewCell+Custeffet.m */; };
+		183B198E20F7875D005B27AD /* TradeRecordViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18E420F7875C005B27AD /* TradeRecordViewController+Custeffet.m */; };
+		183B198F20F7875D005B27AD /* TextInfoViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18E520F7875C005B27AD /* TextInfoViewCell+Custeffet.m */; };
+		183B199020F7875D005B27AD /* PhoneCodeVerifyView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18EA20F7875C005B27AD /* PhoneCodeVerifyView+Custeffet.m */; };
+		183B199220F7875D005B27AD /* OLUserAsset+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18EC20F7875C005B27AD /* OLUserAsset+Custeffet.m */; };
+		183B199320F7875D005B27AD /* InvestViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18EF20F7875C005B27AD /* InvestViewController+Custeffet.m */; };
+		183B199420F7875D005B27AD /* PreferentialModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18F120F7875C005B27AD /* PreferentialModel+Custeffet.m */; };
+		183B199520F7875D005B27AD /* FastLoginView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18F320F7875C005B27AD /* FastLoginView+Custeffet.m */; };
+		183B199620F7875D005B27AD /* ManageMoneyCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18F520F7875C005B27AD /* ManageMoneyCell+Custeffet.m */; };
+		183B199720F7875D005B27AD /* TradeDetailModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18F620F7875C005B27AD /* TradeDetailModel+Custeffet.m */; };
+		183B199820F7875D005B27AD /* HomeSectionHeader+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18F720F7875C005B27AD /* HomeSectionHeader+Custeffet.m */; };
+		183B199920F7875D005B27AD /* BidSecondViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18F920F7875C005B27AD /* BidSecondViewCell+Custeffet.m */; };
+		183B199A20F7875D005B27AD /* QATableViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18FA20F7875C005B27AD /* QATableViewCell+Custeffet.m */; };
+		183B199B20F7875D005B27AD /* BidDetailViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18FB20F7875C005B27AD /* BidDetailViewController+Custeffet.m */; };
+		183B199C20F7875D005B27AD /* LoanDescriptionCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18FC20F7875C005B27AD /* LoanDescriptionCell+Custeffet.m */; };
+		183B199D20F7875D005B27AD /* QADetailViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18FE20F7875C005B27AD /* QADetailViewController+Custeffet.m */; };
+		183B199E20F7875D005B27AD /* OLUser+DBOperateCusteffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B18FF20F7875C005B27AD /* OLUser+DBOperateCusteffet.m */; };
+		183B199F20F7875D005B27AD /* RealNameTableViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B190020F7875C005B27AD /* RealNameTableViewCell+Custeffet.m */; };
+		183B19A020F7875D005B27AD /* RealNameModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B190120F7875C005B27AD /* RealNameModel+Custeffet.m */; };
+		183B19A120F7875D005B27AD /* LoanHeaderView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B190320F7875C005B27AD /* LoanHeaderView+Custeffet.m */; };
+		183B19A220F7875D005B27AD /* SendVerifyCodeView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B190520F7875C005B27AD /* SendVerifyCodeView+Custeffet.m */; };
+		183B19A320F7875D005B27AD /* AboutUsViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B190A20F7875C005B27AD /* AboutUsViewController+Custeffet.m */; };
+		183B19A420F7875D005B27AD /* BidFirstViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B190C20F7875C005B27AD /* BidFirstViewCell+Custeffet.m */; };
+		183B19A520F7875D005B27AD /* QAViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B191220F7875C005B27AD /* QAViewController+Custeffet.m */; };
+		183B19A620F7875D005B27AD /* TradePasswordNextController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B191320F7875C005B27AD /* TradePasswordNextController+Custeffet.m */; };
+		183B19A720F7875D005B27AD /* GuideViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B191420F7875C005B27AD /* GuideViewController+Custeffet.m */; };
+		183B19A820F7875D005B27AD /* SettingModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B191720F7875C005B27AD /* SettingModel+Custeffet.m */; };
+		183B19A920F7875D005B27AD /* PlanBidViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B191A20F7875C005B27AD /* PlanBidViewController+Custeffet.m */; };
+		183B19AA20F7875D005B27AD /* CompleteViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B191C20F7875C005B27AD /* CompleteViewController+Custeffet.m */; };
+		183B19AB20F7875D005B27AD /* RepaymentController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B191D20F7875C005B27AD /* RepaymentController+Custeffet.m */; };
+		183B19AC20F7875D005B27AD /* LoginViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B191E20F7875C005B27AD /* LoginViewController+Custeffet.m */; };
+		183B19AD20F7875D005B27AD /* BindCardViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B191F20F7875C005B27AD /* BindCardViewController+Custeffet.m */; };
+		183B19AE20F7875D005B27AD /* SheetPresentStyleView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B192320F7875C005B27AD /* SheetPresentStyleView+Custeffet.m */; };
+		183B19AF20F7875D005B27AD /* OLPickerView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B192720F7875C005B27AD /* OLPickerView+Custeffet.m */; };
+		183B19B020F7875D005B27AD /* RegisterModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B192A20F7875C005B27AD /* RegisterModel+Custeffet.m */; };
+		183B19B120F7875D005B27AD /* DiscoveryViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B192C20F7875C005B27AD /* DiscoveryViewCell+Custeffet.m */; };
+		183B19B220F7875D005B27AD /* ImageInfoViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B192D20F7875C005B27AD /* ImageInfoViewCell+Custeffet.m */; };
+		183B19B320F7875D005B27AD /* ManageMoneyModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B192F20F7875C005B27AD /* ManageMoneyModel+Custeffet.m */; };
+		183B19B420F7875D005B27AD /* CustomTextEdgeField+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B193020F7875C005B27AD /* CustomTextEdgeField+Custeffet.m */; };
+		183B19B520F7875D005B27AD /* DiscoveryDetailModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B193220F7875C005B27AD /* DiscoveryDetailModel+Custeffet.m */; };
+		183B19B620F7875D005B27AD /* HomeSignView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B193320F7875C005B27AD /* HomeSignView+Custeffet.m */; };
+		183B19B720F7875D005B27AD /* CustomProgressView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B193520F7875C005B27AD /* CustomProgressView+Custeffet.m */; };
+		183B19B820F7875D005B27AD /* RegisterController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B193920F7875C005B27AD /* RegisterController+Custeffet.m */; };
+		183B19B920F7875D005B27AD /* ChangePasswordController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B193B20F7875C005B27AD /* ChangePasswordController+Custeffet.m */; };
+		183B19BA20F7875D005B27AD /* CardBagViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B193D20F7875C005B27AD /* CardBagViewController+Custeffet.m */; };
+		183B19BB20F7875D005B27AD /* HomePageViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B194120F7875C005B27AD /* HomePageViewController+Custeffet.m */; };
+		183B19BC20F7875D005B27AD /* ScoreShopViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B194320F7875C005B27AD /* ScoreShopViewController+Custeffet.m */; };
+		183B19BD20F7875D005B27AD /* LoanModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B194420F7875C005B27AD /* LoanModel+Custeffet.m */; };
+		183B19BE20F7875D005B27AD /* BidModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B194620F7875C005B27AD /* BidModel+Custeffet.m */; };
+		183B19BF20F7875D005B27AD /* HomeThirdViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B194720F7875C005B27AD /* HomeThirdViewCell+Custeffet.m */; };
+		183B19C020F7875D005B27AD /* SettingTableViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B194820F7875C005B27AD /* SettingTableViewCell+Custeffet.m */; };
+		183B19C120F7875D005B27AD /* AboutUsTableViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B194C20F7875C005B27AD /* AboutUsTableViewCell+Custeffet.m */; };
+		183B19C220F7875D005B27AD /* TradeRecoderModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B194F20F7875C005B27AD /* TradeRecoderModel+Custeffet.m */; };
+		183B19C320F7875D005B27AD /* RegisterFooterView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B195020F7875C005B27AD /* RegisterFooterView+Custeffet.m */; };
+		183B19C420F7875D005B27AD /* TTVerticalAlignmentButton+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B195120F7875C005B27AD /* TTVerticalAlignmentButton+Custeffet.m */; };
+		183B19C520F7875D005B27AD /* CardBagViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B195220F7875C005B27AD /* CardBagViewCell+Custeffet.m */; };
+		183B19C620F7875D005B27AD /* CardBagModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B195420F7875C005B27AD /* CardBagModel+Custeffet.m */; };
+		183B19C720F7875D005B27AD /* ChargeWithdrawViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B195520F7875C005B27AD /* ChargeWithdrawViewCell+Custeffet.m */; };
+		183B19C820F7875D005B27AD /* DiscoveryViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B195720F7875C005B27AD /* DiscoveryViewController+Custeffet.m */; };
+		183B19C920F7875D005B27AD /* MineTableModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B195820F7875C005B27AD /* MineTableModel+Custeffet.m */; };
+		183B19CA20F7875D005B27AD /* MineTableHeaderView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B195920F7875C005B27AD /* MineTableHeaderView+Custeffet.m */; };
+		183B19CB20F7875D005B27AD /* PasswordLoginView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B195A20F7875C005B27AD /* PasswordLoginView+Custeffet.m */; };
+		183B19CC20F7875D005B27AD /* HomeFirstViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B195C20F7875C005B27AD /* HomeFirstViewCell+Custeffet.m */; };
+		183B19CD20F7875D005B27AD /* ShippingAddressController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B196120F7875C005B27AD /* ShippingAddressController+Custeffet.m */; };
+		183B19CE20F7875D005B27AD /* TradePasswordController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B196620F7875C005B27AD /* TradePasswordController+Custeffet.m */; };
+		183B19CF20F7875D005B27AD /* AssetGraphView+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B196820F7875C005B27AD /* AssetGraphView+Custeffet.m */; };
+		183B19D020F7875D005B27AD /* BillTableViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B196E20F7875C005B27AD /* BillTableViewCell+Custeffet.m */; };
+		183B19D120F7875D005B27AD /* ScoreModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B196F20F7875C005B27AD /* ScoreModel+Custeffet.m */; };
+		183B19D220F7875D005B27AD /* QAModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B197120F7875C005B27AD /* QAModel+Custeffet.m */; };
+		183B19D320F7875D005B27AD /* MineViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B197220F7875C005B27AD /* MineViewController+Custeffet.m */; };
+		183B19D420F7875D005B27AD /* MineTableViewCell+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B197320F7875C005B27AD /* MineTableViewCell+Custeffet.m */; };
+		183B19D520F7875D005B27AD /* AboutUsModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B197720F7875C005B27AD /* AboutUsModel+Custeffet.m */; };
+		183B19D620F7875D005B27AD /* LoanViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B197820F7875C005B27AD /* LoanViewController+Custeffet.m */; };
+		183B19D720F7875D005B27AD /* ChargeViewController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B197920F7875C005B27AD /* ChargeViewController+Custeffet.m */; };
+		183B19D820F7875D005B27AD /* DiscoveryDetailController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B197A20F7875C005B27AD /* DiscoveryDetailController+Custeffet.m */; };
+		183B19D920F7875D005B27AD /* AccoutSecurityController+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B197B20F7875C005B27AD /* AccoutSecurityController+Custeffet.m */; };
+		183B19DA20F7875D005B27AD /* BillModel+Custeffet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183B197D20F7875C005B27AD /* BillModel+Custeffet.m */; };
+		1850CB3520F77A4500175D29 /* UIView+YGCExtensionUsdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB1B20F77A4500175D29 /* UIView+YGCExtensionUsdata.m */; };
+		1850CB3620F77A4500175D29 /* FHouseCounterHybirdViewController+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB1C20F77A4500175D29 /* FHouseCounterHybirdViewController+Usdata.m */; };
+		1850CB3720F77A4500175D29 /* FHouseCounterViewController+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB1F20F77A4500175D29 /* FHouseCounterViewController+Usdata.m */; };
+		1850CB3820F77A4500175D29 /* FCommonCounterViewController+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB2120F77A4500175D29 /* FCommonCounterViewController+Usdata.m */; };
+		1850CB3920F77A4500175D29 /* FFinanceCounterViewController+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB2720F77A4500175D29 /* FFinanceCounterViewController+Usdata.m */; };
+		1850CB3A20F77A4500175D29 /* ZTAppCalculatorViewController+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB2820F77A4500175D29 /* ZTAppCalculatorViewController+Usdata.m */; };
+		1850CB3B20F77A4500175D29 /* YGCTradeWindow+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB2A20F77A4500175D29 /* YGCTradeWindow+Usdata.m */; };
+		1850CB3C20F77A4500175D29 /* FCounterViewController+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB2B20F77A4500175D29 /* FCounterViewController+Usdata.m */; };
+		1850CB3D20F77A4500175D29 /* CalculateMethod+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB2E20F77A4500175D29 /* CalculateMethod+Usdata.m */; };
+		1850CB3E20F77A4500175D29 /* UnderlineView+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB2F20F77A4500175D29 /* UnderlineView+Usdata.m */; };
+		1850CB3F20F77A4500175D29 /* FHouseCounterSimpleViewController+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB3120F77A4500175D29 /* FHouseCounterSimpleViewController+Usdata.m */; };
+		1850CB4020F77A4500175D29 /* FSaveCounterViewController+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB3220F77A4500175D29 /* FSaveCounterViewController+Usdata.m */; };
+		1850CB4120F77A4500175D29 /* FFinanceRepayDetailViewController+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB3320F77A4500175D29 /* FFinanceRepayDetailViewController+Usdata.m */; };
+		1850CB4220F77A4500175D29 /* FRepayDetailCell+Usdata.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB3420F77A4500175D29 /* FRepayDetailCell+Usdata.m */; };
+		1850CB5620F77BCA00175D29 /* ClearNavPullToRefreshController+Initview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB4420F77BCA00175D29 /* ClearNavPullToRefreshController+Initview.m */; };
+		1850CB5720F77BCA00175D29 /* ClearNavViewController+Initview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB4520F77BCA00175D29 /* ClearNavViewController+Initview.m */; };
+		1850CB5820F77BCA00175D29 /* BaseTableViewController+Initview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB4720F77BCA00175D29 /* BaseTableViewController+Initview.m */; };
+		1850CB5920F77BCA00175D29 /* BaseNavigationController+Initview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB4A20F77BCA00175D29 /* BaseNavigationController+Initview.m */; };
+		1850CB5A20F77BCA00175D29 /* BaseInfoModel+Initview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB4D20F77BCA00175D29 /* BaseInfoModel+Initview.m */; };
+		1850CB5B20F77BCA00175D29 /* BaseViewController+Initview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB5020F77BCA00175D29 /* BaseViewController+Initview.m */; };
+		1850CB5C20F77BCA00175D29 /* MutiTablesPullToRefreshController+Initview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB5220F77BCA00175D29 /* MutiTablesPullToRefreshController+Initview.m */; };
+		1850CB5D20F77BCA00175D29 /* ClearNavTableController+Initview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB5420F77BCA00175D29 /* ClearNavTableController+Initview.m */; };
+		1850CB5E20F77BCA00175D29 /* BasePullToRefreshController+Initview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1850CB5520F77BCA00175D29 /* BasePullToRefreshController+Initview.m */; };
 		18AB48D920EE12080036E54C /* F_default_201805.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18AB470220EE12070036E54C /* F_default_201805.txt */; };
 		18AB48DA20EE12080036E54C /* AccoutCategeries.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18AB470320EE12070036E54C /* AccoutCategeries.plist */; };
 		18AB48DB20EE12080036E54C /* F_default_201806.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18AB470420EE12070036E54C /* F_default_201806.txt */; };
@@ -40,8 +177,6 @@
 		18AB48F920EE12080036E54C /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB474620EE12070036E54C /* BRAddressModel.m */; };
 		18AB48FA20EE12080036E54C /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18AB474820EE12070036E54C /* BRPickerView.bundle */; };
 		18AB48FB20EE12080036E54C /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB474A20EE12070036E54C /* BRAddressPickerView.m */; };
-		18AB48FC20EE12080036E54C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 18AB474B20EE12070036E54C /* LICENSE */; };
-		18AB48FD20EE12080036E54C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18AB474C20EE12070036E54C /* README.md */; };
 		18AB48FE20EE12080036E54C /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB475220EE12070036E54C /* MJPropertyType.m */; };
 		18AB48FF20EE12080036E54C /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB475520EE12070036E54C /* NSObject+MJKeyValue.m */; };
 		18AB490020EE12080036E54C /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB475620EE12070036E54C /* MJProperty.m */; };
@@ -52,9 +187,6 @@
 		18AB490520EE12080036E54C /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB475E20EE12070036E54C /* NSString+MJExtension.m */; };
 		18AB490620EE12080036E54C /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB475F20EE12070036E54C /* MJPropertyKey.m */; };
 		18AB490720EE12080036E54C /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB476320EE12070036E54C /* MJFoundation.m */; };
-		18AB490820EE12080036E54C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 18AB476420EE12070036E54C /* LICENSE */; };
-		18AB490920EE12080036E54C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18AB476520EE12070036E54C /* README.md */; };
-		18AB490A20EE12080036E54C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 18AB476720EE12070036E54C /* LICENSE */; };
 		18AB490B20EE12080036E54C /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB476920EE12070036E54C /* UIScrollView+MJRefresh.m */; };
 		18AB490C20EE12080036E54C /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB476A20EE12070036E54C /* MJRefreshConst.m */; };
 		18AB490D20EE12080036E54C /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18AB476E20EE12070036E54C /* MJRefresh.bundle */; };
@@ -75,22 +207,13 @@
 		18AB491C20EE12080036E54C /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB479120EE12070036E54C /* MJRefreshBackFooter.m */; };
 		18AB491D20EE12080036E54C /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB479220EE12070036E54C /* MJRefreshAutoFooter.m */; };
 		18AB491E20EE12080036E54C /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB479420EE12070036E54C /* MJRefreshComponent.m */; };
-		18AB491F20EE12080036E54C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18AB479720EE12070036E54C /* README.md */; };
-		18AB492020EE12080036E54C /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 18AB479A20EE12070036E54C /* README.markdown */; };
-		18AB492120EE12080036E54C /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18AB479B20EE12070036E54C /* License.txt */; };
 		18AB492220EE12080036E54C /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB479C20EE12070036E54C /* DejalActivityView.m */; };
-		18AB492320EE12080036E54C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 18AB479E20EE12070036E54C /* LICENSE */; };
 		18AB492420EE12080036E54C /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47A120EE12070036E54C /* UINavigationController+FDFullscreenPopGesture.m */; };
-		18AB492520EE12080036E54C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18AB47A220EE12070036E54C /* README.md */; };
 		18AB492620EE12080036E54C /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47A720EE12070036E54C /* SVRadialGradientLayer.m */; };
 		18AB492720EE12080036E54C /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47AA20EE12070036E54C /* SVProgressAnimatedView.m */; };
 		18AB492820EE12080036E54C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47AC20EE12070036E54C /* SVProgressHUD.m */; };
 		18AB492920EE12080036E54C /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47AD20EE12070036E54C /* SVIndefiniteAnimatedView.m */; };
 		18AB492A20EE12080036E54C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18AB47AE20EE12070036E54C /* SVProgressHUD.bundle */; };
-		18AB492B20EE12080036E54C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18AB47B020EE12070036E54C /* README.md */; };
-		18AB492C20EE12080036E54C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18AB47B120EE12070036E54C /* LICENSE.txt */; };
-		18AB492D20EE12080036E54C /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 18AB47B320EE12070036E54C /* LICENSE.md */; };
-		18AB492E20EE12080036E54C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18AB47B420EE12070036E54C /* README.md */; };
 		18AB492F20EE12080036E54C /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47B720EE12070036E54C /* IQTextView.m */; };
 		18AB493020EE12080036E54C /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47BB20EE12070036E54C /* IQToolbar.m */; };
 		18AB493120EE12080036E54C /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47BD20EE12070036E54C /* IQTitleBarButtonItem.m */; };
@@ -106,7 +229,6 @@
 		18AB493B20EE12080036E54C /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47D220EE12070036E54C /* IQUIView+Hierarchy.m */; };
 		18AB493C20EE12080036E54C /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47D720EE12070036E54C /* IQUIViewController+Additions.m */; };
 		18AB493D20EE12080036E54C /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47D920EE12070036E54C /* IQKeyboardReturnKeyHandler.m */; };
-		18AB494620EE12080036E54C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18AB47EF20EE12070036E54C /* README.md */; };
 		18AB494720EE12080036E54C /* SPPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB47F120EE12070036E54C /* SPPageMenu.m */; };
 		18AB495C20EE12080036E54C /* NSString+encryptDES.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB481D20EE12070036E54C /* NSString+encryptDES.m */; };
 		18AB495D20EE12080036E54C /* ConverUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB481E20EE12070036E54C /* ConverUtil.m */; };
@@ -373,6 +495,280 @@
 
 /* Begin PBXFileReference section */
 		05D3F83CFCF956574F30B9A1 /* Pods-XiaoYuOnline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XiaoYuOnline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XiaoYuOnline/Pods-XiaoYuOnline.debug.xcconfig"; sourceTree = "<group>"; };
+		183B187B20F783A3005B27AD /* JinnLockPassword+Infrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JinnLockPassword+Infrate.m"; sourceTree = "<group>"; };
+		183B187C20F783A3005B27AD /* UIView+FrameLayoutMethodInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameLayoutMethodInfrate.h"; sourceTree = "<group>"; };
+		183B187D20F783A3005B27AD /* UIScrollView+SVPullToRefreshInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefreshInfrate.m"; sourceTree = "<group>"; };
+		183B187E20F783A3005B27AD /* UIViewController+ShowTextHUDInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ShowTextHUDInfrate.m"; sourceTree = "<group>"; };
+		183B187F20F783A3005B27AD /* UITextView+PlaceholderInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PlaceholderInfrate.h"; sourceTree = "<group>"; };
+		183B188020F783A3005B27AD /* UIView+CommonInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CommonInfrate.h"; sourceTree = "<group>"; };
+		183B188120F783A3005B27AD /* UIImage+CommonInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CommonInfrate.h"; sourceTree = "<group>"; };
+		183B188220F783A3005B27AD /* NSString+CommonInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CommonInfrate.h"; sourceTree = "<group>"; };
+		183B188320F783A3005B27AD /* DatabaseQueueManager+Infrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DatabaseQueueManager+Infrate.h"; sourceTree = "<group>"; };
+		183B188420F783A3005B27AD /* JinnLockCircle+Infrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JinnLockCircle+Infrate.m"; sourceTree = "<group>"; };
+		183B188520F783A3005B27AD /* UIScrollView+SVInfiniteScrollingInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrollingInfrate.h"; sourceTree = "<group>"; };
+		183B188720F783A3005B27AD /* UIColor+HelperInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HelperInfrate.h"; sourceTree = "<group>"; };
+		183B188820F783A3005B27AD /* NSDictionary+CommonInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CommonInfrate.h"; sourceTree = "<group>"; };
+		183B188920F783A3005B27AD /* UIViewController+KeyboardHandlerInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KeyboardHandlerInfrate.m"; sourceTree = "<group>"; };
+		183B188A20F783A3005B27AD /* JinnLockIndicator+Infrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JinnLockIndicator+Infrate.m"; sourceTree = "<group>"; };
+		183B188B20F783A3005B27AD /* NSTimer+HelperInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+HelperInfrate.h"; sourceTree = "<group>"; };
+		183B188C20F783A3005B27AD /* NSString+NetworkEncryptionInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NetworkEncryptionInfrate.m"; sourceTree = "<group>"; };
+		183B188D20F783A3005B27AD /* ThirdPartHelper+Infrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ThirdPartHelper+Infrate.m"; sourceTree = "<group>"; };
+		183B188F20F783A3005B27AD /* UIView+FirstResponderInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FirstResponderInfrate.h"; sourceTree = "<group>"; };
+		183B189020F783A3005B27AD /* SVPullToRefreshView+Infrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVPullToRefreshView+Infrate.m"; sourceTree = "<group>"; };
+		183B189120F783A3005B27AD /* UserDefaultsHelper+Infrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserDefaultsHelper+Infrate.h"; sourceTree = "<group>"; };
+		183B189220F783A3005B27AD /* SVInfiniteScrollingView+Infrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVInfiniteScrollingView+Infrate.h"; sourceTree = "<group>"; };
+		183B189320F783A3005B27AD /* UIViewController+ShowTextHUDInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ShowTextHUDInfrate.h"; sourceTree = "<group>"; };
+		183B189420F783A3005B27AD /* UITextView+PlaceholderInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PlaceholderInfrate.m"; sourceTree = "<group>"; };
+		183B189520F783A3005B27AD /* UIScrollView+SVPullToRefreshInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefreshInfrate.h"; sourceTree = "<group>"; };
+		183B189620F783A3005B27AD /* UIView+FrameLayoutMethodInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameLayoutMethodInfrate.m"; sourceTree = "<group>"; };
+		183B189720F783A3005B27AD /* JinnLockPassword+Infrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JinnLockPassword+Infrate.h"; sourceTree = "<group>"; };
+		183B189820F783A3005B27AD /* UIViewController+KeyboardHandlerInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KeyboardHandlerInfrate.h"; sourceTree = "<group>"; };
+		183B189920F783A3005B27AD /* NSDictionary+CommonInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CommonInfrate.m"; sourceTree = "<group>"; };
+		183B189A20F783A3005B27AD /* UIColor+HelperInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HelperInfrate.m"; sourceTree = "<group>"; };
+		183B189C20F783A3005B27AD /* UIScrollView+SVInfiniteScrollingInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrollingInfrate.m"; sourceTree = "<group>"; };
+		183B189D20F783A3005B27AD /* JinnLockCircle+Infrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JinnLockCircle+Infrate.h"; sourceTree = "<group>"; };
+		183B189E20F783A3005B27AD /* UIImage+CommonInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CommonInfrate.m"; sourceTree = "<group>"; };
+		183B189F20F783A3005B27AD /* NSString+CommonInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CommonInfrate.m"; sourceTree = "<group>"; };
+		183B18A020F783A3005B27AD /* DatabaseQueueManager+Infrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DatabaseQueueManager+Infrate.m"; sourceTree = "<group>"; };
+		183B18A120F783A3005B27AD /* UIView+CommonInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CommonInfrate.m"; sourceTree = "<group>"; };
+		183B18A320F783A3005B27AD /* ThirdPartHelper+Infrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ThirdPartHelper+Infrate.h"; sourceTree = "<group>"; };
+		183B18A420F783A3005B27AD /* NSString+NetworkEncryptionInfrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NetworkEncryptionInfrate.h"; sourceTree = "<group>"; };
+		183B18A520F783A3005B27AD /* NSTimer+HelperInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+HelperInfrate.m"; sourceTree = "<group>"; };
+		183B18A620F783A3005B27AD /* JinnLockIndicator+Infrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JinnLockIndicator+Infrate.h"; sourceTree = "<group>"; };
+		183B18A720F783A3005B27AD /* SVInfiniteScrollingView+Infrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVInfiniteScrollingView+Infrate.m"; sourceTree = "<group>"; };
+		183B18A820F783A3005B27AD /* UserDefaultsHelper+Infrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserDefaultsHelper+Infrate.m"; sourceTree = "<group>"; };
+		183B18A920F783A3005B27AD /* SVPullToRefreshView+Infrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVPullToRefreshView+Infrate.h"; sourceTree = "<group>"; };
+		183B18AA20F783A3005B27AD /* UIView+FirstResponderInfrate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FirstResponderInfrate.m"; sourceTree = "<group>"; };
+		183B18C420F7875C005B27AD /* HomeSignView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeSignView+Custeffet.h"; sourceTree = "<group>"; };
+		183B18C520F7875C005B27AD /* InviteFrinendController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InviteFrinendController+Custeffet.m"; sourceTree = "<group>"; };
+		183B18C620F7875C005B27AD /* GesturePasswordNextController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GesturePasswordNextController+Custeffet.m"; sourceTree = "<group>"; };
+		183B18C720F7875C005B27AD /* DiscoveryDetailModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiscoveryDetailModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B18C820F7875C005B27AD /* ManageMoneyModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ManageMoneyModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B18C920F7875C005B27AD /* OLUser+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OLUser+Custeffet.m"; sourceTree = "<group>"; };
+		183B18CA20F7875C005B27AD /* CustomTextEdgeField+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CustomTextEdgeField+Custeffet.h"; sourceTree = "<group>"; };
+		183B18CB20F7875C005B27AD /* DiscoveryViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiscoveryViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B18CC20F7875C005B27AD /* ImageInfoViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImageInfoViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B18CD20F7875C005B27AD /* SettingViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B18CE20F7875C005B27AD /* ScoreShopTableViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScoreShopTableViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18CF20F7875C005B27AD /* RegisterModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RegisterModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B18D020F7875C005B27AD /* TradeDetailViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TradeDetailViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B18D120F7875C005B27AD /* OLPickerView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OLPickerView+Custeffet.h"; sourceTree = "<group>"; };
+		183B18D220F7875C005B27AD /* BillTableViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BillTableViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B18D320F7875C005B27AD /* HomeSecondViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeSecondViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18D420F7875C005B27AD /* BidThirdViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BidThirdViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18D520F7875C005B27AD /* SheetPresentStyleView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SheetPresentStyleView+Custeffet.h"; sourceTree = "<group>"; };
+		183B18D620F7875C005B27AD /* SocreShopHeader+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SocreShopHeader+Custeffet.m"; sourceTree = "<group>"; };
+		183B18D720F7875C005B27AD /* DiscoveryModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DiscoveryModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B18D820F7875C005B27AD /* CardBagViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardBagViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B18D920F7875C005B27AD /* CardBagModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardBagModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B18DA20F7875C005B27AD /* LoanViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoanViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18DB20F7875C005B27AD /* RegisterFooterView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RegisterFooterView+Custeffet.h"; sourceTree = "<group>"; };
+		183B18DC20F7875C005B27AD /* TTVerticalAlignmentButton+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TTVerticalAlignmentButton+Custeffet.h"; sourceTree = "<group>"; };
+		183B18DD20F7875C005B27AD /* TradeRecoderModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TradeRecoderModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B18DE20F7875C005B27AD /* SigleTextFieldCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SigleTextFieldCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18DF20F7875C005B27AD /* TradeDetailViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TradeDetailViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18E020F7875C005B27AD /* AboutUsTableViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AboutUsTableViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B18E120F7875C005B27AD /* SettingRealNameController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingRealNameController+Custeffet.m"; sourceTree = "<group>"; };
+		183B18E220F7875C005B27AD /* RegisterViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RegisterViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18E320F7875C005B27AD /* SettingTableViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingTableViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B18E420F7875C005B27AD /* TradeRecordViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TradeRecordViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B18E520F7875C005B27AD /* TextInfoViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TextInfoViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18E620F7875C005B27AD /* BidModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BidModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B18E720F7875C005B27AD /* HomeThirdViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeThirdViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B18E820F7875C005B27AD /* ScoreShopViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScoreShopViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B18E920F7875C005B27AD /* LoanModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoanModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B18EA20F7875C005B27AD /* PhoneCodeVerifyView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PhoneCodeVerifyView+Custeffet.m"; sourceTree = "<group>"; };
+		183B18EC20F7875C005B27AD /* OLUserAsset+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OLUserAsset+Custeffet.m"; sourceTree = "<group>"; };
+		183B18ED20F7875C005B27AD /* HomePageViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomePageViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B18EE20F7875C005B27AD /* CardBagViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CardBagViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B18EF20F7875C005B27AD /* InvestViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "InvestViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B18F020F7875C005B27AD /* ChangePasswordController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChangePasswordController+Custeffet.h"; sourceTree = "<group>"; };
+		183B18F120F7875C005B27AD /* PreferentialModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PreferentialModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B18F220F7875C005B27AD /* RegisterController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RegisterController+Custeffet.h"; sourceTree = "<group>"; };
+		183B18F320F7875C005B27AD /* FastLoginView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FastLoginView+Custeffet.m"; sourceTree = "<group>"; };
+		183B18F420F7875C005B27AD /* CustomProgressView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CustomProgressView+Custeffet.h"; sourceTree = "<group>"; };
+		183B18F520F7875C005B27AD /* ManageMoneyCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ManageMoneyCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18F620F7875C005B27AD /* TradeDetailModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TradeDetailModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B18F720F7875C005B27AD /* HomeSectionHeader+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeSectionHeader+Custeffet.m"; sourceTree = "<group>"; };
+		183B18F820F7875C005B27AD /* TradePasswordController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TradePasswordController+Custeffet.h"; sourceTree = "<group>"; };
+		183B18F920F7875C005B27AD /* BidSecondViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BidSecondViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18FA20F7875C005B27AD /* QATableViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QATableViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18FB20F7875C005B27AD /* BidDetailViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BidDetailViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B18FC20F7875C005B27AD /* LoanDescriptionCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoanDescriptionCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B18FD20F7875C005B27AD /* ShippingAddressController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ShippingAddressController+Custeffet.h"; sourceTree = "<group>"; };
+		183B18FE20F7875C005B27AD /* QADetailViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QADetailViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B18FF20F7875C005B27AD /* OLUser+DBOperateCusteffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OLUser+DBOperateCusteffet.m"; sourceTree = "<group>"; };
+		183B190020F7875C005B27AD /* RealNameTableViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RealNameTableViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B190120F7875C005B27AD /* RealNameModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RealNameModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B190220F7875C005B27AD /* HomeFirstViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeFirstViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B190320F7875C005B27AD /* LoanHeaderView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoanHeaderView+Custeffet.m"; sourceTree = "<group>"; };
+		183B190420F7875C005B27AD /* PasswordLoginView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PasswordLoginView+Custeffet.h"; sourceTree = "<group>"; };
+		183B190520F7875C005B27AD /* SendVerifyCodeView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendVerifyCodeView+Custeffet.m"; sourceTree = "<group>"; };
+		183B190620F7875C005B27AD /* MineTableHeaderView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MineTableHeaderView+Custeffet.h"; sourceTree = "<group>"; };
+		183B190720F7875C005B27AD /* MineTableModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MineTableModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B190820F7875C005B27AD /* ChargeWithdrawViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChargeWithdrawViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B190920F7875C005B27AD /* DiscoveryViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiscoveryViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B190A20F7875C005B27AD /* AboutUsViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AboutUsViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B190B20F7875C005B27AD /* BillModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BillModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B190C20F7875C005B27AD /* BidFirstViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BidFirstViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B190D20F7875C005B27AD /* AccoutSecurityController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AccoutSecurityController+Custeffet.h"; sourceTree = "<group>"; };
+		183B190E20F7875C005B27AD /* LoanViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoanViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B190F20F7875C005B27AD /* DiscoveryDetailController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiscoveryDetailController+Custeffet.h"; sourceTree = "<group>"; };
+		183B191020F7875C005B27AD /* ChargeViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ChargeViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B191120F7875C005B27AD /* AboutUsModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AboutUsModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B191220F7875C005B27AD /* QAViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QAViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B191320F7875C005B27AD /* TradePasswordNextController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TradePasswordNextController+Custeffet.m"; sourceTree = "<group>"; };
+		183B191420F7875C005B27AD /* GuideViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GuideViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B191520F7875C005B27AD /* MineTableViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MineTableViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B191620F7875C005B27AD /* MineViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MineViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B191720F7875C005B27AD /* SettingModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B191820F7875C005B27AD /* ScoreModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScoreModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B191920F7875C005B27AD /* QAModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QAModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B191A20F7875C005B27AD /* PlanBidViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PlanBidViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B191B20F7875C005B27AD /* BillTableViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BillTableViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B191C20F7875C005B27AD /* CompleteViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CompleteViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B191D20F7875C005B27AD /* RepaymentController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RepaymentController+Custeffet.m"; sourceTree = "<group>"; };
+		183B191E20F7875C005B27AD /* LoginViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoginViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B191F20F7875C005B27AD /* BindCardViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BindCardViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B192020F7875C005B27AD /* AssetGraphView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AssetGraphView+Custeffet.h"; sourceTree = "<group>"; };
+		183B192120F7875C005B27AD /* SocreShopHeader+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocreShopHeader+Custeffet.h"; sourceTree = "<group>"; };
+		183B192220F7875C005B27AD /* DiscoveryModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DiscoveryModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B192320F7875C005B27AD /* SheetPresentStyleView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SheetPresentStyleView+Custeffet.m"; sourceTree = "<group>"; };
+		183B192420F7875C005B27AD /* BidThirdViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BidThirdViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B192520F7875C005B27AD /* BillTableViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BillTableViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B192620F7875C005B27AD /* HomeSecondViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeSecondViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B192720F7875C005B27AD /* OLPickerView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OLPickerView+Custeffet.m"; sourceTree = "<group>"; };
+		183B192820F7875C005B27AD /* TradeDetailViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TradeDetailViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B192920F7875C005B27AD /* ScoreShopTableViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScoreShopTableViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B192A20F7875C005B27AD /* RegisterModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RegisterModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B192B20F7875C005B27AD /* SettingViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B192C20F7875C005B27AD /* DiscoveryViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DiscoveryViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B192D20F7875C005B27AD /* ImageInfoViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ImageInfoViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B192E20F7875C005B27AD /* OLUser+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OLUser+Custeffet.h"; sourceTree = "<group>"; };
+		183B192F20F7875C005B27AD /* ManageMoneyModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ManageMoneyModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B193020F7875C005B27AD /* CustomTextEdgeField+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CustomTextEdgeField+Custeffet.m"; sourceTree = "<group>"; };
+		183B193120F7875C005B27AD /* GesturePasswordNextController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GesturePasswordNextController+Custeffet.h"; sourceTree = "<group>"; };
+		183B193220F7875C005B27AD /* DiscoveryDetailModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DiscoveryDetailModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B193320F7875C005B27AD /* HomeSignView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeSignView+Custeffet.m"; sourceTree = "<group>"; };
+		183B193420F7875C005B27AD /* InviteFrinendController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InviteFrinendController+Custeffet.h"; sourceTree = "<group>"; };
+		183B193520F7875C005B27AD /* CustomProgressView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CustomProgressView+Custeffet.m"; sourceTree = "<group>"; };
+		183B193620F7875C005B27AD /* ManageMoneyCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ManageMoneyCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B193720F7875C005B27AD /* HomeSectionHeader+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeSectionHeader+Custeffet.h"; sourceTree = "<group>"; };
+		183B193820F7875C005B27AD /* TradeDetailModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TradeDetailModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B193920F7875C005B27AD /* RegisterController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RegisterController+Custeffet.m"; sourceTree = "<group>"; };
+		183B193A20F7875C005B27AD /* PreferentialModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PreferentialModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B193B20F7875C005B27AD /* ChangePasswordController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChangePasswordController+Custeffet.m"; sourceTree = "<group>"; };
+		183B193C20F7875C005B27AD /* FastLoginView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FastLoginView+Custeffet.h"; sourceTree = "<group>"; };
+		183B193D20F7875C005B27AD /* CardBagViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CardBagViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B193E20F7875C005B27AD /* InvestViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "InvestViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B194020F7875C005B27AD /* OLUserAsset+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OLUserAsset+Custeffet.h"; sourceTree = "<group>"; };
+		183B194120F7875C005B27AD /* HomePageViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomePageViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B194220F7875C005B27AD /* PhoneCodeVerifyView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhoneCodeVerifyView+Custeffet.h"; sourceTree = "<group>"; };
+		183B194320F7875C005B27AD /* ScoreShopViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScoreShopViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B194420F7875C005B27AD /* LoanModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoanModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B194520F7875C005B27AD /* TextInfoViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TextInfoViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B194620F7875C005B27AD /* BidModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BidModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B194720F7875C005B27AD /* HomeThirdViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeThirdViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B194820F7875C005B27AD /* SettingTableViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingTableViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B194920F7875C005B27AD /* TradeRecordViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TradeRecordViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B194A20F7875C005B27AD /* SettingRealNameController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingRealNameController+Custeffet.h"; sourceTree = "<group>"; };
+		183B194B20F7875C005B27AD /* RegisterViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RegisterViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B194C20F7875C005B27AD /* AboutUsTableViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AboutUsTableViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B194D20F7875C005B27AD /* TradeDetailViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TradeDetailViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B194E20F7875C005B27AD /* SigleTextFieldCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SigleTextFieldCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B194F20F7875C005B27AD /* TradeRecoderModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TradeRecoderModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B195020F7875C005B27AD /* RegisterFooterView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RegisterFooterView+Custeffet.m"; sourceTree = "<group>"; };
+		183B195120F7875C005B27AD /* TTVerticalAlignmentButton+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TTVerticalAlignmentButton+Custeffet.m"; sourceTree = "<group>"; };
+		183B195220F7875C005B27AD /* CardBagViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CardBagViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B195320F7875C005B27AD /* LoanViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoanViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B195420F7875C005B27AD /* CardBagModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CardBagModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B195520F7875C005B27AD /* ChargeWithdrawViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChargeWithdrawViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B195620F7875C005B27AD /* AboutUsViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AboutUsViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B195720F7875C005B27AD /* DiscoveryViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DiscoveryViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B195820F7875C005B27AD /* MineTableModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MineTableModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B195920F7875C005B27AD /* MineTableHeaderView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MineTableHeaderView+Custeffet.m"; sourceTree = "<group>"; };
+		183B195A20F7875C005B27AD /* PasswordLoginView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PasswordLoginView+Custeffet.m"; sourceTree = "<group>"; };
+		183B195B20F7875C005B27AD /* SendVerifyCodeView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SendVerifyCodeView+Custeffet.h"; sourceTree = "<group>"; };
+		183B195C20F7875C005B27AD /* HomeFirstViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeFirstViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B195D20F7875C005B27AD /* LoanHeaderView+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoanHeaderView+Custeffet.h"; sourceTree = "<group>"; };
+		183B195E20F7875C005B27AD /* RealNameModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RealNameModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B195F20F7875C005B27AD /* OLUser+DBOperateCusteffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OLUser+DBOperateCusteffet.h"; sourceTree = "<group>"; };
+		183B196020F7875C005B27AD /* RealNameTableViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RealNameTableViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B196120F7875C005B27AD /* ShippingAddressController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ShippingAddressController+Custeffet.m"; sourceTree = "<group>"; };
+		183B196220F7875C005B27AD /* QADetailViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QADetailViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B196320F7875C005B27AD /* LoanDescriptionCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoanDescriptionCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B196420F7875C005B27AD /* QATableViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QATableViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B196520F7875C005B27AD /* BidDetailViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BidDetailViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B196620F7875C005B27AD /* TradePasswordController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TradePasswordController+Custeffet.m"; sourceTree = "<group>"; };
+		183B196720F7875C005B27AD /* BidSecondViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BidSecondViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B196820F7875C005B27AD /* AssetGraphView+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AssetGraphView+Custeffet.m"; sourceTree = "<group>"; };
+		183B196920F7875C005B27AD /* RepaymentController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RepaymentController+Custeffet.h"; sourceTree = "<group>"; };
+		183B196A20F7875C005B27AD /* BindCardViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BindCardViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B196B20F7875C005B27AD /* LoginViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B196C20F7875C005B27AD /* PlanBidViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlanBidViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B196D20F7875C005B27AD /* CompleteViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CompleteViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B196E20F7875C005B27AD /* BillTableViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BillTableViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B196F20F7875C005B27AD /* ScoreModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScoreModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B197020F7875C005B27AD /* SettingModel+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingModel+Custeffet.h"; sourceTree = "<group>"; };
+		183B197120F7875C005B27AD /* QAModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QAModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B197220F7875C005B27AD /* MineViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MineViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B197320F7875C005B27AD /* MineTableViewCell+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MineTableViewCell+Custeffet.m"; sourceTree = "<group>"; };
+		183B197420F7875C005B27AD /* GuideViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GuideViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B197520F7875C005B27AD /* QAViewController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QAViewController+Custeffet.h"; sourceTree = "<group>"; };
+		183B197620F7875C005B27AD /* TradePasswordNextController+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TradePasswordNextController+Custeffet.h"; sourceTree = "<group>"; };
+		183B197720F7875C005B27AD /* AboutUsModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AboutUsModel+Custeffet.m"; sourceTree = "<group>"; };
+		183B197820F7875C005B27AD /* LoanViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoanViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B197920F7875C005B27AD /* ChargeViewController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ChargeViewController+Custeffet.m"; sourceTree = "<group>"; };
+		183B197A20F7875C005B27AD /* DiscoveryDetailController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DiscoveryDetailController+Custeffet.m"; sourceTree = "<group>"; };
+		183B197B20F7875C005B27AD /* AccoutSecurityController+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AccoutSecurityController+Custeffet.m"; sourceTree = "<group>"; };
+		183B197C20F7875C005B27AD /* BidFirstViewCell+Custeffet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BidFirstViewCell+Custeffet.h"; sourceTree = "<group>"; };
+		183B197D20F7875C005B27AD /* BillModel+Custeffet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BillModel+Custeffet.m"; sourceTree = "<group>"; };
+		1850CB1920F77A4500175D29 /* ZTAppCalculatorViewController+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZTAppCalculatorViewController+Usdata.h"; sourceTree = "<group>"; };
+		1850CB1A20F77A4500175D29 /* FFinanceCounterViewController+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FFinanceCounterViewController+Usdata.h"; sourceTree = "<group>"; };
+		1850CB1B20F77A4500175D29 /* UIView+YGCExtensionUsdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YGCExtensionUsdata.m"; sourceTree = "<group>"; };
+		1850CB1C20F77A4500175D29 /* FHouseCounterHybirdViewController+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FHouseCounterHybirdViewController+Usdata.m"; sourceTree = "<group>"; };
+		1850CB1D20F77A4500175D29 /* FCounterViewController+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FCounterViewController+Usdata.h"; sourceTree = "<group>"; };
+		1850CB1E20F77A4500175D29 /* YGCTradeWindow+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YGCTradeWindow+Usdata.h"; sourceTree = "<group>"; };
+		1850CB1F20F77A4500175D29 /* FHouseCounterViewController+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FHouseCounterViewController+Usdata.m"; sourceTree = "<group>"; };
+		1850CB2020F77A4500175D29 /* FHouseCounterSimpleViewController+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FHouseCounterSimpleViewController+Usdata.h"; sourceTree = "<group>"; };
+		1850CB2120F77A4500175D29 /* FCommonCounterViewController+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FCommonCounterViewController+Usdata.m"; sourceTree = "<group>"; };
+		1850CB2220F77A4500175D29 /* UnderlineView+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UnderlineView+Usdata.h"; sourceTree = "<group>"; };
+		1850CB2320F77A4500175D29 /* CalculateMethod+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CalculateMethod+Usdata.h"; sourceTree = "<group>"; };
+		1850CB2420F77A4500175D29 /* FRepayDetailCell+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FRepayDetailCell+Usdata.h"; sourceTree = "<group>"; };
+		1850CB2520F77A4500175D29 /* FFinanceRepayDetailViewController+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FFinanceRepayDetailViewController+Usdata.h"; sourceTree = "<group>"; };
+		1850CB2620F77A4500175D29 /* FSaveCounterViewController+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FSaveCounterViewController+Usdata.h"; sourceTree = "<group>"; };
+		1850CB2720F77A4500175D29 /* FFinanceCounterViewController+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FFinanceCounterViewController+Usdata.m"; sourceTree = "<group>"; };
+		1850CB2820F77A4500175D29 /* ZTAppCalculatorViewController+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZTAppCalculatorViewController+Usdata.m"; sourceTree = "<group>"; };
+		1850CB2920F77A4500175D29 /* FHouseCounterViewController+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FHouseCounterViewController+Usdata.h"; sourceTree = "<group>"; };
+		1850CB2A20F77A4500175D29 /* YGCTradeWindow+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YGCTradeWindow+Usdata.m"; sourceTree = "<group>"; };
+		1850CB2B20F77A4500175D29 /* FCounterViewController+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FCounterViewController+Usdata.m"; sourceTree = "<group>"; };
+		1850CB2C20F77A4500175D29 /* FHouseCounterHybirdViewController+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FHouseCounterHybirdViewController+Usdata.h"; sourceTree = "<group>"; };
+		1850CB2D20F77A4500175D29 /* UIView+YGCExtensionUsdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YGCExtensionUsdata.h"; sourceTree = "<group>"; };
+		1850CB2E20F77A4500175D29 /* CalculateMethod+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CalculateMethod+Usdata.m"; sourceTree = "<group>"; };
+		1850CB2F20F77A4500175D29 /* UnderlineView+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UnderlineView+Usdata.m"; sourceTree = "<group>"; };
+		1850CB3020F77A4500175D29 /* FCommonCounterViewController+Usdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FCommonCounterViewController+Usdata.h"; sourceTree = "<group>"; };
+		1850CB3120F77A4500175D29 /* FHouseCounterSimpleViewController+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FHouseCounterSimpleViewController+Usdata.m"; sourceTree = "<group>"; };
+		1850CB3220F77A4500175D29 /* FSaveCounterViewController+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSaveCounterViewController+Usdata.m"; sourceTree = "<group>"; };
+		1850CB3320F77A4500175D29 /* FFinanceRepayDetailViewController+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FFinanceRepayDetailViewController+Usdata.m"; sourceTree = "<group>"; };
+		1850CB3420F77A4500175D29 /* FRepayDetailCell+Usdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FRepayDetailCell+Usdata.m"; sourceTree = "<group>"; };
+		1850CB4420F77BCA00175D29 /* ClearNavPullToRefreshController+Initview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ClearNavPullToRefreshController+Initview.m"; sourceTree = "<group>"; };
+		1850CB4520F77BCA00175D29 /* ClearNavViewController+Initview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ClearNavViewController+Initview.m"; sourceTree = "<group>"; };
+		1850CB4620F77BCA00175D29 /* BaseInfoModel+Initview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseInfoModel+Initview.h"; sourceTree = "<group>"; };
+		1850CB4720F77BCA00175D29 /* BaseTableViewController+Initview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseTableViewController+Initview.m"; sourceTree = "<group>"; };
+		1850CB4820F77BCA00175D29 /* MutiTablesPullToRefreshController+Initview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MutiTablesPullToRefreshController+Initview.h"; sourceTree = "<group>"; };
+		1850CB4920F77BCA00175D29 /* BaseViewController+Initview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseViewController+Initview.h"; sourceTree = "<group>"; };
+		1850CB4A20F77BCA00175D29 /* BaseNavigationController+Initview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseNavigationController+Initview.m"; sourceTree = "<group>"; };
+		1850CB4B20F77BCA00175D29 /* BasePullToRefreshController+Initview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BasePullToRefreshController+Initview.h"; sourceTree = "<group>"; };
+		1850CB4C20F77BCA00175D29 /* ClearNavTableController+Initview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClearNavTableController+Initview.h"; sourceTree = "<group>"; };
+		1850CB4D20F77BCA00175D29 /* BaseInfoModel+Initview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseInfoModel+Initview.m"; sourceTree = "<group>"; };
+		1850CB4E20F77BCA00175D29 /* ClearNavViewController+Initview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClearNavViewController+Initview.h"; sourceTree = "<group>"; };
+		1850CB4F20F77BCA00175D29 /* ClearNavPullToRefreshController+Initview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ClearNavPullToRefreshController+Initview.h"; sourceTree = "<group>"; };
+		1850CB5020F77BCA00175D29 /* BaseViewController+Initview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseViewController+Initview.m"; sourceTree = "<group>"; };
+		1850CB5120F77BCA00175D29 /* BaseTableViewController+Initview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseTableViewController+Initview.h"; sourceTree = "<group>"; };
+		1850CB5220F77BCA00175D29 /* MutiTablesPullToRefreshController+Initview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MutiTablesPullToRefreshController+Initview.m"; sourceTree = "<group>"; };
+		1850CB5320F77BCA00175D29 /* BaseNavigationController+Initview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseNavigationController+Initview.h"; sourceTree = "<group>"; };
+		1850CB5420F77BCA00175D29 /* ClearNavTableController+Initview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ClearNavTableController+Initview.m"; sourceTree = "<group>"; };
+		1850CB5520F77BCA00175D29 /* BasePullToRefreshController+Initview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BasePullToRefreshController+Initview.m"; sourceTree = "<group>"; };
 		18AB470220EE12070036E54C /* F_default_201805.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = F_default_201805.txt; sourceTree = "<group>"; };
 		18AB470320EE12070036E54C /* AccoutCategeries.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AccoutCategeries.plist; sourceTree = "<group>"; };
 		18AB470420EE12070036E54C /* F_default_201806.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = F_default_201806.txt; sourceTree = "<group>"; };
@@ -431,8 +827,6 @@
 		18AB474820EE12070036E54C /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BRPickerView.bundle; sourceTree = "<group>"; };
 		18AB474920EE12070036E54C /* BRAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressModel.h; sourceTree = "<group>"; };
 		18AB474A20EE12070036E54C /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
-		18AB474B20EE12070036E54C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		18AB474C20EE12070036E54C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18AB474F20EE12070036E54C /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
 		18AB475020EE12070036E54C /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
 		18AB475120EE12070036E54C /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
@@ -454,9 +848,6 @@
 		18AB476120EE12070036E54C /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
 		18AB476220EE12070036E54C /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
 		18AB476320EE12070036E54C /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
-		18AB476420EE12070036E54C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		18AB476520EE12070036E54C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		18AB476720EE12070036E54C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		18AB476920EE12070036E54C /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		18AB476A20EE12070036E54C /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
 		18AB476B20EE12070036E54C /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
@@ -497,15 +888,10 @@
 		18AB479420EE12070036E54C /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
 		18AB479520EE12070036E54C /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
 		18AB479620EE12070036E54C /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
-		18AB479720EE12070036E54C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18AB479920EE12070036E54C /* DejalActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejalActivityView.h; sourceTree = "<group>"; };
-		18AB479A20EE12070036E54C /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
-		18AB479B20EE12070036E54C /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		18AB479C20EE12070036E54C /* DejalActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejalActivityView.m; sourceTree = "<group>"; };
-		18AB479E20EE12070036E54C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		18AB47A020EE12070036E54C /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		18AB47A120EE12070036E54C /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		18AB47A220EE12070036E54C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18AB47A720EE12070036E54C /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		18AB47A820EE12070036E54C /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		18AB47A920EE12070036E54C /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
@@ -515,10 +901,6 @@
 		18AB47AD20EE12070036E54C /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		18AB47AE20EE12070036E54C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		18AB47AF20EE12070036E54C /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		18AB47B020EE12070036E54C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		18AB47B120EE12070036E54C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		18AB47B320EE12070036E54C /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		18AB47B420EE12070036E54C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18AB47B720EE12070036E54C /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
 		18AB47B820EE12070036E54C /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
 		18AB47BA20EE12070036E54C /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
@@ -550,7 +932,6 @@
 		18AB47D720EE12070036E54C /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
 		18AB47D820EE12070036E54C /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
 		18AB47D920EE12070036E54C /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
-		18AB47EF20EE12070036E54C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18AB47F120EE12070036E54C /* SPPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPageMenu.m; sourceTree = "<group>"; };
 		18AB47F220EE12070036E54C /* SPPageMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPageMenu.h; sourceTree = "<group>"; };
 		18AB481D20EE12070036E54C /* NSString+encryptDES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+encryptDES.m"; sourceTree = "<group>"; };
@@ -1047,6 +1428,308 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		183B187A20F783A3005B27AD /* serveExtends */ = {
+			isa = PBXGroup;
+			children = (
+				183B187B20F783A3005B27AD /* JinnLockPassword+Infrate.m */,
+				183B187C20F783A3005B27AD /* UIView+FrameLayoutMethodInfrate.h */,
+				183B187D20F783A3005B27AD /* UIScrollView+SVPullToRefreshInfrate.m */,
+				183B187E20F783A3005B27AD /* UIViewController+ShowTextHUDInfrate.m */,
+				183B187F20F783A3005B27AD /* UITextView+PlaceholderInfrate.h */,
+				183B188020F783A3005B27AD /* UIView+CommonInfrate.h */,
+				183B188120F783A3005B27AD /* UIImage+CommonInfrate.h */,
+				183B188220F783A3005B27AD /* NSString+CommonInfrate.h */,
+				183B188320F783A3005B27AD /* DatabaseQueueManager+Infrate.h */,
+				183B188420F783A3005B27AD /* JinnLockCircle+Infrate.m */,
+				183B188520F783A3005B27AD /* UIScrollView+SVInfiniteScrollingInfrate.h */,
+				183B188720F783A3005B27AD /* UIColor+HelperInfrate.h */,
+				183B188820F783A3005B27AD /* NSDictionary+CommonInfrate.h */,
+				183B188920F783A3005B27AD /* UIViewController+KeyboardHandlerInfrate.m */,
+				183B188A20F783A3005B27AD /* JinnLockIndicator+Infrate.m */,
+				183B188B20F783A3005B27AD /* NSTimer+HelperInfrate.h */,
+				183B188C20F783A3005B27AD /* NSString+NetworkEncryptionInfrate.m */,
+				183B188D20F783A3005B27AD /* ThirdPartHelper+Infrate.m */,
+				183B188F20F783A3005B27AD /* UIView+FirstResponderInfrate.h */,
+				183B189020F783A3005B27AD /* SVPullToRefreshView+Infrate.m */,
+				183B189120F783A3005B27AD /* UserDefaultsHelper+Infrate.h */,
+				183B189220F783A3005B27AD /* SVInfiniteScrollingView+Infrate.h */,
+				183B189320F783A3005B27AD /* UIViewController+ShowTextHUDInfrate.h */,
+				183B189420F783A3005B27AD /* UITextView+PlaceholderInfrate.m */,
+				183B189520F783A3005B27AD /* UIScrollView+SVPullToRefreshInfrate.h */,
+				183B189620F783A3005B27AD /* UIView+FrameLayoutMethodInfrate.m */,
+				183B189720F783A3005B27AD /* JinnLockPassword+Infrate.h */,
+				183B189820F783A3005B27AD /* UIViewController+KeyboardHandlerInfrate.h */,
+				183B189920F783A3005B27AD /* NSDictionary+CommonInfrate.m */,
+				183B189A20F783A3005B27AD /* UIColor+HelperInfrate.m */,
+				183B189C20F783A3005B27AD /* UIScrollView+SVInfiniteScrollingInfrate.m */,
+				183B189D20F783A3005B27AD /* JinnLockCircle+Infrate.h */,
+				183B189E20F783A3005B27AD /* UIImage+CommonInfrate.m */,
+				183B189F20F783A3005B27AD /* NSString+CommonInfrate.m */,
+				183B18A020F783A3005B27AD /* DatabaseQueueManager+Infrate.m */,
+				183B18A120F783A3005B27AD /* UIView+CommonInfrate.m */,
+				183B18A320F783A3005B27AD /* ThirdPartHelper+Infrate.h */,
+				183B18A420F783A3005B27AD /* NSString+NetworkEncryptionInfrate.h */,
+				183B18A520F783A3005B27AD /* NSTimer+HelperInfrate.m */,
+				183B18A620F783A3005B27AD /* JinnLockIndicator+Infrate.h */,
+				183B18A720F783A3005B27AD /* SVInfiniteScrollingView+Infrate.m */,
+				183B18A820F783A3005B27AD /* UserDefaultsHelper+Infrate.m */,
+				183B18A920F783A3005B27AD /* SVPullToRefreshView+Infrate.h */,
+				183B18AA20F783A3005B27AD /* UIView+FirstResponderInfrate.m */,
+			);
+			path = serveExtends;
+			sourceTree = "<group>";
+		};
+		183B18C320F7875C005B27AD /* custExtends */ = {
+			isa = PBXGroup;
+			children = (
+				183B18C420F7875C005B27AD /* HomeSignView+Custeffet.h */,
+				183B18C520F7875C005B27AD /* InviteFrinendController+Custeffet.m */,
+				183B18C620F7875C005B27AD /* GesturePasswordNextController+Custeffet.m */,
+				183B18C720F7875C005B27AD /* DiscoveryDetailModel+Custeffet.h */,
+				183B18C820F7875C005B27AD /* ManageMoneyModel+Custeffet.h */,
+				183B18C920F7875C005B27AD /* OLUser+Custeffet.m */,
+				183B18CA20F7875C005B27AD /* CustomTextEdgeField+Custeffet.h */,
+				183B18CB20F7875C005B27AD /* DiscoveryViewCell+Custeffet.h */,
+				183B18CC20F7875C005B27AD /* ImageInfoViewCell+Custeffet.h */,
+				183B18CD20F7875C005B27AD /* SettingViewController+Custeffet.m */,
+				183B18CE20F7875C005B27AD /* ScoreShopTableViewCell+Custeffet.m */,
+				183B18CF20F7875C005B27AD /* RegisterModel+Custeffet.h */,
+				183B18D020F7875C005B27AD /* TradeDetailViewController+Custeffet.m */,
+				183B18D120F7875C005B27AD /* OLPickerView+Custeffet.h */,
+				183B18D220F7875C005B27AD /* BillTableViewController+Custeffet.m */,
+				183B18D320F7875C005B27AD /* HomeSecondViewCell+Custeffet.m */,
+				183B18D420F7875C005B27AD /* BidThirdViewCell+Custeffet.m */,
+				183B18D520F7875C005B27AD /* SheetPresentStyleView+Custeffet.h */,
+				183B18D620F7875C005B27AD /* SocreShopHeader+Custeffet.m */,
+				183B18D720F7875C005B27AD /* DiscoveryModel+Custeffet.m */,
+				183B18D820F7875C005B27AD /* CardBagViewCell+Custeffet.h */,
+				183B18D920F7875C005B27AD /* CardBagModel+Custeffet.h */,
+				183B18DA20F7875C005B27AD /* LoanViewCell+Custeffet.m */,
+				183B18DB20F7875C005B27AD /* RegisterFooterView+Custeffet.h */,
+				183B18DC20F7875C005B27AD /* TTVerticalAlignmentButton+Custeffet.h */,
+				183B18DD20F7875C005B27AD /* TradeRecoderModel+Custeffet.h */,
+				183B18DE20F7875C005B27AD /* SigleTextFieldCell+Custeffet.m */,
+				183B18DF20F7875C005B27AD /* TradeDetailViewCell+Custeffet.m */,
+				183B18E020F7875C005B27AD /* AboutUsTableViewCell+Custeffet.h */,
+				183B18E120F7875C005B27AD /* SettingRealNameController+Custeffet.m */,
+				183B18E220F7875C005B27AD /* RegisterViewCell+Custeffet.m */,
+				183B18E320F7875C005B27AD /* SettingTableViewCell+Custeffet.h */,
+				183B18E420F7875C005B27AD /* TradeRecordViewController+Custeffet.m */,
+				183B18E520F7875C005B27AD /* TextInfoViewCell+Custeffet.m */,
+				183B18E620F7875C005B27AD /* BidModel+Custeffet.h */,
+				183B18E720F7875C005B27AD /* HomeThirdViewCell+Custeffet.h */,
+				183B18E820F7875C005B27AD /* ScoreShopViewController+Custeffet.h */,
+				183B18E920F7875C005B27AD /* LoanModel+Custeffet.h */,
+				183B18EA20F7875C005B27AD /* PhoneCodeVerifyView+Custeffet.m */,
+				183B18EC20F7875C005B27AD /* OLUserAsset+Custeffet.m */,
+				183B18ED20F7875C005B27AD /* HomePageViewController+Custeffet.h */,
+				183B18EE20F7875C005B27AD /* CardBagViewController+Custeffet.h */,
+				183B18EF20F7875C005B27AD /* InvestViewController+Custeffet.m */,
+				183B18F020F7875C005B27AD /* ChangePasswordController+Custeffet.h */,
+				183B18F120F7875C005B27AD /* PreferentialModel+Custeffet.m */,
+				183B18F220F7875C005B27AD /* RegisterController+Custeffet.h */,
+				183B18F320F7875C005B27AD /* FastLoginView+Custeffet.m */,
+				183B18F420F7875C005B27AD /* CustomProgressView+Custeffet.h */,
+				183B18F520F7875C005B27AD /* ManageMoneyCell+Custeffet.m */,
+				183B18F620F7875C005B27AD /* TradeDetailModel+Custeffet.m */,
+				183B18F720F7875C005B27AD /* HomeSectionHeader+Custeffet.m */,
+				183B18F820F7875C005B27AD /* TradePasswordController+Custeffet.h */,
+				183B18F920F7875C005B27AD /* BidSecondViewCell+Custeffet.m */,
+				183B18FA20F7875C005B27AD /* QATableViewCell+Custeffet.m */,
+				183B18FB20F7875C005B27AD /* BidDetailViewController+Custeffet.m */,
+				183B18FC20F7875C005B27AD /* LoanDescriptionCell+Custeffet.m */,
+				183B18FD20F7875C005B27AD /* ShippingAddressController+Custeffet.h */,
+				183B18FE20F7875C005B27AD /* QADetailViewController+Custeffet.m */,
+				183B18FF20F7875C005B27AD /* OLUser+DBOperateCusteffet.m */,
+				183B190020F7875C005B27AD /* RealNameTableViewCell+Custeffet.m */,
+				183B190120F7875C005B27AD /* RealNameModel+Custeffet.m */,
+				183B190220F7875C005B27AD /* HomeFirstViewCell+Custeffet.h */,
+				183B190320F7875C005B27AD /* LoanHeaderView+Custeffet.m */,
+				183B190420F7875C005B27AD /* PasswordLoginView+Custeffet.h */,
+				183B190520F7875C005B27AD /* SendVerifyCodeView+Custeffet.m */,
+				183B190620F7875C005B27AD /* MineTableHeaderView+Custeffet.h */,
+				183B190720F7875C005B27AD /* MineTableModel+Custeffet.h */,
+				183B190820F7875C005B27AD /* ChargeWithdrawViewCell+Custeffet.h */,
+				183B190920F7875C005B27AD /* DiscoveryViewController+Custeffet.h */,
+				183B190A20F7875C005B27AD /* AboutUsViewController+Custeffet.m */,
+				183B190B20F7875C005B27AD /* BillModel+Custeffet.h */,
+				183B190C20F7875C005B27AD /* BidFirstViewCell+Custeffet.m */,
+				183B190D20F7875C005B27AD /* AccoutSecurityController+Custeffet.h */,
+				183B190E20F7875C005B27AD /* LoanViewController+Custeffet.h */,
+				183B190F20F7875C005B27AD /* DiscoveryDetailController+Custeffet.h */,
+				183B191020F7875C005B27AD /* ChargeViewController+Custeffet.h */,
+				183B191120F7875C005B27AD /* AboutUsModel+Custeffet.h */,
+				183B191220F7875C005B27AD /* QAViewController+Custeffet.m */,
+				183B191320F7875C005B27AD /* TradePasswordNextController+Custeffet.m */,
+				183B191420F7875C005B27AD /* GuideViewController+Custeffet.m */,
+				183B191520F7875C005B27AD /* MineTableViewCell+Custeffet.h */,
+				183B191620F7875C005B27AD /* MineViewController+Custeffet.h */,
+				183B191720F7875C005B27AD /* SettingModel+Custeffet.m */,
+				183B191820F7875C005B27AD /* ScoreModel+Custeffet.h */,
+				183B191920F7875C005B27AD /* QAModel+Custeffet.h */,
+				183B191A20F7875C005B27AD /* PlanBidViewController+Custeffet.m */,
+				183B191B20F7875C005B27AD /* BillTableViewCell+Custeffet.h */,
+				183B191C20F7875C005B27AD /* CompleteViewController+Custeffet.m */,
+				183B191D20F7875C005B27AD /* RepaymentController+Custeffet.m */,
+				183B191E20F7875C005B27AD /* LoginViewController+Custeffet.m */,
+				183B191F20F7875C005B27AD /* BindCardViewController+Custeffet.m */,
+				183B192020F7875C005B27AD /* AssetGraphView+Custeffet.h */,
+				183B192120F7875C005B27AD /* SocreShopHeader+Custeffet.h */,
+				183B192220F7875C005B27AD /* DiscoveryModel+Custeffet.h */,
+				183B192320F7875C005B27AD /* SheetPresentStyleView+Custeffet.m */,
+				183B192420F7875C005B27AD /* BidThirdViewCell+Custeffet.h */,
+				183B192520F7875C005B27AD /* BillTableViewController+Custeffet.h */,
+				183B192620F7875C005B27AD /* HomeSecondViewCell+Custeffet.h */,
+				183B192720F7875C005B27AD /* OLPickerView+Custeffet.m */,
+				183B192820F7875C005B27AD /* TradeDetailViewController+Custeffet.h */,
+				183B192920F7875C005B27AD /* ScoreShopTableViewCell+Custeffet.h */,
+				183B192A20F7875C005B27AD /* RegisterModel+Custeffet.m */,
+				183B192B20F7875C005B27AD /* SettingViewController+Custeffet.h */,
+				183B192C20F7875C005B27AD /* DiscoveryViewCell+Custeffet.m */,
+				183B192D20F7875C005B27AD /* ImageInfoViewCell+Custeffet.m */,
+				183B192E20F7875C005B27AD /* OLUser+Custeffet.h */,
+				183B192F20F7875C005B27AD /* ManageMoneyModel+Custeffet.m */,
+				183B193020F7875C005B27AD /* CustomTextEdgeField+Custeffet.m */,
+				183B193120F7875C005B27AD /* GesturePasswordNextController+Custeffet.h */,
+				183B193220F7875C005B27AD /* DiscoveryDetailModel+Custeffet.m */,
+				183B193320F7875C005B27AD /* HomeSignView+Custeffet.m */,
+				183B193420F7875C005B27AD /* InviteFrinendController+Custeffet.h */,
+				183B193520F7875C005B27AD /* CustomProgressView+Custeffet.m */,
+				183B193620F7875C005B27AD /* ManageMoneyCell+Custeffet.h */,
+				183B193720F7875C005B27AD /* HomeSectionHeader+Custeffet.h */,
+				183B193820F7875C005B27AD /* TradeDetailModel+Custeffet.h */,
+				183B193920F7875C005B27AD /* RegisterController+Custeffet.m */,
+				183B193A20F7875C005B27AD /* PreferentialModel+Custeffet.h */,
+				183B193B20F7875C005B27AD /* ChangePasswordController+Custeffet.m */,
+				183B193C20F7875C005B27AD /* FastLoginView+Custeffet.h */,
+				183B193D20F7875C005B27AD /* CardBagViewController+Custeffet.m */,
+				183B193E20F7875C005B27AD /* InvestViewController+Custeffet.h */,
+				183B194020F7875C005B27AD /* OLUserAsset+Custeffet.h */,
+				183B194120F7875C005B27AD /* HomePageViewController+Custeffet.m */,
+				183B194220F7875C005B27AD /* PhoneCodeVerifyView+Custeffet.h */,
+				183B194320F7875C005B27AD /* ScoreShopViewController+Custeffet.m */,
+				183B194420F7875C005B27AD /* LoanModel+Custeffet.m */,
+				183B194520F7875C005B27AD /* TextInfoViewCell+Custeffet.h */,
+				183B194620F7875C005B27AD /* BidModel+Custeffet.m */,
+				183B194720F7875C005B27AD /* HomeThirdViewCell+Custeffet.m */,
+				183B194820F7875C005B27AD /* SettingTableViewCell+Custeffet.m */,
+				183B194920F7875C005B27AD /* TradeRecordViewController+Custeffet.h */,
+				183B194A20F7875C005B27AD /* SettingRealNameController+Custeffet.h */,
+				183B194B20F7875C005B27AD /* RegisterViewCell+Custeffet.h */,
+				183B194C20F7875C005B27AD /* AboutUsTableViewCell+Custeffet.m */,
+				183B194D20F7875C005B27AD /* TradeDetailViewCell+Custeffet.h */,
+				183B194E20F7875C005B27AD /* SigleTextFieldCell+Custeffet.h */,
+				183B194F20F7875C005B27AD /* TradeRecoderModel+Custeffet.m */,
+				183B195020F7875C005B27AD /* RegisterFooterView+Custeffet.m */,
+				183B195120F7875C005B27AD /* TTVerticalAlignmentButton+Custeffet.m */,
+				183B195220F7875C005B27AD /* CardBagViewCell+Custeffet.m */,
+				183B195320F7875C005B27AD /* LoanViewCell+Custeffet.h */,
+				183B195420F7875C005B27AD /* CardBagModel+Custeffet.m */,
+				183B195520F7875C005B27AD /* ChargeWithdrawViewCell+Custeffet.m */,
+				183B195620F7875C005B27AD /* AboutUsViewController+Custeffet.h */,
+				183B195720F7875C005B27AD /* DiscoveryViewController+Custeffet.m */,
+				183B195820F7875C005B27AD /* MineTableModel+Custeffet.m */,
+				183B195920F7875C005B27AD /* MineTableHeaderView+Custeffet.m */,
+				183B195A20F7875C005B27AD /* PasswordLoginView+Custeffet.m */,
+				183B195B20F7875C005B27AD /* SendVerifyCodeView+Custeffet.h */,
+				183B195C20F7875C005B27AD /* HomeFirstViewCell+Custeffet.m */,
+				183B195D20F7875C005B27AD /* LoanHeaderView+Custeffet.h */,
+				183B195E20F7875C005B27AD /* RealNameModel+Custeffet.h */,
+				183B195F20F7875C005B27AD /* OLUser+DBOperateCusteffet.h */,
+				183B196020F7875C005B27AD /* RealNameTableViewCell+Custeffet.h */,
+				183B196120F7875C005B27AD /* ShippingAddressController+Custeffet.m */,
+				183B196220F7875C005B27AD /* QADetailViewController+Custeffet.h */,
+				183B196320F7875C005B27AD /* LoanDescriptionCell+Custeffet.h */,
+				183B196420F7875C005B27AD /* QATableViewCell+Custeffet.h */,
+				183B196520F7875C005B27AD /* BidDetailViewController+Custeffet.h */,
+				183B196620F7875C005B27AD /* TradePasswordController+Custeffet.m */,
+				183B196720F7875C005B27AD /* BidSecondViewCell+Custeffet.h */,
+				183B196820F7875C005B27AD /* AssetGraphView+Custeffet.m */,
+				183B196920F7875C005B27AD /* RepaymentController+Custeffet.h */,
+				183B196A20F7875C005B27AD /* BindCardViewController+Custeffet.h */,
+				183B196B20F7875C005B27AD /* LoginViewController+Custeffet.h */,
+				183B196C20F7875C005B27AD /* PlanBidViewController+Custeffet.h */,
+				183B196D20F7875C005B27AD /* CompleteViewController+Custeffet.h */,
+				183B196E20F7875C005B27AD /* BillTableViewCell+Custeffet.m */,
+				183B196F20F7875C005B27AD /* ScoreModel+Custeffet.m */,
+				183B197020F7875C005B27AD /* SettingModel+Custeffet.h */,
+				183B197120F7875C005B27AD /* QAModel+Custeffet.m */,
+				183B197220F7875C005B27AD /* MineViewController+Custeffet.m */,
+				183B197320F7875C005B27AD /* MineTableViewCell+Custeffet.m */,
+				183B197420F7875C005B27AD /* GuideViewController+Custeffet.h */,
+				183B197520F7875C005B27AD /* QAViewController+Custeffet.h */,
+				183B197620F7875C005B27AD /* TradePasswordNextController+Custeffet.h */,
+				183B197720F7875C005B27AD /* AboutUsModel+Custeffet.m */,
+				183B197820F7875C005B27AD /* LoanViewController+Custeffet.m */,
+				183B197920F7875C005B27AD /* ChargeViewController+Custeffet.m */,
+				183B197A20F7875C005B27AD /* DiscoveryDetailController+Custeffet.m */,
+				183B197B20F7875C005B27AD /* AccoutSecurityController+Custeffet.m */,
+				183B197C20F7875C005B27AD /* BidFirstViewCell+Custeffet.h */,
+				183B197D20F7875C005B27AD /* BillModel+Custeffet.m */,
+			);
+			path = custExtends;
+			sourceTree = "<group>";
+		};
+		1850CB1820F77A4500175D29 /* fextends */ = {
+			isa = PBXGroup;
+			children = (
+				1850CB1920F77A4500175D29 /* ZTAppCalculatorViewController+Usdata.h */,
+				1850CB1A20F77A4500175D29 /* FFinanceCounterViewController+Usdata.h */,
+				1850CB1B20F77A4500175D29 /* UIView+YGCExtensionUsdata.m */,
+				1850CB1C20F77A4500175D29 /* FHouseCounterHybirdViewController+Usdata.m */,
+				1850CB1D20F77A4500175D29 /* FCounterViewController+Usdata.h */,
+				1850CB1E20F77A4500175D29 /* YGCTradeWindow+Usdata.h */,
+				1850CB1F20F77A4500175D29 /* FHouseCounterViewController+Usdata.m */,
+				1850CB2020F77A4500175D29 /* FHouseCounterSimpleViewController+Usdata.h */,
+				1850CB2120F77A4500175D29 /* FCommonCounterViewController+Usdata.m */,
+				1850CB2220F77A4500175D29 /* UnderlineView+Usdata.h */,
+				1850CB2320F77A4500175D29 /* CalculateMethod+Usdata.h */,
+				1850CB2420F77A4500175D29 /* FRepayDetailCell+Usdata.h */,
+				1850CB2520F77A4500175D29 /* FFinanceRepayDetailViewController+Usdata.h */,
+				1850CB2620F77A4500175D29 /* FSaveCounterViewController+Usdata.h */,
+				1850CB2720F77A4500175D29 /* FFinanceCounterViewController+Usdata.m */,
+				1850CB2820F77A4500175D29 /* ZTAppCalculatorViewController+Usdata.m */,
+				1850CB2920F77A4500175D29 /* FHouseCounterViewController+Usdata.h */,
+				1850CB2A20F77A4500175D29 /* YGCTradeWindow+Usdata.m */,
+				1850CB2B20F77A4500175D29 /* FCounterViewController+Usdata.m */,
+				1850CB2C20F77A4500175D29 /* FHouseCounterHybirdViewController+Usdata.h */,
+				1850CB2D20F77A4500175D29 /* UIView+YGCExtensionUsdata.h */,
+				1850CB2E20F77A4500175D29 /* CalculateMethod+Usdata.m */,
+				1850CB2F20F77A4500175D29 /* UnderlineView+Usdata.m */,
+				1850CB3020F77A4500175D29 /* FCommonCounterViewController+Usdata.h */,
+				1850CB3120F77A4500175D29 /* FHouseCounterSimpleViewController+Usdata.m */,
+				1850CB3220F77A4500175D29 /* FSaveCounterViewController+Usdata.m */,
+				1850CB3320F77A4500175D29 /* FFinanceRepayDetailViewController+Usdata.m */,
+				1850CB3420F77A4500175D29 /* FRepayDetailCell+Usdata.m */,
+			);
+			path = fextends;
+			sourceTree = "<group>";
+		};
+		1850CB4320F77BCA00175D29 /* baseExtends */ = {
+			isa = PBXGroup;
+			children = (
+				1850CB4420F77BCA00175D29 /* ClearNavPullToRefreshController+Initview.m */,
+				1850CB4520F77BCA00175D29 /* ClearNavViewController+Initview.m */,
+				1850CB4620F77BCA00175D29 /* BaseInfoModel+Initview.h */,
+				1850CB4720F77BCA00175D29 /* BaseTableViewController+Initview.m */,
+				1850CB4820F77BCA00175D29 /* MutiTablesPullToRefreshController+Initview.h */,
+				1850CB4920F77BCA00175D29 /* BaseViewController+Initview.h */,
+				1850CB4A20F77BCA00175D29 /* BaseNavigationController+Initview.m */,
+				1850CB4B20F77BCA00175D29 /* BasePullToRefreshController+Initview.h */,
+				1850CB4C20F77BCA00175D29 /* ClearNavTableController+Initview.h */,
+				1850CB4D20F77BCA00175D29 /* BaseInfoModel+Initview.m */,
+				1850CB4E20F77BCA00175D29 /* ClearNavViewController+Initview.h */,
+				1850CB4F20F77BCA00175D29 /* ClearNavPullToRefreshController+Initview.h */,
+				1850CB5020F77BCA00175D29 /* BaseViewController+Initview.m */,
+				1850CB5120F77BCA00175D29 /* BaseTableViewController+Initview.h */,
+				1850CB5220F77BCA00175D29 /* MutiTablesPullToRefreshController+Initview.m */,
+				1850CB5320F77BCA00175D29 /* BaseNavigationController+Initview.h */,
+				1850CB5420F77BCA00175D29 /* ClearNavTableController+Initview.m */,
+				1850CB5520F77BCA00175D29 /* BasePullToRefreshController+Initview.m */,
+			);
+			path = baseExtends;
+			sourceTree = "<group>";
+		};
 		18AB470120EE12070036E54C /* XTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -1064,6 +1747,7 @@
 		18AB470820EE12070036E54C /* ftool */ = {
 			isa = PBXGroup;
 			children = (
+				1850CB1820F77A4500175D29 /* fextends */,
 				18AB470920EE12070036E54C /* home */,
 				18AB473620EE12070036E54C /* Vendors */,
 				18AB481B20EE12070036E54C /* Utils */,
@@ -1167,8 +1851,6 @@
 			isa = PBXGroup;
 			children = (
 				18AB473820EE12070036E54C /* BRPickerView */,
-				18AB474B20EE12070036E54C /* LICENSE */,
-				18AB474C20EE12070036E54C /* README.md */,
 			);
 			path = BRPickerView;
 			sourceTree = "<group>";
@@ -1230,8 +1912,6 @@
 			isa = PBXGroup;
 			children = (
 				18AB474E20EE12070036E54C /* MJExtension */,
-				18AB476420EE12070036E54C /* LICENSE */,
-				18AB476520EE12070036E54C /* README.md */,
 			);
 			path = MJExtension;
 			sourceTree = "<group>";
@@ -1267,9 +1947,7 @@
 		18AB476620EE12070036E54C /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				18AB476720EE12070036E54C /* LICENSE */,
 				18AB476820EE12070036E54C /* MJRefresh */,
-				18AB479720EE12070036E54C /* README.md */,
 			);
 			path = MJRefresh;
 			sourceTree = "<group>";
@@ -1373,8 +2051,6 @@
 			isa = PBXGroup;
 			children = (
 				18AB479920EE12070036E54C /* DejalActivityView.h */,
-				18AB479A20EE12070036E54C /* README.markdown */,
-				18AB479B20EE12070036E54C /* License.txt */,
 				18AB479C20EE12070036E54C /* DejalActivityView.m */,
 			);
 			path = DejalActivityView;
@@ -1383,9 +2059,7 @@
 		18AB479D20EE12070036E54C /* FDFullscreenPopGesture */ = {
 			isa = PBXGroup;
 			children = (
-				18AB479E20EE12070036E54C /* LICENSE */,
 				18AB479F20EE12070036E54C /* FDFullscreenPopGesture */,
-				18AB47A220EE12070036E54C /* README.md */,
 			);
 			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
@@ -1403,8 +2077,6 @@
 			isa = PBXGroup;
 			children = (
 				18AB47A620EE12070036E54C /* SVProgressHUD */,
-				18AB47B020EE12070036E54C /* README.md */,
-				18AB47B120EE12070036E54C /* LICENSE.txt */,
 			);
 			path = SVProgressHUD;
 			sourceTree = "<group>";
@@ -1428,8 +2100,6 @@
 		18AB47B220EE12070036E54C /* IQKeyboardManager */ = {
 			isa = PBXGroup;
 			children = (
-				18AB47B320EE12070036E54C /* LICENSE.md */,
-				18AB47B420EE12070036E54C /* README.md */,
 				18AB47B520EE12070036E54C /* IQKeyboardManager */,
 			);
 			path = IQKeyboardManager;
@@ -1516,7 +2186,6 @@
 		18AB47EE20EE12070036E54C /* SPPageMenu */ = {
 			isa = PBXGroup;
 			children = (
-				18AB47EF20EE12070036E54C /* README.md */,
 				18AB47F020EE12070036E54C /* SPPageMenu */,
 			);
 			path = SPPageMenu;
@@ -1849,6 +2518,9 @@
 		3D3284E12071CD9000F82D3E /* XiaoYuOnline */ = {
 			isa = PBXGroup;
 			children = (
+				1850CB4320F77BCA00175D29 /* baseExtends */,
+				183B187A20F783A3005B27AD /* serveExtends */,
+				183B18C320F7875C005B27AD /* custExtends */,
 				18D29B3320F6061500B6EF0A /* PrefixHeader.pch */,
 				3D977FB8207BA8D2006A2BD5 /* Assets.xcassets */,
 				3D3284E22071CD9000F82D3E /* AppDelegate.h */,
@@ -2602,14 +3274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18AB499120EE12080036E54C /* FMonthBudgetRecordCell.xib in Resources */,
-				18AB492C20EE12080036E54C /* LICENSE.txt in Resources */,
 				18AB492A20EE12080036E54C /* SVProgressHUD.bundle in Resources */,
 				18AB499C20EE12080036E54C /* 计算器_缩小@3x.png in Resources */,
 				18AB48DB20EE12080036E54C /* F_default_201806.txt in Resources */,
 				3D3285822073662300F82D3E /* Localizable.strings in Resources */,
 				3D763B2120A579EE00D0E4B8 /* mine_wb_cb_test7@3x.png in Resources */,
 				18AB499B20EE12080036E54C /* 计算器_缩小@2x.png in Resources */,
-				18AB492520EE12080036E54C /* README.md in Resources */,
 				3D3BD13E20749962000887AF /* BillTableViewCell.xib in Resources */,
 				3D763B1120A579EE00D0E4B8 /* mine_wb_cb_test0@2x.png in Resources */,
 				18AB496920EE12080036E54C /* close_btn_icon@2x.png in Resources */,
@@ -2617,10 +3287,7 @@
 				18AB499A20EE12080036E54C /* 计算器_叉@3x.png in Resources */,
 				18AB499D20EE12080036E54C /* 计算器_叉@2x.png in Resources */,
 				3D763B1A20A579EE00D0E4B8 /* withdraw_success.jpg in Resources */,
-				18AB492E20EE12080036E54C /* README.md in Resources */,
-				18AB492D20EE12080036E54C /* LICENSE.md in Resources */,
 				18AB48FA20EE12080036E54C /* BRPickerView.bundle in Resources */,
-				18AB492B20EE12080036E54C /* README.md in Resources */,
 				18AB490D20EE12080036E54C /* MJRefresh.bundle in Resources */,
 				3D763B1320A579EE00D0E4B8 /* charge_success.jpg in Resources */,
 				18AB499920EE12080036E54C /* 计算器_放大@2x.png in Resources */,
@@ -2635,25 +3302,15 @@
 				18AB48DA20EE12080036E54C /* AccoutCategeries.plist in Resources */,
 				3D6564DD20A82C4400BA364E /* inviteFriends_top.png in Resources */,
 				18AB499620EE12080036E54C /* FCounterViewController.xib in Resources */,
-				18AB490A20EE12080036E54C /* LICENSE in Resources */,
 				18AB498F20EE12080036E54C /* FMyExpandseRecordCell.xib in Resources */,
 				18AB48E820EE12080036E54C /* FHomeNewsCell.xib in Resources */,
 				18AB49B720EE3C3E0036E54C /* homebanner.jpeg in Resources */,
 				3D977FB9207BA8D2006A2BD5 /* Assets.xcassets in Resources */,
-				18AB494620EE12080036E54C /* README.md in Resources */,
 				18AB48E020EE12080036E54C /* FRateViewController.xib in Resources */,
-				18AB48FD20EE12080036E54C /* README.md in Resources */,
-				18AB48FC20EE12080036E54C /* LICENSE in Resources */,
 				18AB48DC20EE12080036E54C /* F_default_201807.txt in Resources */,
 				18AB48D920EE12080036E54C /* F_default_201805.txt in Resources */,
-				18AB492320EE12080036E54C /* LICENSE in Resources */,
-				18AB490820EE12080036E54C /* LICENSE in Resources */,
-				18AB492120EE12080036E54C /* License.txt in Resources */,
 				3D763B2020A579EE00D0E4B8 /* withdraw_failure.jpg in Resources */,
-				18AB492020EE12080036E54C /* README.markdown in Resources */,
 				18AB499020EE12080036E54C /* FMyIncomeRecordCell.xib in Resources */,
-				18AB490920EE12080036E54C /* README.md in Resources */,
-				18AB491F20EE12080036E54C /* README.md in Resources */,
 				18AB48E120EE12080036E54C /* FEditFirstTypeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2696,8 +3353,12 @@
 				18AB498520EE12080036E54C /* FMonthIncomeRecordController.m in Sources */,
 				18AB490E20EE12080036E54C /* UIScrollView+MJExtension.m in Sources */,
 				3DFFF9DE207713100049DC9A /* SigleTextFieldCell.m in Sources */,
+				183B19AB20F7875D005B27AD /* RepaymentController+Custeffet.m in Sources */,
 				18AB48F720EE12080036E54C /* NSDate+BRAdd.m in Sources */,
+				1850CB5B20F77BCA00175D29 /* BaseViewController+Initview.m in Sources */,
+				183B19D020F7875D005B27AD /* BillTableViewCell+Custeffet.m in Sources */,
 				18AB493820EE12080036E54C /* IQUIWindow+Hierarchy.m in Sources */,
+				183B19A520F7875D005B27AD /* QAViewController+Custeffet.m in Sources */,
 				3D3ADFEB207AFE1700B7386B /* UIDevice+Common.m in Sources */,
 				3DFFF9C2207626EF0049DC9A /* SettingTableViewCell.m in Sources */,
 				3DFFFA142077ACF50049DC9A /* CardBagViewController.m in Sources */,
@@ -2706,13 +3367,20 @@
 				18AB48E320EE12080036E54C /* FHomeCell.m in Sources */,
 				18AB493420EE12080036E54C /* IQPreviousNextView.m in Sources */,
 				3DBED6E620A1FB82003AF52E /* BindCardViewController.m in Sources */,
+				183B18BB20F783A3005B27AD /* UIImage+CommonInfrate.m in Sources */,
+				183B198F20F7875D005B27AD /* TextInfoViewCell+Custeffet.m in Sources */,
 				18AB490120EE12080036E54C /* NSObject+MJCoding.m in Sources */,
 				18AB48E720EE12080036E54C /* HomeHeader.m in Sources */,
+				1850CB5820F77BCA00175D29 /* BaseTableViewController+Initview.m in Sources */,
 				18AB498220EE12080036E54C /* BaseContentCell.m in Sources */,
+				183B19D220F7875D005B27AD /* QAModel+Custeffet.m in Sources */,
+				183B19BA20F7875D005B27AD /* CardBagViewController+Custeffet.m in Sources */,
 				18AB498120EE12080036E54C /* FTabBarController.m in Sources */,
+				183B18AD20F783A3005B27AD /* UIViewController+ShowTextHUDInfrate.m in Sources */,
 				3DFFF9B6207619890049DC9A /* AboutUsViewController.m in Sources */,
 				3DFFF9BC2076207F0049DC9A /* AboutUsTableViewCell.m in Sources */,
 				18AB49A520EE12080036E54C /* UnderlineView.m in Sources */,
+				183B19B220F7875D005B27AD /* ImageInfoViewCell+Custeffet.m in Sources */,
 				3D41071B207CA305004288E5 /* BidFirstViewCell.m in Sources */,
 				18AB490220EE12080036E54C /* MJExtensionConst.m in Sources */,
 				3DC5998020B6F7DC00D86CFF /* ScoreModel.m in Sources */,
@@ -2720,35 +3388,57 @@
 				3DFFF9E4207718270049DC9A /* TradePasswordController.m in Sources */,
 				18AB48F920EE12080036E54C /* BRAddressModel.m in Sources */,
 				18AB496C20EE12080036E54C /* AJListBox.m in Sources */,
+				183B19C320F7875D005B27AD /* RegisterFooterView+Custeffet.m in Sources */,
 				18AB491520EE12080036E54C /* MJRefreshAutoGifFooter.m in Sources */,
+				183B19CE20F7875D005B27AD /* TradePasswordController+Custeffet.m in Sources */,
 				3DC16C6A208237E800A9292A /* RegisterFooterView.m in Sources */,
 				18AB497C20EE12080036E54C /* BaseWKWebViewController.m in Sources */,
 				3DC16C2B207F48BF00A9292A /* LoanViewCell.m in Sources */,
 				18AB491D20EE12080036E54C /* MJRefreshAutoFooter.m in Sources */,
 				3D32853520732E8400F82D3E /* NSDictionary+Common.m in Sources */,
 				18AB48E420EE12080036E54C /* FHomeNewsCell.m in Sources */,
+				183B197E20F7875C005B27AD /* InviteFrinendController+Custeffet.m in Sources */,
 				3D5FDD9B2092C6A500C16A5F /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				18AB498D20EE12080036E54C /* FMyIncomeRecordController.m in Sources */,
+				183B19D920F7875D005B27AD /* AccoutSecurityController+Custeffet.m in Sources */,
+				183B199320F7875D005B27AD /* InvestViewController+Custeffet.m in Sources */,
+				183B198720F7875D005B27AD /* SocreShopHeader+Custeffet.m in Sources */,
+				183B18B820F783A3005B27AD /* UIColor+HelperInfrate.m in Sources */,
 				18AB490B20EE12080036E54C /* UIScrollView+MJRefresh.m in Sources */,
 				18AB491A20EE12080036E54C /* MJRefreshFooter.m in Sources */,
+				183B19DA20F7875D005B27AD /* BillModel+Custeffet.m in Sources */,
 				18AB493220EE12080036E54C /* IQBarButtonItem.m in Sources */,
 				3D32854C207342B600F82D3E /* BaseViewController.m in Sources */,
 				18AB49A120EE12080036E54C /* CalculateMethod.m in Sources */,
 				3D41071E207CB740004288E5 /* BidSecondViewCell.m in Sources */,
+				1850CB3E20F77A4500175D29 /* UnderlineView+Usdata.m in Sources */,
 				3D32854F207342EE00F82D3E /* HomePageViewController.m in Sources */,
+				183B19A120F7875D005B27AD /* LoanHeaderView+Custeffet.m in Sources */,
+				183B19AC20F7875D005B27AD /* LoginViewController+Custeffet.m in Sources */,
 				3D3BD1362074991C000887AF /* BillTableViewController.m in Sources */,
 				18AB493D20EE12080036E54C /* IQKeyboardReturnKeyHandler.m in Sources */,
+				183B18BF20F783A3005B27AD /* NSTimer+HelperInfrate.m in Sources */,
 				18AB49A320EE12080036E54C /* FFinanceRepayDetailViewController.m in Sources */,
+				183B18B720F783A3005B27AD /* NSDictionary+CommonInfrate.m in Sources */,
 				3D5FDD9F2092D16300C16A5F /* BasePullToRefreshController.m in Sources */,
+				183B19B920F7875D005B27AD /* ChangePasswordController+Custeffet.m in Sources */,
+				183B199D20F7875D005B27AD /* QADetailViewController+Custeffet.m in Sources */,
+				183B198220F7875C005B27AD /* ScoreShopTableViewCell+Custeffet.m in Sources */,
 				18AB497220EE12080036E54C /* NSDictionary+AJ.m in Sources */,
+				183B19BD20F7875D005B27AD /* LoanModel+Custeffet.m in Sources */,
 				18AB491C20EE12080036E54C /* MJRefreshBackFooter.m in Sources */,
 				3DFFF9FA207746760049DC9A /* JinnLockPassword.m in Sources */,
+				183B199720F7875D005B27AD /* TradeDetailModel+Custeffet.m in Sources */,
 				18AB496120EE12080036E54C /* ReLogin.m in Sources */,
+				183B18C020F783A3005B27AD /* SVInfiniteScrollingView+Infrate.m in Sources */,
 				3DCF9A7B20AACCFA00AE6F74 /* CardBagModel.m in Sources */,
+				183B19A020F7875D005B27AD /* RealNameModel+Custeffet.m in Sources */,
 				18AB493C20EE12080036E54C /* IQUIViewController+Additions.m in Sources */,
 				18AB48FF20EE12080036E54C /* NSObject+MJKeyValue.m in Sources */,
 				3DFFF9AD2075C1B30049DC9A /* ClearNavViewController.m in Sources */,
 				18AB493A20EE12080036E54C /* IQUIScrollView+Additions.m in Sources */,
+				183B18BE20F783A3005B27AD /* UIView+CommonInfrate.m in Sources */,
+				183B198C20F7875D005B27AD /* SettingRealNameController+Custeffet.m in Sources */,
 				3D3ADFCA2078ECCF00B7386B /* CompleteViewController.m in Sources */,
 				18AB48EE20EE12080036E54C /* FEditSubTypeController.m in Sources */,
 				18AB49A820EE12080036E54C /* FSaveCounterViewController.m in Sources */,
@@ -2758,29 +3448,39 @@
 				3D32853120732E8400F82D3E /* UIView+Common.m in Sources */,
 				3D3285552073431300F82D3E /* DiscoveryViewController.m in Sources */,
 				18AB48EC20EE12080036E54C /* FModifySubTypeController.m in Sources */,
+				183B19B320F7875D005B27AD /* ManageMoneyModel+Custeffet.m in Sources */,
 				18AB48F220EE12080036E54C /* FTakeRecordIncomeController.m in Sources */,
 				18AB498920EE12080036E54C /* FMonthExpandseRecordController.m in Sources */,
 				18AB498C20EE12080036E54C /* FAccountRecord.m in Sources */,
 				18AB492920EE12080036E54C /* SVIndefiniteAnimatedView.m in Sources */,
+				183B18B620F783A3005B27AD /* UIView+FrameLayoutMethodInfrate.m in Sources */,
 				18AB49AA20EE12080036E54C /* FCounterViewController.m in Sources */,
 				18AB490F20EE12080036E54C /* NSBundle+MJRefresh.m in Sources */,
 				18AB491420EE12080036E54C /* MJRefreshAutoStateFooter.m in Sources */,
+				183B19B020F7875D005B27AD /* RegisterModel+Custeffet.m in Sources */,
 				18AB495D20EE12080036E54C /* ConverUtil.m in Sources */,
 				3DC16C6D20844C1A00A9292A /* SheetPresentStyleView.m in Sources */,
 				18AB493020EE12080036E54C /* IQToolbar.m in Sources */,
 				3D410718207C9FFB004288E5 /* BidDetailViewController.m in Sources */,
 				3DFFF9EA207743BC0049DC9A /* GesturePasswordNextController.m in Sources */,
+				183B19A320F7875D005B27AD /* AboutUsViewController+Custeffet.m in Sources */,
 				18AB496420EE12080036E54C /* UIView+AJ.m in Sources */,
+				183B199920F7875D005B27AD /* BidSecondViewCell+Custeffet.m in Sources */,
 				3D3284F22071CD9100F82D3E /* main.m in Sources */,
 				18AB497420EE12080036E54C /* NSDate+AJax.m in Sources */,
 				18AB498020EE12080036E54C /* FNavigationController.m in Sources */,
 				3D3FA822207E1134005F96E1 /* HomeSectionHeader.m in Sources */,
+				1850CB5720F77BCA00175D29 /* ClearNavViewController+Initview.m in Sources */,
 				3D3285732073531200F82D3E /* UserDefaultsHelper.m in Sources */,
 				18AB490720EE12080036E54C /* MJFoundation.m in Sources */,
+				1850CB3F20F77A4500175D29 /* FHouseCounterSimpleViewController+Usdata.m in Sources */,
+				1850CB3620F77A4500175D29 /* FHouseCounterHybirdViewController+Usdata.m in Sources */,
 				18AB490320EE12080036E54C /* NSObject+MJProperty.m in Sources */,
 				3D3FA81C207DED93005F96E1 /* HomeFirstViewCell.m in Sources */,
 				3DC16C28207F45B800A9292A /* LoanViewController.m in Sources */,
+				183B19C020F7875D005B27AD /* SettingTableViewCell+Custeffet.m in Sources */,
 				3DFFF9F8207746760049DC9A /* JinnLockViewController.m in Sources */,
+				183B19B720F7875D005B27AD /* CustomProgressView+Custeffet.m in Sources */,
 				3D5FDD912090CEC400C16A5F /* OLUserAsset.m in Sources */,
 				3D3ADFC42078C2C000B7386B /* ChargeWithdrawViewCell.m in Sources */,
 				18AB48F020EE12080036E54C /* FAddSubTypeController.m in Sources */,
@@ -2790,89 +3490,138 @@
 				18AB499520EE12080036E54C /* FMonthBudgetRecordCell.m in Sources */,
 				3DC16C31207F51E100A9292A /* LoanModel.m in Sources */,
 				3D3ADFE8207A088400B7386B /* MineTableModel.m in Sources */,
+				183B18BD20F783A3005B27AD /* DatabaseQueueManager+Infrate.m in Sources */,
+				183B19AE20F7875D005B27AD /* SheetPresentStyleView+Custeffet.m in Sources */,
+				1850CB5D20F77BCA00175D29 /* ClearNavTableController+Initview.m in Sources */,
 				3D5FDD8520902E9D00C16A5F /* UIViewController+ShowTextHUD.m in Sources */,
+				183B19C120F7875D005B27AD /* AboutUsTableViewCell+Custeffet.m in Sources */,
 				3DFFF9B920761B710049DC9A /* AboutUsModel.m in Sources */,
 				18AB48ED20EE12080036E54C /* FAddFirstTypeController.m in Sources */,
 				3DC16C552080B67C00A9292A /* LoginViewController.m in Sources */,
 				3DFFFA042077A3C40049DC9A /* WellBeingModel.m in Sources */,
 				18AB49B020EE12080036E54C /* FUsersTool.m in Sources */,
 				3D3ADFBA20786E8000B7386B /* SocreShopHeader.m in Sources */,
+				183B199420F7875D005B27AD /* PreferentialModel+Custeffet.m in Sources */,
 				18AB49B420EE12080036E54C /* NSString+Shove.m in Sources */,
 				18AB492F20EE12080036E54C /* IQTextView.m in Sources */,
+				183B19AF20F7875D005B27AD /* OLPickerView+Custeffet.m in Sources */,
 				18AB496320EE12080036E54C /* UITextField+custom.m in Sources */,
+				183B19C920F7875D005B27AD /* MineTableModel+Custeffet.m in Sources */,
+				183B19D520F7875D005B27AD /* AboutUsModel+Custeffet.m in Sources */,
 				18AB498820EE12080036E54C /* FMyIncomeRecordDetailController.m in Sources */,
 				3DBED6E320A1EA38003AF52E /* ManageMoneyModel.m in Sources */,
 				3D5FDD8B209066BF00C16A5F /* DatabaseQueueManager.m in Sources */,
 				3DFFF9F9207746760049DC9A /* JinnLockIndicator.m in Sources */,
 				18AB496820EE12080036E54C /* AJImgBrowser.m in Sources */,
 				18AB497520EE12080036E54C /* UIButton+Custom.m in Sources */,
+				183B19CD20F7875D005B27AD /* ShippingAddressController+Custeffet.m in Sources */,
 				18AB49AF20EE12080036E54C /* UIButton+CountDown.m in Sources */,
 				18AB496D20EE12080036E54C /* ZHPickView.m in Sources */,
 				18AB48DF20EE12080036E54C /* FTakeRecordFatherController.m in Sources */,
 				3D5FDD882090589900C16A5F /* OLUser.m in Sources */,
 				18AB492220EE12080036E54C /* DejalActivityView.m in Sources */,
 				3DFFF9CF20765CE50049DC9A /* RealNameModel.m in Sources */,
+				1850CB5920F77BCA00175D29 /* BaseNavigationController+Initview.m in Sources */,
 				18AB498320EE12080036E54C /* FMonthBudgetRecordController.m in Sources */,
 				3DFFF9B32075FFBD0049DC9A /* OLGlobalUIConfig.m in Sources */,
 				3DC16C7020844C7A00A9292A /* OLPickerView.m in Sources */,
 				18AB496620EE12080036E54C /* LDProgressView.m in Sources */,
 				3D3285522073430600F82D3E /* ManageMoneyViewController.m in Sources */,
+				183B19A720F7875D005B27AD /* GuideViewController+Custeffet.m in Sources */,
 				3D3ADFD92079B44A00B7386B /* DiscoveryDetailController.m in Sources */,
+				183B19CF20F7875D005B27AD /* AssetGraphView+Custeffet.m in Sources */,
 				18AB495E20EE12080036E54C /* AJIDFATool.m in Sources */,
+				183B19A220F7875D005B27AD /* SendVerifyCodeView+Custeffet.m in Sources */,
 				3DFFF9DB20770E190049DC9A /* AccoutSecurityController.m in Sources */,
 				18AB498420EE12080036E54C /* FMyExpandseRecordController.m in Sources */,
 				18D29B2E20F5EA0A00B6EF0A /* DataUtil.m in Sources */,
+				183B199220F7875D005B27AD /* OLUserAsset+Custeffet.m in Sources */,
 				3DFFF9E1207713E40049DC9A /* ChangePasswordController.m in Sources */,
 				3DC16C4B20809E9600A9292A /* RepaymentController.m in Sources */,
+				183B19B820F7875D005B27AD /* RegisterController+Custeffet.m in Sources */,
 				3D6564D420A7C4F000BA364E /* PlanBidViewController.m in Sources */,
 				3DC16C34207F8A1800A9292A /* LoanHeaderView.m in Sources */,
 				3D32855B207348EF00F82D3E /* BaseTableViewController.m in Sources */,
+				183B198820F7875D005B27AD /* DiscoveryModel+Custeffet.m in Sources */,
+				1850CB3C20F77A4500175D29 /* FCounterViewController+Usdata.m in Sources */,
+				183B199820F7875D005B27AD /* HomeSectionHeader+Custeffet.m in Sources */,
 				18AB490520EE12080036E54C /* NSString+MJExtension.m in Sources */,
 				3DC16C5E2081DF4A00A9292A /* UIViewController+KeyboardHandler.m in Sources */,
 				18AB499E20EE12080036E54C /* UIView+YGCExtension.m in Sources */,
+				183B199E20F7875D005B27AD /* OLUser+DBOperateCusteffet.m in Sources */,
+				183B198620F7875D005B27AD /* BidThirdViewCell+Custeffet.m in Sources */,
 				3DC16C5B2080BCA900A9292A /* PasswordLoginView.m in Sources */,
+				183B199520F7875D005B27AD /* FastLoginView+Custeffet.m in Sources */,
 				18AB48EB20EE12080036E54C /* FHomeNews.m in Sources */,
+				183B19D820F7875D005B27AD /* DiscoveryDetailController+Custeffet.m in Sources */,
 				3D6564D920A8286200BA364E /* InviteFrinendController.m in Sources */,
 				3D3284E42071CD9000F82D3E /* AppDelegate.m in Sources */,
 				18AB48FB20EE12080036E54C /* BRAddressPickerView.m in Sources */,
 				18AB492820EE12080036E54C /* SVProgressHUD.m in Sources */,
+				183B18B020F783A3005B27AD /* JinnLockIndicator+Infrate.m in Sources */,
+				183B199C20F7875D005B27AD /* LoanDescriptionCell+Custeffet.m in Sources */,
 				3D5FDDA52093641800C16A5F /* BidModel.m in Sources */,
 				3D6564D120A7367500BA364E /* PreferentialModel.m in Sources */,
 				18AB490620EE12080036E54C /* MJPropertyKey.m in Sources */,
 				3DC16C4520807AB500A9292A /* PhoneCodeVerifyView.m in Sources */,
 				18AB497120EE12080036E54C /* UIImageView+AJ.m in Sources */,
+				183B19B120F7875D005B27AD /* DiscoveryViewCell+Custeffet.m in Sources */,
 				18AB490420EE12080036E54C /* NSObject+MJClass.m in Sources */,
 				18AB48E620EE12080036E54C /* FTakeRecordIncomeView.m in Sources */,
+				183B18B420F783A3005B27AD /* SVPullToRefreshView+Infrate.m in Sources */,
+				183B19AA20F7875D005B27AD /* CompleteViewController+Custeffet.m in Sources */,
 				18AB48F520EE12080036E54C /* BRStringPickerView.m in Sources */,
+				1850CB3820F77A4500175D29 /* FCommonCounterViewController+Usdata.m in Sources */,
 				18AB49B120EE12080036E54C /* FRegisterViewController.m in Sources */,
 				3D3BD1412074A68D000887AF /* QAViewController.m in Sources */,
+				183B198420F7875D005B27AD /* BillTableViewController+Custeffet.m in Sources */,
+				183B19A820F7875D005B27AD /* SettingModel+Custeffet.m in Sources */,
 				18AB493120EE12080036E54C /* IQTitleBarButtonItem.m in Sources */,
 				18AB492420EE12080036E54C /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				3DFFF9FE20779D4A0049DC9A /* WellBeingViewCell.m in Sources */,
 				18AB48E220EE12080036E54C /* FTakeRecordExpandView.m in Sources */,
+				1850CB5C20F77BCA00175D29 /* MutiTablesPullToRefreshController+Initview.m in Sources */,
+				1850CB3920F77A4500175D29 /* FFinanceCounterViewController+Usdata.m in Sources */,
 				18AB49A020EE12080036E54C /* ZTAppCalculatorViewController.m in Sources */,
 				3DFFFA012077A2E40049DC9A /* WellBeingViewController.m in Sources */,
 				3D3BD1392074993C000887AF /* BillModel.m in Sources */,
+				183B18AC20F783A3005B27AD /* UIScrollView+SVPullToRefreshInfrate.m in Sources */,
 				18AB491120EE12080036E54C /* MJRefreshBackGifFooter.m in Sources */,
+				183B19A620F7875D005B27AD /* TradePasswordNextController+Custeffet.m in Sources */,
 				18AB496220EE12080036E54C /* MyTools.m in Sources */,
 				18AB499F20EE12080036E54C /* YGCTradeWindow.m in Sources */,
+				183B19C820F7875D005B27AD /* DiscoveryViewController+Custeffet.m in Sources */,
 				18AB491720EE12080036E54C /* MJRefreshNormalHeader.m in Sources */,
+				183B19B420F7875D005B27AD /* CustomTextEdgeField+Custeffet.m in Sources */,
 				18AB49B220EE12080036E54C /* ColorTools.m in Sources */,
 				3DC16C3C208049F300A9292A /* TradeDetailViewController.m in Sources */,
 				3DFFF9BF207625580049DC9A /* BaseInfoModel.m in Sources */,
 				18AB490020EE12080036E54C /* MJProperty.m in Sources */,
+				183B198320F7875C005B27AD /* TradeDetailViewController+Custeffet.m in Sources */,
+				183B19CB20F7875D005B27AD /* PasswordLoginView+Custeffet.m in Sources */,
+				183B198020F7875C005B27AD /* OLUser+Custeffet.m in Sources */,
 				3D32856F20734E5A00F82D3E /* GuideViewController.m in Sources */,
 				18AB49B320EE12080036E54C /* FLoginViewController.m in Sources */,
 				18AB498A20EE12080036E54C /* FAccountRecordSaveTool.m in Sources */,
 				18AB49A420EE12080036E54C /* FHouseCounterHybirdViewController.m in Sources */,
+				183B198D20F7875D005B27AD /* RegisterViewCell+Custeffet.m in Sources */,
+				183B19B620F7875D005B27AD /* HomeSignView+Custeffet.m in Sources */,
 				18AB497820EE12080036E54C /* BaseEntity.m in Sources */,
+				1850CB4020F77A4500175D29 /* FSaveCounterViewController+Usdata.m in Sources */,
 				18AB49A220EE12080036E54C /* FRepayDetailCell.m in Sources */,
 				18AB48FE20EE12080036E54C /* MJPropertyType.m in Sources */,
+				183B198B20F7875D005B27AD /* TradeDetailViewCell+Custeffet.m in Sources */,
+				183B199B20F7875D005B27AD /* BidDetailViewController+Custeffet.m in Sources */,
+				183B19BC20F7875D005B27AD /* ScoreShopViewController+Custeffet.m in Sources */,
 				3DFFF9E720773FCC0049DC9A /* TradePasswordNextController.m in Sources */,
 				18AB496F20EE12080036E54C /* NSURL+UrlStringAutoAdjust.m in Sources */,
 				18AB497620EE12080036E54C /* ProductItem.m in Sources */,
+				183B198A20F7875D005B27AD /* SigleTextFieldCell+Custeffet.m in Sources */,
+				183B198120F7875C005B27AD /* SettingViewController+Custeffet.m in Sources */,
+				183B198920F7875D005B27AD /* LoanViewCell+Custeffet.m in Sources */,
 				18AB497D20EE12080036E54C /* AJTextFieldBaseController.m in Sources */,
 				3D410721207CB9F1004288E5 /* BidThirdViewCell.m in Sources */,
+				183B19D420F7875D005B27AD /* MineTableViewCell+Custeffet.m in Sources */,
 				18AB496520EE12080036E54C /* NavBar.m in Sources */,
 				18AB498720EE12080036E54C /* FMineController.m in Sources */,
 				18AB497F20EE12080036E54C /* FBaseViewController.m in Sources */,
@@ -2880,40 +3629,56 @@
 				3D3ADFE22079E99500B7386B /* MineTableHeaderView.m in Sources */,
 				18AB492620EE12080036E54C /* SVRadialGradientLayer.m in Sources */,
 				18AB496720EE12080036E54C /* AJMonthSectionHeader.m in Sources */,
+				183B18AF20F783A3005B27AD /* UIViewController+KeyboardHandlerInfrate.m in Sources */,
 				18AB491320EE12080036E54C /* MJRefreshBackNormalFooter.m in Sources */,
 				18AB48F820EE12080036E54C /* BRBaseView.m in Sources */,
 				3DFFF9CC20765CB20049DC9A /* SettingRealNameController.m in Sources */,
+				183B19BF20F7875D005B27AD /* HomeThirdViewCell+Custeffet.m in Sources */,
 				18AB49A620EE12080036E54C /* FFinanceCounterViewController.m in Sources */,
 				18AB48EA20EE12080036E54C /* FTakeRecordExpandController.m in Sources */,
 				3D5FDDA22093155200C16A5F /* MutiTablesPullToRefreshController.m in Sources */,
 				18AB499220EE12080036E54C /* FMineCell.m in Sources */,
 				18AB49A720EE12080036E54C /* FHouseCounterViewController.m in Sources */,
+				183B19CC20F7875D005B27AD /* HomeFirstViewCell+Custeffet.m in Sources */,
 				3D32853620732E8400F82D3E /* UIImage+Common.m in Sources */,
 				3D3ADFE5207A05AC00B7386B /* MineTableViewCell.m in Sources */,
 				3D3ADFC12078B81A00B7386B /* ChargeViewController.m in Sources */,
+				1850CB4220F77A4500175D29 /* FRepayDetailCell+Usdata.m in Sources */,
 				18AB496B20EE12080036E54C /* UIColor+custom.m in Sources */,
 				3D5FDDAB20936EB500C16A5F /* ClearNavPullToRefreshController.m in Sources */,
+				1850CB3720F77A4500175D29 /* FHouseCounterViewController+Usdata.m in Sources */,
+				183B18C120F783A3005B27AD /* UserDefaultsHelper+Infrate.m in Sources */,
 				18AB49AD20EE12080036E54C /* UIButton+KK.m in Sources */,
 				3D4B429520A4284B00586D4F /* TextInfoViewCell.m in Sources */,
 				18AB49AB20EE12080036E54C /* FCommonCounterViewController.m in Sources */,
 				18AB498620EE12080036E54C /* FMyExpandseRecordDetailController.m in Sources */,
+				183B199620F7875D005B27AD /* ManageMoneyCell+Custeffet.m in Sources */,
 				18AB496E20EE12080036E54C /* WSPlaceholderTextView.m in Sources */,
 				3DC16C39207F9CD400A9292A /* TradeRecordViewController.m in Sources */,
 				3DFFF9D2207661680049DC9A /* RealNameTableViewCell.m in Sources */,
+				183B19C420F7875D005B27AD /* TTVerticalAlignmentButton+Custeffet.m in Sources */,
 				18AB491920EE12080036E54C /* MJRefreshGifHeader.m in Sources */,
+				183B18B120F783A3005B27AD /* NSString+NetworkEncryptionInfrate.m in Sources */,
+				183B199A20F7875D005B27AD /* QATableViewCell+Custeffet.m in Sources */,
 				3D32853320732E8400F82D3E /* UIColor+Helper.m in Sources */,
 				18AB496A20EE12080036E54C /* UITableViewCell+AJ.m in Sources */,
+				183B18BA20F783A3005B27AD /* UIScrollView+SVInfiniteScrollingInfrate.m in Sources */,
 				18AB491220EE12080036E54C /* MJRefreshBackStateFooter.m in Sources */,
 				18AB49AE20EE12080036E54C /* InputView.m in Sources */,
 				3DFFF9C5207629810049DC9A /* SettingViewController.m in Sources */,
 				18AB497A20EE12080036E54C /* AJNetWorkController.m in Sources */,
+				183B18B220F783A3005B27AD /* ThirdPartHelper+Infrate.m in Sources */,
+				183B19D620F7875D005B27AD /* LoanViewController+Custeffet.m in Sources */,
 				3D5FDD94209184FB00C16A5F /* AssetGraphView.m in Sources */,
 				3DC16C422080517200A9292A /* TradeDetailViewCell.m in Sources */,
 				18AB496020EE12080036E54C /* SecurityUtil.m in Sources */,
 				3DC16C582080B90C00A9292A /* FastLoginView.m in Sources */,
+				183B19CA20F7875D005B27AD /* MineTableHeaderView+Custeffet.m in Sources */,
 				3D3FA81F207E0C30005F96E1 /* TTVerticalAlignmentButton.m in Sources */,
 				3D3BD1472074A937000887AF /* QAModel.m in Sources */,
+				183B199F20F7875D005B27AD /* RealNameTableViewCell+Custeffet.m in Sources */,
 				3D5FDD9C2092C6A500C16A5F /* UIScrollView+SVPullToRefresh.m in Sources */,
+				183B19B520F7875D005B27AD /* DiscoveryDetailModel+Custeffet.m in Sources */,
 				18AB48F320EE12080036E54C /* FHomeViewController.m in Sources */,
 				18AB492720EE12080036E54C /* SVProgressAnimatedView.m in Sources */,
 				18AB49AC20EE12080036E54C /* ForgetKeyController.m in Sources */,
@@ -2922,7 +3687,9 @@
 				18AB49A920EE12080036E54C /* FHouseCounterSimpleViewController.m in Sources */,
 				3D5FDD7E208F72B200C16A5F /* ThirdPartHelper.m in Sources */,
 				18AB497020EE12080036E54C /* UIImage+AJ.m in Sources */,
+				1850CB5A20F77BCA00175D29 /* BaseInfoModel+Initview.m in Sources */,
 				18AB494720EE12080036E54C /* SPPageMenu.m in Sources */,
+				1850CB3B20F77A4500175D29 /* YGCTradeWindow+Usdata.m in Sources */,
 				3D32853220732E8400F82D3E /* NSString+Common.m in Sources */,
 				3D5FDDA820936BC900C16A5F /* ClearNavTableController.m in Sources */,
 				18AB497720EE12080036E54C /* AJTime.m in Sources */,
@@ -2933,30 +3700,53 @@
 				18AB48DE20EE12080036E54C /* FWebController.m in Sources */,
 				18AB491020EE12080036E54C /* UIView+MJExtension.m in Sources */,
 				18AB48F420EE12080036E54C /* FRateViewController.m in Sources */,
+				1850CB3A20F77A4500175D29 /* ZTAppCalculatorViewController+Usdata.m in Sources */,
 				3D3BD13D20749962000887AF /* BillTableViewCell.m in Sources */,
+				183B19A420F7875D005B27AD /* BidFirstViewCell+Custeffet.m in Sources */,
 				18AB498E20EE12080036E54C /* FMyExpandseRecordCell.m in Sources */,
 				3DFFF9FB207746760049DC9A /* JinnLockCircle.m in Sources */,
+				1850CB5620F77BCA00175D29 /* ClearNavPullToRefreshController+Initview.m in Sources */,
 				18AB49B520EE12080036E54C /* CaptchaView.m in Sources */,
 				3DC16C4820808EE700A9292A /* CustomTextEdgeField.m in Sources */,
 				3D3ADFBD2078875D00B7386B /* ScoreShopTableViewCell.m in Sources */,
+				183B19D320F7875D005B27AD /* MineViewController+Custeffet.m in Sources */,
 				3D4B429820A428C700586D4F /* ImageInfoViewCell.m in Sources */,
+				183B18B520F783A3005B27AD /* UITextView+PlaceholderInfrate.m in Sources */,
+				183B199020F7875D005B27AD /* PhoneCodeVerifyView+Custeffet.m in Sources */,
+				183B19A920F7875D005B27AD /* PlanBidViewController+Custeffet.m in Sources */,
+				183B19C520F7875D005B27AD /* CardBagViewCell+Custeffet.m in Sources */,
 				3DC16C6720822F3D00A9292A /* RegisterModel.m in Sources */,
 				3D3BD1442074A6A7000887AF /* QATableViewCell.m in Sources */,
+				183B19AD20F7875D005B27AD /* BindCardViewController+Custeffet.m in Sources */,
 				18AB497920EE12080036E54C /* FNoDataView.m in Sources */,
+				183B19C720F7875D005B27AD /* ChargeWithdrawViewCell+Custeffet.m in Sources */,
 				3DC16C2E207F515600A9292A /* LoanDescriptionCell.m in Sources */,
+				183B19D720F7875D005B27AD /* ChargeViewController+Custeffet.m in Sources */,
+				183B19BE20F7875D005B27AD /* BidModel+Custeffet.m in Sources */,
 				3D32853020732E8400F82D3E /* UITextView+Placeholder.m in Sources */,
+				183B18AE20F783A3005B27AD /* JinnLockCircle+Infrate.m in Sources */,
 				18AB48F620EE12080036E54C /* BRDatePickerView.m in Sources */,
+				183B18BC20F783A3005B27AD /* NSString+CommonInfrate.m in Sources */,
 				3DC16C3F20804B4300A9292A /* TradeDetailModel.m in Sources */,
 				3D410715207C6159004288E5 /* ManageMoneyCell.m in Sources */,
 				18AB493720EE12080036E54C /* IQNSArray+Sort.m in Sources */,
+				1850CB3D20F77A4500175D29 /* CalculateMethod+Usdata.m in Sources */,
+				183B19D120F7875D005B27AD /* ScoreModel+Custeffet.m in Sources */,
 				3DC16C22207EF49000A9292A /* BaseNavigationController.m in Sources */,
+				183B19BB20F7875D005B27AD /* HomePageViewController+Custeffet.m in Sources */,
 				3D410724207CC107004288E5 /* InvestViewController.m in Sources */,
+				183B19C620F7875D005B27AD /* CardBagModel+Custeffet.m in Sources */,
 				18AB493620EE12080036E54C /* IQKeyboardManager.m in Sources */,
 				3D3ADFD62078FB3300B7386B /* DiscoveryModel.m in Sources */,
 				3D3BD14A2074B2C0000887AF /* QADetailViewController.m in Sources */,
+				1850CB5E20F77BCA00175D29 /* BasePullToRefreshController+Initview.m in Sources */,
+				183B18C220F783A3005B27AD /* UIView+FirstResponderInfrate.m in Sources */,
 				18AB490C20EE12080036E54C /* MJRefreshConst.m in Sources */,
+				183B18AB20F783A3005B27AD /* JinnLockPassword+Infrate.m in Sources */,
 				3DFFF9D520766D450049DC9A /* ShippingAddressController.m in Sources */,
 				18AB493320EE12080036E54C /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				1850CB4120F77A4500175D29 /* FFinanceRepayDetailViewController+Usdata.m in Sources */,
+				183B19C220F7875D005B27AD /* TradeRecoderModel+Custeffet.m in Sources */,
 				3DC16C1F207E432400A9292A /* HomeThirdViewCell.m in Sources */,
 				18AB493920EE12080036E54C /* IQUITextFieldView+Additions.m in Sources */,
 				18AB491E20EE12080036E54C /* MJRefreshComponent.m in Sources */,
@@ -2964,15 +3754,19 @@
 				18AB497E20EE12080036E54C /* FUserModel.m in Sources */,
 				18AB491620EE12080036E54C /* MJRefreshAutoNormalFooter.m in Sources */,
 				3DFFFA112077AC120049DC9A /* WKSegementSliderView.m in Sources */,
+				183B198520F7875D005B27AD /* HomeSecondViewCell+Custeffet.m in Sources */,
 				3D3ADFB520786C0F00B7386B /* ScoreShopViewController.m in Sources */,
 				3DFFF9F7207746760049DC9A /* JinnLockSudoko.m in Sources */,
 				3D4B429220A421FF00586D4F /* DiscoveryDetailModel.m in Sources */,
+				1850CB3520F77A4500175D29 /* UIView+YGCExtensionUsdata.m in Sources */,
 				18AB491820EE12080036E54C /* MJRefreshStateHeader.m in Sources */,
 				18AB491B20EE12080036E54C /* MJRefreshHeader.m in Sources */,
 				3DFFF9C820762ADB0049DC9A /* SettingModel.m in Sources */,
 				18AB48E920EE12080036E54C /* FEditFirstTypeCell.m in Sources */,
 				3DC16C25207F20B100A9292A /* HomeSignView.m in Sources */,
+				183B197F20F7875C005B27AD /* GesturePasswordNextController+Custeffet.m in Sources */,
 				3DC16C612081F5B200A9292A /* RegisterController.m in Sources */,
+				183B198E20F7875D005B27AD /* TradeRecordViewController+Custeffet.m in Sources */,
 				18AB495F20EE12080036E54C /* AppDefaultUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

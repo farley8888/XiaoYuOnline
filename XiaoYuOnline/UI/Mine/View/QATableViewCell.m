@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "QATableViewCell.h"
+#import "QATableViewCell+Custeffet.h"
 
 @implementation QATableViewCell {
     UIView *_backView;

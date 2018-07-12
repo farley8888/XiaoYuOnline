@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "MineViewController.h"
+#import "MineViewController+Custeffet.h"
 #import "BillTableViewController.h"
 #import "QAViewController.h"
 #import "AboutUsViewController.h"

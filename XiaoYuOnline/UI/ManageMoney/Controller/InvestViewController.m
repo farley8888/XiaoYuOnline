@@ -7,7 +7,7 @@
 //
 
 //#import "InvestViewController.h"
-#import "InvestViewController.h"
+#import "InvestViewController+Custeffet.h"
 #import "UIViewController+ShowTextHUD.h"
 #import "UIView+Common.h"
 #import "PreferentialModel.h"

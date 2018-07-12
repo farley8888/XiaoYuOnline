@@ -8,6 +8,7 @@
 
 #import "DiscoveryViewController.h"
 #import "DiscoveryDetailController.h"
+#import "DiscoveryViewController+Custeffet.h"
 #import "DiscoveryViewCell.h"
 #import "SVPullToRefresh.h"
 #import "DiscoveryModel.h"

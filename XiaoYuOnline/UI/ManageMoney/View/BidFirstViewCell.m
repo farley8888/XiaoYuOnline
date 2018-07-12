@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "BidFirstViewCell.h"
+#import "BidFirstViewCell+Custeffet.h"
 
 @implementation BidFirstViewCell
 

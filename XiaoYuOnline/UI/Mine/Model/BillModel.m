@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "BillModel.h"
+#import "BillModel+Custeffet.h"
 #import <YYKit/NSDictionary+YYAdd.h>
 
 @implementation BillModel

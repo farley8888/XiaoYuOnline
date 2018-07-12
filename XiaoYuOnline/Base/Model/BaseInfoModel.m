@@ -8,6 +8,7 @@
 
 #import "BaseInfoModel.h"
 
+#import "BaseInfoModel+Initview.h"
 @interface BaseInfoModel()
 @property (nonatomic, copy) NSString *title;
 @end

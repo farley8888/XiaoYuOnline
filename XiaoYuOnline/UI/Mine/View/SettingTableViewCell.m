@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "SettingTableViewCell.h"
+#import "SettingTableViewCell+Custeffet.h"
 
 @implementation SettingTableViewCell {
     UIImageView *_accessoryImageView;

@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "HomePageViewController.h"
+#import "HomePageViewController+Custeffet.h"
 #import "BidDetailViewController.h"
 #import "PlanBidViewController.h"
 #import "InviteFrinendController.h"

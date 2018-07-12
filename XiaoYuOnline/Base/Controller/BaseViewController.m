@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "BaseViewController+Initview.h"
 #import "UIImage+Common.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 

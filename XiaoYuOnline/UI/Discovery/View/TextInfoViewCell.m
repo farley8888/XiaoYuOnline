@@ -8,6 +8,7 @@
 
 #import "TextInfoViewCell.h"
 
+#import "TextInfoViewCell+Custeffet.h"
 @implementation TextInfoViewCell
 
 - (void)awakeFromNib {

@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-#define UP_TIME @"2018-07-1"  //提交审核时间
+#define UP_TIME @"2018-07-12"  //提交审核时间
 #define REQUEST_TIMEOUT 30 //请求超时时间（单位秒）
 
 #define ExaminingTime 7 //默认审核天数
-#define ExaminedTime 5 //默认审核通过时间（超过此时间默认通过）
+#define ExaminedTime 15 //默认审核通过时间（超过此时间默认通过）
 
 #define MY_VERSION @"mYclientVersion" //已经安装的版本，默认和build一致
 #define KEY_EXAMIN @"mYisExamin" //是否审核通过标识
@@ -62,10 +62,10 @@ int main(int argc, char * argv[]) {
                 NSURLSessionDataTask *dataTask = [urlSession dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                     
                     if (error) {
-                        //                        NSString *errorDescription = error.localizedDescription;
+        //                        NSString *errorDescription = error.localizedDescription;
                         DLOG(@"main请求error = %@", error);
                         isExamined = NO;
-                        //                        [[NSUserDefaults standardUserDefaults] setInteger:errTimes+1 forKey:KEY_ErrorTimes];
+        //                        [[NSUserDefaults standardUserDefaults] setInteger:errTimes+1 forKey:KEY_ErrorTimes];
                         
                     } else {
                         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];

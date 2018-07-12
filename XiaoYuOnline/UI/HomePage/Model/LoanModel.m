@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "LoanModel.h"
+#import "LoanModel+Custeffet.h"
 
 @implementation LoanModel
 

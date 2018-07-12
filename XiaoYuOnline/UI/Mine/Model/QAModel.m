@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "QAModel.h"
+#import "QAModel+Custeffet.h"
 
 @implementation QAModel
 

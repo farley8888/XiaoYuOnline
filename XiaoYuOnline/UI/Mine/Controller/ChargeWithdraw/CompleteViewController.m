@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "CompleteViewController.h"
+#import "CompleteViewController+Custeffet.h"
 
 @interface CompleteViewController () {
     UIImage *_image;

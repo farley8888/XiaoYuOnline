@@ -8,6 +8,7 @@
 
 #import "UserDefaultsHelper.h"
 #import "NSString+Common.h"
+#import "UserDefaultsHelper+Infrate.h"
 
 static NSString *kLocalVersionKey = @"XYLocalAppVersion";
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018年 XiaoYuOnline. All rights reserved.
 //
 
-#import "AssetGraphView.h"
+#import "AssetGraphView+Custeffet.h"
 
 const CGFloat XYASSET_GRAPH_CIRCLE_RADIUD = 67;
 

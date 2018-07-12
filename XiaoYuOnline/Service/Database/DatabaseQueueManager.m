@@ -8,6 +8,7 @@
 
 #import "DatabaseQueueManager.h"
 #import "OLURLDefine.h"
+#import "DatabaseQueueManager+Infrate.h"
 
 @implementation DatabaseQueueManager {
     NSString *_dbPath;

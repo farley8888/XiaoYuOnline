@@ -8,6 +8,7 @@
 
 #import "OLUser.h"
 #import "DatabaseQueueManager.h"
+#import "OLUser+Custeffet.h"
 #import <YYKit/YYKit.h>
 
 NSNotificationName const OLUserDidLoginNotification = @"OLUserDidLoginNotification";

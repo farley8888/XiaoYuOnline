@@ -8,6 +8,7 @@
 
 #import "ThirdPartHelper.h"
 #import <XMNetworking/XMNetworking.h>
+#import "ThirdPartHelper+Infrate.h"
 #import "NSString+Common.h"
 #import "OLURLDefine.h"
 
