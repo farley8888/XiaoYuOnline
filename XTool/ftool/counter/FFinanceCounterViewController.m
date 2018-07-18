@@ -10,6 +10,7 @@
 #import "BRStringPickerView.h"
 #import "FFinanceRepayDetailViewController.h"
 #import "BRDatePickerView.h"
+#import "FCounterViewController.h"
 
 @interface FFinanceCounterViewController ()<UITextFieldDelegate> {
     
@@ -37,7 +38,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NavBar *bar = [[NavBar alloc] initWithTitle:@"理财计算器" leftName:nil rightName:@"" delegate:self];
+    NavBar *bar = [[NavBar alloc] initWithTitle:@"理财计算器" leftName:nil rightName:@"更多" delegate:self];
+     bar.leftBtn.hidden = YES;  //隐藏返回按钮
     
     [self.tf_limitValue setText:@"12"];
     [self.tf_rateValue setText:@"5"];
@@ -49,13 +51,13 @@
     self.tf_rebackMoney.delegate = self;  //返现
     self.tf_manageRate.delegate = self;  //管理费率
     
-    repayWay = 0;
+    repayWay = 1;
     rateType = 0;
     limitType = 0;
-    dicWay = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"0", @"一次性还本付息",
-              @"1", @"先息后本",@"2", @"等额本息",@"3", @"等额本金", nil];
+    dicWay = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+              @"1", @"先息后本",@"2", @"等额本息",@"3", @"等额本金", @"0", @"一次性还本付息",nil];
     
-    [_btn_selectRepayWay setTitle:@"一次性还本付息" forState:UIControlStateNormal];
+    [_btn_selectRepayWay setTitle:@"先息后本" forState:UIControlStateNormal];
     
 }
 
@@ -100,6 +102,10 @@
     
 }
 
+-(void) nextItemClick{
+    UIViewController *cs = [FCounterViewController new];
+    [self.navigationController pushViewController:cs animated:YES];
+}
 
 - (IBAction)segLimitTypeChange:(UISegmentedControl *)sender {
     limitType = sender.selectedSegmentIndex;
@@ -108,8 +114,8 @@
         dicWay = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"0", @"一次性还本付息", nil];
         [_btn_selectRepayWay setTitle:@"一次性还本付息" forState:UIControlStateNormal];
     }else {
-        dicWay = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"0", @"一次性还本付息",
-                  @"1", @"先息后本",@"2", @"等额本息",@"3", @"等额本金", nil];
+        dicWay = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                  @"1", @"先息后本",@"2", @"等额本息",@"3", @"等额本金",@"0", @"一次性还本付息", nil];
     }
     [self counting];
 }

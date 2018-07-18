@@ -321,6 +321,7 @@
 		18AB49B420EE12080036E54C /* NSString+Shove.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48D620EE12080036E54C /* NSString+Shove.m */; };
 		18AB49B520EE12080036E54C /* CaptchaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB48D720EE12080036E54C /* CaptchaView.m */; };
 		18AB49B720EE3C3E0036E54C /* homebanner.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18AB49B620EE3C3E0036E54C /* homebanner.jpeg */; };
+		18B3523720FED7ED0028CED4 /* FRepayDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3523620FED7ED0028CED4 /* FRepayDetailHeadView.m */; };
 		18D29B2E20F5EA0A00B6EF0A /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D29B2D20F5EA0A00B6EF0A /* DataUtil.m */; };
 		3D3284E42071CD9000F82D3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3284E32071CD9000F82D3E /* AppDelegate.m */; };
 		3D3284EA2071CD9000F82D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3284E82071CD9000F82D3E /* Main.storyboard */; };
@@ -1108,6 +1109,8 @@
 		18AB48D620EE12080036E54C /* NSString+Shove.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Shove.m"; sourceTree = "<group>"; };
 		18AB48D720EE12080036E54C /* CaptchaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptchaView.m; sourceTree = "<group>"; };
 		18AB49B620EE3C3E0036E54C /* homebanner.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homebanner.jpeg; sourceTree = "<group>"; };
+		18B3523520FED7ED0028CED4 /* FRepayDetailHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRepayDetailHeadView.h; sourceTree = "<group>"; };
+		18B3523620FED7ED0028CED4 /* FRepayDetailHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRepayDetailHeadView.m; sourceTree = "<group>"; };
 		18D29B2C20F5EA0A00B6EF0A /* DataUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
 		18D29B2D20F5EA0A00B6EF0A /* DataUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
 		18D29B3320F6061500B6EF0A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -2420,13 +2423,13 @@
 				18AB48B120EE12080036E54C /* FHouseCounterViewController.h */,
 				18AB48B220EE12080036E54C /* FRepayDetailCell.m */,
 				18AB48B320EE12080036E54C /* FFinanceCounterViewController.h */,
+				18AB48BA20EE12080036E54C /* FFinanceCounterViewController.m */,
 				18AB48B420EE12080036E54C /* FFinanceRepayDetailViewController.m */,
 				18AB48B520EE12080036E54C /* FCommonCounterViewController.h */,
 				18AB48B620EE12080036E54C /* FCounterViewController.h */,
 				18AB48B720EE12080036E54C /* FHouseCounterSimpleViewController.h */,
 				18AB48B820EE12080036E54C /* FHouseCounterHybirdViewController.m */,
 				18AB48B920EE12080036E54C /* UnderlineView.m */,
-				18AB48BA20EE12080036E54C /* FFinanceCounterViewController.m */,
 				18AB48BB20EE12080036E54C /* FRepayDetailCell.h */,
 				18AB48BC20EE12080036E54C /* FHouseCounterViewController.m */,
 				18AB48BD20EE12080036E54C /* FSaveCounterViewController.m */,
@@ -2435,6 +2438,8 @@
 				18AB48C020EE12080036E54C /* FHouseCounterSimpleViewController.m */,
 				18AB48C120EE12080036E54C /* FCounterViewController.m */,
 				18AB48C220EE12080036E54C /* FCommonCounterViewController.m */,
+				18B3523520FED7ED0028CED4 /* FRepayDetailHeadView.h */,
+				18B3523620FED7ED0028CED4 /* FRepayDetailHeadView.m */,
 			);
 			path = counter;
 			sourceTree = "<group>";
@@ -3649,6 +3654,7 @@
 				1850CB3720F77A4500175D29 /* FHouseCounterViewController+Usdata.m in Sources */,
 				183B18C120F783A3005B27AD /* UserDefaultsHelper+Infrate.m in Sources */,
 				18AB49AD20EE12080036E54C /* UIButton+KK.m in Sources */,
+				18B3523720FED7ED0028CED4 /* FRepayDetailHeadView.m in Sources */,
 				3D4B429520A4284B00586D4F /* TextInfoViewCell.m in Sources */,
 				18AB49AB20EE12080036E54C /* FCommonCounterViewController.m in Sources */,
 				18AB498620EE12080036E54C /* FMyExpandseRecordDetailController.m in Sources */,

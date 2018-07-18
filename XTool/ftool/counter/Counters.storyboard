@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--最新利率（存款）-->
         <scene sceneID="hrK-L8-ZOn">
@@ -1884,7 +1879,7 @@
                                 <rect key="frame" x="0.0" y="65" width="375" height="602"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="Kun-Hb-ckI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1E-qu-Xf9">
@@ -1977,39 +1972,6 @@
                                                 <constraint firstItem="Xrw-Xh-fHZ" firstAttribute="centerY" secondItem="dXp-a8-W1S" secondAttribute="centerY" id="qOm-iN-iSg"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9y-eR-daA">
-                                            <rect key="frame" x="0.0" y="134" width="375" height="35"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="期号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3K-Qz-BlP">
-                                                    <rect key="frame" x="25" y="8.5" width="31" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还款金额(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hya-bt-nkA">
-                                                    <rect key="frame" x="143.5" y="8.5" width="87.5" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还款时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgX-YB-QGQ">
-                                                    <rect key="frame" x="286.5" y="9" width="61.5" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.96068006753921509" green="0.96084433794021606" blue="0.96066969633102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstItem="hya-bt-nkA" firstAttribute="centerX" secondItem="T9y-eR-daA" secondAttribute="centerX" id="EZj-Nq-OOH"/>
-                                                <constraint firstItem="g3K-Qz-BlP" firstAttribute="centerY" secondItem="T9y-eR-daA" secondAttribute="centerY" id="gXt-Kc-c6V"/>
-                                                <constraint firstItem="hya-bt-nkA" firstAttribute="centerY" secondItem="T9y-eR-daA" secondAttribute="centerY" id="k8b-ml-8TI"/>
-                                                <constraint firstAttribute="trailing" secondItem="qgX-YB-QGQ" secondAttribute="trailing" constant="27" id="rKD-EZ-fsh"/>
-                                                <constraint firstItem="qgX-YB-QGQ" firstAttribute="centerY" secondItem="T9y-eR-daA" secondAttribute="centerY" id="tic-Wy-kxn"/>
-                                                <constraint firstAttribute="height" constant="35" id="z12-nZ-qL6"/>
-                                                <constraint firstItem="g3K-Qz-BlP" firstAttribute="leading" secondItem="T9y-eR-daA" secondAttribute="leading" constant="25" id="zZa-t1-vJk"/>
-                                            </constraints>
-                                        </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96c-Aq-FO3">
                                             <rect key="frame" x="0.0" y="90" width="375" height="44"/>
                                             <subviews>
@@ -2059,12 +2021,9 @@
                                         <constraint firstAttribute="trailing" secondItem="d1E-qu-Xf9" secondAttribute="trailing" id="3ps-Ck-RDk"/>
                                         <constraint firstItem="96c-Aq-FO3" firstAttribute="top" secondItem="dXp-a8-W1S" secondAttribute="bottom" constant="1" id="Dyd-v1-TMo"/>
                                         <constraint firstItem="dXp-a8-W1S" firstAttribute="leading" secondItem="Kun-Hb-ckI" secondAttribute="leading" id="EiM-4W-bBU"/>
-                                        <constraint firstAttribute="trailing" secondItem="T9y-eR-daA" secondAttribute="trailing" id="FDG-i9-fyd"/>
-                                        <constraint firstItem="T9y-eR-daA" firstAttribute="top" secondItem="96c-Aq-FO3" secondAttribute="bottom" id="Jc8-GU-f0X"/>
                                         <constraint firstItem="d1E-qu-Xf9" firstAttribute="top" secondItem="Kun-Hb-ckI" secondAttribute="top" id="OE2-Hn-IOi"/>
                                         <constraint firstAttribute="trailing" secondItem="dXp-a8-W1S" secondAttribute="trailing" id="Y3w-I7-FlY"/>
                                         <constraint firstItem="d1E-qu-Xf9" firstAttribute="leading" secondItem="Kun-Hb-ckI" secondAttribute="leading" id="ZyN-Pi-HsB"/>
-                                        <constraint firstItem="T9y-eR-daA" firstAttribute="leading" secondItem="Kun-Hb-ckI" secondAttribute="leading" id="eUo-4o-GZX"/>
                                         <constraint firstItem="96c-Aq-FO3" firstAttribute="leading" secondItem="Kun-Hb-ckI" secondAttribute="leading" id="ftX-nI-Fkd"/>
                                         <constraint firstAttribute="trailing" secondItem="96c-Aq-FO3" secondAttribute="trailing" id="oM2-ig-Lld"/>
                                         <constraint firstItem="dXp-a8-W1S" firstAttribute="top" secondItem="d1E-qu-Xf9" secondAttribute="bottom" constant="1" id="t1l-qr-Efa"/>
@@ -2072,7 +2031,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="repayDetailCell" id="Ck2-bB-yU5" customClass="FRepayDetailCell">
-                                        <rect key="frame" x="0.0" y="197" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="173" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ck2-bB-yU5" id="auA-yY-9MB">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>

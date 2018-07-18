@@ -26,23 +26,25 @@ static NSString * const reuseIdentifier = @"FHomeCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NavBar *bar = [[NavBar alloc] initWithTitle:@"计你所想" leftName:nil rightName:nil delegate:self];
-    bar.leftBtn.hidden = YES;  //主页隐藏返回按钮
+    NavBar *bar = [[NavBar alloc] initWithTitle:@"计算器集" leftName:@"🔙" rightName:nil delegate:self];
+//    bar.leftBtn.hidden = YES;  //隐藏返回按钮
     
 //    [_tableView registerClass:[BaseContentCell class] forCellReuseIdentifier:@"RateViewCell"];
  [self.tableView registerNib:[UINib nibWithNibName:reuseIdentifier bundle:nil] forCellReuseIdentifier:reuseIdentifier];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
-    groupTitls = @[@"存款", @"贷款", @"理财", @"简计"];
-    self.dataArray = @[@"存款计算器", @"房贷计算器", @"普通贷款计算器", @"理财计算器", @"小计算器"].mutableCopy;
+//    groupTitls = @[@"存款", @"贷款", @"理财", @"简计"];
+    groupTitls = @[@"存款", @"贷款", @"简计"];
+//    self.dataArray = @[@"存款计算器", @"房贷计算器", @"普通贷款计算器", @"理财计算器", @"小计算器"].mutableCopy;
+        self.dataArray = @[@"存款计算器", @"房贷计算器", @"普通贷款计算器", @"小计器"].mutableCopy;
     rowCount = 0;
 }
 
 
 //显示多少组
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return groupTitls.count;
 }
 
 
@@ -96,8 +98,9 @@ static NSString * const reuseIdentifier = @"FHomeCell";
         }else{          //其它贷款计算
             controller = [homeStoryboard instantiateViewControllerWithIdentifier:@"CommonCounter"];
         }
-    }else if (section == 2){ //第三组 /理财计算
-        controller = [homeStoryboard instantiateViewControllerWithIdentifier:@"FinanceCounter"];
+    }else if (section == 2){ //第三组
+//        controller = [homeStoryboard instantiateViewControllerWithIdentifier:@"FinanceCounter"];
+        [self showFloatWindow];
     }else { //第四组 /生活小计
         [self showFloatWindow];
 //                controller =  [[ZTAppCalculatorViewController alloc] init];

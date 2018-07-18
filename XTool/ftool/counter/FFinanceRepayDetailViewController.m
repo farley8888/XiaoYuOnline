@@ -8,7 +8,9 @@
 
 #import "FFinanceRepayDetailViewController.h"
 #import "FRepayDetailCell.h"
+#import "FRepayDetailHeadView.h"
 
+static NSString * const reuseIdentifier2 = @"AJMonthSectionHeader";
 @interface FFinanceRepayDetailViewController ()
 
 @end
@@ -32,6 +34,7 @@
     _lb_repayWay.text = _repayWay;
 //    NSLog(@"data = %@", _data);
     
+    [self.tableView registerClass:[FRepayDetailHeadView class] forHeaderFooterViewReuseIdentifier:reuseIdentifier2];
     [self.tableView reloadData];
 }
 
@@ -40,7 +43,15 @@
     return self.data.count;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    FRepayDetailHeadView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:reuseIdentifier2];
+    return header;
+}
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 40.f;
+}
 
 
 //每一组的内容

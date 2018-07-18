@@ -5,7 +5,8 @@
 //
 
 #import "FTabBarController.h"
-#import "FCounterViewController.h"
+//#import "FCounterViewController.h"
+#import "FFinanceCounterViewController.h"
 #import "FMineController.h"
 #import "FHomeViewController.h"
 #import "FNavigationController.h"
@@ -28,8 +29,9 @@
     FNavigationController *nav1 = [[FNavigationController alloc] initWithRootViewController:home];
     [self addChildViewController:nav1];
 
-    FCounterViewController *vender = [[FCounterViewController alloc] init];
-    vender.title = @"计算器";
+    UIStoryboard *homeStoryboard = [UIStoryboard storyboardWithName:@"Counters" bundle:nil];
+    FFinanceCounterViewController *vender = [homeStoryboard instantiateViewControllerWithIdentifier:@"FinanceCounter"];
+//    vender.title = @"理财计算";
     FNavigationController *nav2 = [[FNavigationController alloc] initWithRootViewController:vender];
     [self addChildViewController:nav2];
     
