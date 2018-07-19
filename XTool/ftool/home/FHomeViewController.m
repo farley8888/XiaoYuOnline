@@ -31,7 +31,7 @@ static NSString * const reuseIdentifier2 = @"FHomeNewsCell";
     
     [self initView];
     
-    self.dataArray = @[@"最新利率", @"记一笔"].mutableCopy;
+    self.dataArray = @[@"最新利率"].mutableCopy; //, @"记一笔"
     self.header.imageURLStringsGroup = @[
 //                                         @"https://static.weijinzaixian.com/ad_0603403dc18654ec40c34a63c5eb5dd8.jpg",
                                          @"homebanner.jpeg",
@@ -121,8 +121,8 @@ static NSString * const reuseIdentifier2 = @"FHomeNewsCell";
 
             NSArray *newsArr = [FHomeNews mj_objectArrayWithKeyValuesArray:dic[@"list"]];
             
-            if (self.dataArray.count > 2) {
-                [self.dataArray removeObjectsInRange:NSMakeRange(2, self.dataArray.count-2)];
+            if (self.dataArray.count > 1) {
+                [self.dataArray removeObjectsInRange:NSMakeRange(1, self.dataArray.count-1)];
             }
             
             [self.dataArray addObjectsFromArray:newsArr];
@@ -148,7 +148,7 @@ static NSString * const reuseIdentifier2 = @"FHomeNewsCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    if (indexPath.row >=2) {
+    if (indexPath.row >=1) {
         return 90;
     }
     return 50.f;
@@ -161,7 +161,7 @@ static NSString * const reuseIdentifier2 = @"FHomeNewsCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    if (indexPath.row >=2) {
+    if (indexPath.row >= 1) {
         
         FHomeNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier2 forIndexPath:indexPath];
         
@@ -182,22 +182,22 @@ static NSString * const reuseIdentifier2 = @"FHomeNewsCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    if (indexPath.row == 1) {
-        
-        if (!AppDelegateInstance.userInfo) {
-            //如果未登录，则跳转登录界面
-            FLoginViewController *loginView = [[FLoginViewController alloc] init];
-            UINavigationController *loginNVC = [[UINavigationController alloc] initWithRootViewController:loginView];
-            //        loginView.backType = MyWealth;
-            [((UINavigationController *)self.tabBarController.selectedViewController) presentViewController:loginNVC animated:YES completion:nil];
-            return;
-        }
-       
-        
-        FTakeRecordFatherController *controller = [[FTakeRecordFatherController alloc] init];
-        controller.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:controller animated:YES];
-    } else if (indexPath.row == 0) {
+//    if (indexPath.row == 1) {
+//
+//        if (!AppDelegateInstance.userInfo) {
+//            //如果未登录，则跳转登录界面
+//            FLoginViewController *loginView = [[FLoginViewController alloc] init];
+//            UINavigationController *loginNVC = [[UINavigationController alloc] initWithRootViewController:loginView];
+//            //        loginView.backType = MyWealth;
+//            [((UINavigationController *)self.tabBarController.selectedViewController) presentViewController:loginNVC animated:YES completion:nil];
+//            return;
+//        }
+//
+//        FTakeRecordFatherController *controller = [[FTakeRecordFatherController alloc] init];
+//        controller.hidesBottomBarWhenPushed = YES;
+//        [self.navigationController pushViewController:controller animated:YES];
+//    } else
+        if (indexPath.row == 0) {
 
         UIStoryboard *homeStoryboard = [UIStoryboard storyboardWithName:@"Counters" bundle:nil];
         UIViewController *tenderVC = [homeStoryboard instantiateViewControllerWithIdentifier:@"rateController"];

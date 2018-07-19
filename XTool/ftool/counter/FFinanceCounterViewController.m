@@ -96,6 +96,7 @@
         }
         detailVc.data = [self generateListData];
         
+        detailVc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:detailVc animated:YES];
         
     }

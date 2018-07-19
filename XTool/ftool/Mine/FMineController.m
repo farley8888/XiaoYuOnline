@@ -16,6 +16,7 @@
 #import "FMyIncomeRecordCell.h"// 今日记录
 #import "FMyExpandseRecordCell.h"// 今日记录
 #import "FTakeRecordFatherController.h"
+#import "FLoginViewController.h"
 
 @interface FMineController ()
 @property (nonatomic, weak) UIView *ratioView;
@@ -41,7 +42,7 @@ static NSString * const reuseIdentifier = @"FMineCell";
     [super viewDidLoad];
     
     [self initView];
-    self.dataArray = @[@"收入记录", @"支出记录"].mutableCopy;
+    self.dataArray = @[@"收入记录", @"支出记录", @"记一笔"].mutableCopy;
     
     [self updateTodayRecordView];
 }
@@ -136,6 +137,16 @@ static NSString * const reuseIdentifier = @"FMineCell";
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    if ([[AppDefaultUtil sharedInstance]isLoginState]) {
+        self.tableView.tableFooterView.hidden = NO;
+    }else {
+        //未登录时
+        self.tableView.tableFooterView.hidden = YES;
+        //清空数据
+        AppDelegateInstance.currentMonthRecord.expandseArr = [NSMutableArray array];
+        AppDelegateInstance.currentMonthRecord.incomeArr = [NSMutableArray array];
+        AppDelegateInstance.aFAccountCategaries.expensesTypeArr = [NSMutableArray array];
+    }
     
     // 更新数据
     CGFloat monthIncome = 0;
@@ -143,8 +154,6 @@ static NSString * const reuseIdentifier = @"FMineCell";
         monthIncome += incomeRecord.amount;
     }
     self.incomeL.text = [NSString numberformatStrFromDouble:monthIncome];
-    
-
     
     CGFloat monthExpandse = 0;
     for (FAccountRecord *expandseRecord in AppDelegateInstance.currentMonthRecord.expandseArr) {
@@ -175,18 +184,21 @@ static NSString * const reuseIdentifier = @"FMineCell";
 
 - (void)monthIncomeClick:(UIButton *)sender
 {
+    if ([self isNoLogin])  return;
     FMonthIncomeRecordController *controller = [FMonthIncomeRecordController new];
     controller.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:controller animated:YES];
 }
 - (void)monthExpandseClick:(UIButton *)sender
 {
+    if ([self isNoLogin])  return;
     FMonthExpandseRecordController *controller = [FMonthExpandseRecordController new];
     controller.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:controller animated:YES];
 }
 - (void)monthBudgetClick:(UIButton *)sender
 {
+    if ([self isNoLogin])  return;
     FMonthBudgetRecordController *controller = [FMonthBudgetRecordController new];
     controller.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:controller animated:YES];
@@ -201,6 +213,7 @@ static NSString * const reuseIdentifier = @"FMineCell";
 }
 
 - (void)lookTodayRecord:(UITapGestureRecognizer *)gesture{
+    if ([self isNoLogin])  return;
     
     CGPoint touchPoint = [gesture locationInView:gesture.view];
     if (CGRectContainsPoint(self.todayExpandseRecordView.frame, touchPoint) == NO) {
@@ -302,6 +315,7 @@ static NSString * const reuseIdentifier = @"FMineCell";
     self.tableView.tableFooterView = footer;
     self.tableView.tableHeaderView = heaer;
     [self.tableView registerNib:[UINib nibWithNibName:reuseIdentifier bundle:nil] forCellReuseIdentifier:reuseIdentifier];
+    self.tableView.tableFooterView.hidden = YES;
 }
 
 - (void)requestData{
@@ -332,9 +346,10 @@ static NSString * const reuseIdentifier = @"FMineCell";
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         ShowLightMessage(@"已退出登录");
-        self.tabBarController.selectedIndex = 0;
+//        self.tabBarController.selectedIndex = 0;  不回主页
         [FUserModel clearUser];
         AppDelegateInstance.userInfo = nil;
+        [self isNoLogin];
     });
 }
 
@@ -345,19 +360,38 @@ static NSString * const reuseIdentifier = @"FMineCell";
     return cell;
 }
 
+-(BOOL) isNoLogin{
+    if (!AppDelegateInstance.userInfo) {
+        //如果未登录，则跳转登录界面
+        FLoginViewController *loginView = [[FLoginViewController alloc] init];
+        UINavigationController *loginNVC = [[UINavigationController alloc] initWithRootViewController:loginView];
+        //        loginView.backType = MyWealth;
+        [((UINavigationController *)self.tabBarController.selectedViewController) presentViewController:loginNVC animated:YES completion:nil];
+        return YES;
+    }else {
+        return NO;
+    }
+}
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([self isNoLogin])  return;
     
     if (indexPath.row == 0) {
         
         FMyIncomeRecordController *controller = [FMyIncomeRecordController new];
         controller.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:controller animated:YES];
-    }else{
+    }else  if (indexPath.row == 1) {
         FMyExpandseRecordController *controller = [FMyExpandseRecordController new];
         controller.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:controller animated:YES];
         
+    }else {
+
+        FTakeRecordFatherController *controller = [[FTakeRecordFatherController alloc] init];
+        controller.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:controller animated:YES];
     }
 }
 

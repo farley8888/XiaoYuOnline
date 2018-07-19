@@ -487,7 +487,7 @@
 	[[AppDefaultUtil sharedInstance] setPassword:pwdStr];// 保存用户密码（des加密）
     [[AppDefaultUtil sharedInstance] setLoginState:YES];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:CHANGETABBAR object:@"2"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:CHANGETABBAR object:@"0"];
     [self dismissViewControllerAnimated:YES completion:nil];
     
     FUserModel *user = [[FUserModel alloc] init];
