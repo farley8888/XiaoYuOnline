@@ -9,16 +9,16 @@
 #import <UIKit/UIKit.h>
 
 //ftool
-@class FAccountCategaries, FCurrentMonthRecord;
+//@class FAccountCategaries, FCurrentMonthRecord;
 //ftool end
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 //ftool
-@property (nonatomic, strong) FUserModel *userInfo;
-@property (nonatomic,strong) FAccountCategaries *aFAccountCategaries;
-@property (nonatomic,strong) FCurrentMonthRecord *currentMonthRecord;
+//@property (nonatomic, strong) FUserModel *userInfo;
+//@property (nonatomic,strong) FAccountCategaries *aFAccountCategaries;
+//@property (nonatomic,strong) FCurrentMonthRecord *currentMonthRecord;
 //ftool end
 
 @end

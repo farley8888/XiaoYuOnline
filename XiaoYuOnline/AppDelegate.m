@@ -14,9 +14,9 @@
 #import "ThirdPartHelper.h"
 
 //ftool
-#import "FTabBarController.h"
-#import "IQKeyboardManager.h"
-#import "NSDate+BRAdd.h"
+//#import "FTabBarController.h"
+//#import "IQKeyboardManager.h"
+//#import "NSDate+BRAdd.h"
 //ftool end
 
 @interface AppDelegate ()
@@ -28,7 +28,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    if (DataUtil.isPass) {
+//    if (DataUtil.isPass) {
 
         self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         self.window.backgroundColor = [UIColor whiteColor];
@@ -48,84 +48,84 @@
         self.window.rootViewController = rootViewController;
         [self initGlobalNavigationBarStyle];
         
-    }else {
-        [self FTLaunch];
-    }
+//    }else {
+//        [self FTLaunch];
+//    }
     
     return YES;
 }
 
 //ftool
--(void)FTLaunch{
-    NSString *clientVersion = [[NSUserDefaults standardUserDefaults] stringForKey:@"clientVersion"];
-    //判断应用程序是否更新了版本
-    NSLog(@"clientVersion = [%@]", clientVersion);
-    if ([clientVersion isEqualToString:CLIENT_VERSION]) {
-        NSLog(@"未更新,正常使用2");
-        
-    }else if(clientVersion == nil ){
-        NSLog(@"首次安装2");
-        [[NSUserDefaults standardUserDefaults] setObject:CLIENT_VERSION forKey:@"clientVersion"];
-        [FUsersTool setDefaultUser];
-    } else{
-        NSLog(@"更新了APP2");
-        [[NSUserDefaults standardUserDefaults] setObject:CLIENT_VERSION forKey:@"clientVersion"];
-    }
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    FTabBarController *tabbarVC = [[FTabBarController alloc] init];
-    self.window.rootViewController = tabbarVC;
-    
-    
-    [self setUpKeyboardManager];
-    
-    self.userInfo = [FUserModel userFrom_NSUserDefaults];
-}
+//-(void)FTLaunch{
+//    NSString *clientVersion = [[NSUserDefaults standardUserDefaults] stringForKey:@"clientVersion"];
+//    //判断应用程序是否更新了版本
+//    NSLog(@"clientVersion = [%@]", clientVersion);
+//    if ([clientVersion isEqualToString:CLIENT_VERSION]) {
+//        NSLog(@"未更新,正常使用2");
+//
+//    }else if(clientVersion == nil ){
+//        NSLog(@"首次安装2");
+//        [[NSUserDefaults standardUserDefaults] setObject:CLIENT_VERSION forKey:@"clientVersion"];
+//        [FUsersTool setDefaultUser];
+//    } else{
+//        NSLog(@"更新了APP2");
+//        [[NSUserDefaults standardUserDefaults] setObject:CLIENT_VERSION forKey:@"clientVersion"];
+//    }
+//
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+//    FTabBarController *tabbarVC = [[FTabBarController alloc] init];
+//    self.window.rootViewController = tabbarVC;
+//
+//
+//    [self setUpKeyboardManager];
+//
+//    self.userInfo = [FUserModel userFrom_NSUserDefaults];
+//}
+//
+//- (void)setUserInfo:(FUserModel *)userInfo{
+//    _userInfo = userInfo;
+//    [[AppDefaultUtil sharedInstance] setLoginState:userInfo?YES:NO]; //测试登录
+//
+//    if (!userInfo) {
+//        return;
+//    }
+//    self.aFAccountCategaries = [FAccountRecordSaveTool readLocalUserAccountCategaries];
+//    // 为默认用户专门生成预算
+//    if ([userInfo.phone isEqualToString:defName]) {
+//        for (FFirstType *expandseFirstType in self.aFAccountCategaries.expensesTypeArr) {
+//            expandseFirstType.budget = expandseFirstType.initBudget;
+//        }
+//    }
+//
+//    [self initcurrentMonthRecord];
+//}
 
-- (void)setUserInfo:(FUserModel *)userInfo{
-    _userInfo = userInfo;
-    [[AppDefaultUtil sharedInstance] setLoginState:userInfo?YES:NO]; //测试登录
-    
-    if (!userInfo) {
-        return;
-    }
-    self.aFAccountCategaries = [FAccountRecordSaveTool readLocalUserAccountCategaries];
-    // 为默认用户专门生成预算
-    if ([userInfo.phone isEqualToString:defName]) {
-        for (FFirstType *expandseFirstType in self.aFAccountCategaries.expensesTypeArr) {
-            expandseFirstType.budget = expandseFirstType.initBudget;
-        }
-    }
-    
-    [self initcurrentMonthRecord];
-}
-
-- (void)initcurrentMonthRecord{
-    
-    self.currentMonthRecord = [FAccountRecordSaveTool readLoaclCurrentMonthBlanceRecords];
-    if (!self.currentMonthRecord) {//
-    }
-}
-
-#pragma  mark - 以下自定义方法
-- (void)setUpKeyboardManager
-{
-    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
-    manager.enable = YES;
-    manager.shouldResignOnTouchOutside = YES;
-    manager.shouldToolbarUsesTextFieldTintColor = YES;
-    manager.shouldShowToolbarPlaceholder = NO;
-    manager.toolbarManageBehaviour = IQAutoToolbarByTag;
-    //    manager.previousNextDisplayMode = IQPreviousNextDisplayModeDefault;
-}
+//- (void)initcurrentMonthRecord{
+//
+//    self.currentMonthRecord = [FAccountRecordSaveTool readLoaclCurrentMonthBlanceRecords];
+//    if (!self.currentMonthRecord) {//
+//    }
+//}
+//
+//#pragma  mark - 以下自定义方法
+//- (void)setUpKeyboardManager
+//{
+//    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+//    manager.enable = YES;
+//    manager.shouldResignOnTouchOutside = YES;
+//    manager.shouldToolbarUsesTextFieldTintColor = YES;
+//    manager.shouldShowToolbarPlaceholder = NO;
+//    manager.toolbarManageBehaviour = IQAutoToolbarByTag;
+//    //    manager.previousNextDisplayMode = IQPreviousNextDisplayModeDefault;
+//}
 //ftool end
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
 
-    if (!DataUtil.isPass)  [self.userInfo saveTo_NSUserDefaults];
+//    if (!DataUtil.isPass)  [self.userInfo saveTo_NSUserDefaults];
    
 }
 //ftool end
