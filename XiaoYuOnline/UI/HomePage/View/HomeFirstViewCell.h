@@ -27,7 +27,7 @@ typedef NS_ENUM(NSUInteger, XYHomeButtonType) {
 @property (nonatomic, strong) SDCycleScrollView *bannerView;
 @property (nonatomic, strong) UIButton *daySignButton;
 @property (nonatomic, strong) UIButton *inviteButton;
-@property (nonatomic, strong) UIButton *appointmentButton;
+@property (nonatomic, strong) UIButton *appointmentButton; //去除借款
 @property (nonatomic, strong) UIButton *bidButton;
 @property (nonatomic, strong) UIButton *notifyButton;
 @property (nonatomic, weak) id<XYHomeFirstCellDelegate> delegate;

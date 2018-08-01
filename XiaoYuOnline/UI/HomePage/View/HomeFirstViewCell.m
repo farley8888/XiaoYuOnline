@@ -49,7 +49,7 @@
         [superView addSubview:_bannerView];
         [superView addSubview:_inviteButton];
         [superView addSubview:_daySignButton];
-        [superView addSubview:_appointmentButton];
+//        [superView addSubview:_appointmentButton];
         [superView addSubview:_bidButton];
         [superView addSubview:_notifyButton];
         [superView addSubview:_lineView];
@@ -64,11 +64,16 @@
     CGFloat h = ceilf(w * (313.0 / 750));
     _bannerView.frame = CGRectMake(0, 0, w, h);
     
-    NSArray *btns = @[_daySignButton, _appointmentButton, _inviteButton, _bidButton];
+//    NSArray *btns = @[_daySignButton, _appointmentButton, _inviteButton, _bidButton];
+    NSArray *btns = @[_daySignButton, _inviteButton, _bidButton];
+    
     CGSize btnSize = CGSizeMake(60, 90);
+    
     CGFloat top = 18.0;
     CGFloat y = CGRectGetMaxY(_bannerView.frame) + top;
-    CGFloat gap = (w - (btnSize.width * btns.count)) / 5;
+    
+    CGFloat gap = (w - (btnSize.width * btns.count)) / (btns.count+1);
+    
     for (NSUInteger i = 0, count = btns.count; i < count; i ++) {
         UIButton *btn = btns[i];
         btn.frame = CGRectMake(gap + (gap + btnSize.width) * i, y, btnSize.width, btnSize.height);
@@ -97,9 +102,11 @@
         type = XYHomeButtonTypeSign;
     } else if (button == _inviteButton) {
         type = XYHomeButtonTypeInvite;
-    } else if (button == _appointmentButton) {
+    }
+    else if (button == _appointmentButton) {
         type = XYHomeButtonTypeAppointment;
-    } else if (button == _bidButton) {
+    }
+    else if (button == _bidButton) {
         type = XYHomeButtonTypeBid;
     } else {
         type = XYHomeButtonTypeNotify;
